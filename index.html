@@ -9,22 +9,22 @@
   </head>
   <body>
     <header
-      class="bg-[url('assets/images/HeaderBackground.png')] min-h-[1000px] bg-no-repeat bg-cover bg-center flex flex-col justify-between"
+      class="bg-[url('assets/images/HeaderBackground.png')] min-h-[700px] md:min-h-[1000px] bg-no-repeat bg-cover bg-center flex flex-col justify-between"
     >
       <div class="navbarWrapper bg-gradient-to-b from-black h-1/2">
         <div
-          class="navbar max-w-[1700px] flex items-center justify-between mx-auto py-6 px-2"
+          class="navbar max-w-[1700px] flex items-center justify-between mx-auto py-6 px-[10px]"
         >
           <div class="logoContainer max-w-[134px]">
             <!-- <img src="assets/images/Logo.png" alt="Logo" /> -->
-            <img src="assets/images/LogoSvg.svg" alt="Logo" />
+            <img src="assets/vectors/LogoSvg.svg" alt="Logo" />
           </div>
           <div class="flex items-center gap-16">
-            <nav>
+            <nav class="hidden lg:flex">
               <ul
                 class="flex items-center gap-8 text-white font-stolzl font-light text-lg"
               >
-                <li><a href="#">Sources</a></li>
+                <li><a href="pages/sourcers.html">Sourcers</a></li>
                 <li><a href="#">Landlords</a></li>
                 <li><a href="#">Pricing</a></li>
                 <li><a href="#">Our Services</a></li>
@@ -33,26 +33,64 @@
               </ul>
             </nav>
             <div
-              class="flex items-center gap-6 text=[18px] font-stolzl text-white"
+              class="flex items-center gap-7 text=[18px] font-stolzl text-white"
             >
-              <div class="relative">
-                <div
-                  class="absolute rounded-full bg-[#F8B84E] w-[20px] h-[20px] -top-[6px] -right-[10px] text-center flex items-center justify-center"
-                >
-                  <span class="text-[14px]">1</span>
+              <div class="hidden sm:flex items-center gap-6">
+                <div class="relative">
+                  <div
+                    class="absolute rounded-full bg-[#F8B84E] w-[20px] h-[20px] -top-[6px] -right-[10px] text-center flex items-center justify-center"
+                  >
+                    <span class="text-[14px]">1</span>
+                  </div>
+                  <img src="assets/vectors/bell.svg" alt="bell img" />
                 </div>
-                <img src="assets/vectors/bell.svg" alt="bell img" />
+                <div class="flex items-center gap-3">
+                  <img
+                    class="shrink-0 w-[39px] h-[39px]"
+                    src="assets/images/avatar.png"
+                    alt="avatar"
+                  />
+                  <div class="flex flex-col">
+                    <span class="text-[11px] font-extralight"
+                      >Signed in as</span
+                    >
+                    <span class="text-lg">Daniel Way</span>
+                  </div>
+                </div>
               </div>
-              <div class="flex items-center gap-3">
-                <img
-                  class="shrink-0 w-[39px] h-[39px]"
-                  src="assets/images/avatar.png"
-                  alt="avatar"
-                />
-                <div class="flex flex-col">
-                  <span class="text-[11px] font-extralight">Signed in as</span>
-                  <span class="text-lg">Daniel Way</span>
-                </div>
+
+              <!-- Burger button -->
+              <div class="inline-block lg:hidden">
+                <button class="relative group">
+                  <div
+                    class="relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all bg-[#F8B84E] ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md"
+                  >
+                    <div
+                      class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden"
+                    >
+                      <div
+                        class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10"
+                      ></div>
+                      <div
+                        class="bg-white h-[2px] w-7 rounded transform transition-all duration-300 group-focus:translate-x-10 delay-75"
+                      ></div>
+                      <div
+                        class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10 delay-150"
+                      ></div>
+
+                      <div
+                        class="absolute items-center justify-between transform transition-all duration-500 top-2.5 -translate-x-10 group-focus:translate-x-0 flex w-0 group-focus:w-12"
+                      >
+                        <div
+                          class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 rotate-0 delay-300 group-focus:rotate-45"
+                        ></div>
+                        <div
+                          class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 -rotate-0 delay-300 group-focus:-rotate-45"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </button>
               </div>
             </div>
           </div>
@@ -60,19 +98,25 @@
       </div>
 
       <div
-        class="bg-[#16234A] bg-opacity-80 w-full h-[312px] text-white font-stolzl py-[50px]"
+        class="bg-[#16234A] bg-opacity-80 w-full min-h-[312px] text-white font-stolzl py-[50px] px-[10px]"
       >
-        <div class="flex items-center max-w-[1700px] mx-auto">
-          <h1 class="text-[50px] font-light max-w-[646px]">
+        <div
+          class="flex flex-col 2xl:flex-row items-baseline 2xl:items-center max-w-[1700px] mx-auto gap-5 2xl:gap-0"
+        >
+          <h1 class="text-[35px] md:text-[50px] font-light max-w-[646px]">
             The ultimate hub for connecting sourcers, landlords and investors
           </h1>
-          <div class="flex flex-col gap-5">
-            <ul class="flex items-center font-extralight text-[17px]">
-              <li class="px-[60px] py-[20px] border-white border-b-0 border">Properties</li>
-              <li class="px-[60px] py-[20px] border-white border-b">R2R</li>
-              <li class="px-[60px] py-[20px] border-white border-b">Land</li>
-              <li class="px-[60px] py-[20px] border-white border-b">Find Sourcers</li>
-              <li class="px-[60px] py-[20px] border-white border-b">Find Investors</li>
+          <div class="flex w-full flex-col gap-5">
+            <ul
+              class="flex items-center font-extralight text-[17px] overflow-auto md:overflow-visible pb-2 md:pb-0"
+            >
+              <li class="md:w-1/5 headerCategory headerCategory-active">
+                Properties
+              </li>
+              <li class="md:w-1/5 headerCategory">R2R</li>
+              <li class="md:w-1/5 headerCategory">Land</li>
+              <li class="md:w-1/5 headerCategory">Find Sourcers</li>
+              <li class="md:w-1/5 headerCategory">Find Investors</li>
             </ul>
 
             <ul class="flex items-center font-extralight gap-5 text-[17px]">
@@ -90,10 +134,18 @@
               </li>
             </ul>
 
-            <div class="flex items-center gap-4">
-              <input class="w-[42%] py-[16px] px-10 rounded-md text-black" type="text">
-              <input class="w-[42%] py-[16px] px-10 rounded-md text-black" type="text">
-              <button class="bg-[#F8B84E] rounded-lg py-[16px] px-6 w-[15%]">
+            <div class="flex flex-wrap md:flex-nowrap items-center gap-4">
+              <input
+                class="w-full md:w-[42%] py-[16px] px-10 rounded-md text-black"
+                type="text"
+              />
+              <input
+                class="w-full md:w-[42%] py-[16px] px-10 rounded-md text-black"
+                type="text"
+              />
+              <button
+                class="bg-[#F8B84E] rounded-lg py-[16px] px-6 w-full md:w-[15%]"
+              >
                 Search
               </button>
             </div>
@@ -103,16 +155,18 @@
     </header>
     <main class="font-stolzl">
       <!-- Referral programme section -->
-      <section class="max-w-[1364px] py-[100px] mx-auto">
+      <section class="homeContainer py-[100px] mx-auto">
         <div
-          class="w-full max-h-[534px] rounded-2xl bg-[#7D1341] text-white font-stolzl flex flex-col items-center justify-center font-light py-[90px] px-[74px] gap-6"
+          class="w-full min-h-[534px] rounded-2xl bg-[#7D1341] text-white font-stolzl flex flex-col items-center justify-center font-light py-[40px] sm:py-[60px] md:py-[90px] px-[35px] sm:px-[50px] md:px-[74px] gap-6"
         >
-          <h3 class="text-[58px] text-center">
+          <h3
+            class="text-[25px] xs:text-[35px] sm:text-[40px] md:text-[58px] text-center"
+          >
             Turn your recommendations into<br /><span class="font-semibold"
               >passive income</span
             >
           </h3>
-          <p class="text-[31px] text-center">
+          <p class="text-[18px] md:text-[31px] text-center">
             Check out our
             <span class="font-semibold">unbeatable Referral programme.</span>
             <br /><span class="font-semibold">Earn money</span> from each
@@ -128,7 +182,9 @@
 
       <!-- Sign up ad section -->
       <section class="bg-[#16234A]">
-        <div class="max-w-[1364px] py-[20px] mx-auto flex items-center">
+        <div
+          class="homeContainer py-[30px] md:py-[20px] mx-auto flex flex-col md:flex-row items-center"
+        >
           <!-- image -->
           <div>
             <img src="assets/images/LaptopHome.png" alt="laptop" />
@@ -138,16 +194,18 @@
           <div
             class="flex flex-col font-stolzl text-white font-light gap-[45px]"
           >
-            <h4 class="text-[45px]">Sign Up For Our Early Bird Offer</h4>
+            <h4 class="text-[30px] sm:text-[45px]">
+              Sign Up For Our Early Bird Offer
+            </h4>
             <div class="flex flex-col gap-6">
-              <p class="text-xl">
+              <p class="text-sm sm:text-xl">
                 Sign up for updates and enjoy the following benefits:
               </p>
-              <div class="flex items-center text-lg gap-7">
+              <div class="flex items-center text-sm sm:text-lg gap-7">
                 <img src="assets/vectors/calendar.svg" alt="calendar" />
                 <p>Your first month subscription free</p>
               </div>
-              <div class="flex items-center text-lg gap-7">
+              <div class="flex items-center text-sm sm:text-lg gap-7">
                 <img src="assets/vectors/percentage.svg" alt="calendar" />
                 <p>
                   <span class="font-semibold">50% off</span> your 2nd and 3rd
@@ -155,17 +213,19 @@
                 </p>
               </div>
             </div>
+
+            <!-- controls -->
             <div
-              class="flex items-center font-stolzl text-white font-light gap-11"
+              class="flex flex-col sm:flex-row sm:items-center font-stolzl text-white font-light gap-11"
             >
               <button class="bg-[#F8B84E] rounded-lg py-[16px] px-10">
                 Sign up today
               </button>
-              <div class="flex gap-2">
+              <div class="flex justify-center sm:justify-normal gap-2">
                 <div class="w-[46px] h-[5px] rounded-sm bg-[#F8B84E]"></div>
                 <div class="w-[46px] h-[5px] rounded-sm bg-white"></div>
               </div>
-              <div class="flex gap-6">
+              <div class="flex justify-evenly sm:justify-normal gap-6">
                 <button>
                   <img src="assets/vectors/arrowLeft.svg" alt="arrow left" />
                 </button>
@@ -180,27 +240,27 @@
 
       <!-- sources section -->
       <section
-        class="max-w-[1364px] py-[100px] mx-auto text-[#1C2A53] font-light"
+        class="homeContainer py-[60px] sm:py-[100px] mx-auto text-[#1C2A53] font-light"
       >
-        <div class="flex items-center justify-between">
+        <div class="flex items-center justify-between flex-col lg:flex-row">
           <div class="max-w-[698px]">
             <img src="assets/images/Sources.png" alt="sources" />
           </div>
-          <div class="flex flex-col gap-4 max-w-[511px]">
+          <div class="flex flex-col gap-4 max-w-[698px] lg:max-w-[511px]">
             <div>
-              <span class="text-[20px]">Sources</span>
-              <h3 class="text-[40px] leading-tight">
+              <span class="text-[15px] sm:text-[20px]">Sources</span>
+              <h3 class="text-[28px] sm:text-[40px] leading-tight">
                 Discover new <span class="font-semibold">properties</span> and
                 <span class="font-semibold">clients</span> through us
               </h3>
             </div>
-            <p class="text-[20px]">
+            <p class="text-[15px] sm:text-[20px]">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
               erat, sed diam voluptua. At vero eos et accusam et justo duo
             </p>
             <button
-              class="bg-[#F8B84E] rounded-lg py-[16px] px-10 text-white w-fit mt-4"
+              class="bg-[#F8B84E] rounded-lg py-[16px] px-10 text-white mt-4 w-full sm:w-fit"
             >
               Sign up today
             </button>
@@ -209,23 +269,27 @@
       </section>
 
       <!-- Rent2Rent section -->
-      <section class="py-[100px] bg-[#F9F9F9] text-[#1C2A53] font-light">
-        <div class="flex items-center justify-between max-w-[1364px] mx-auto">
-          <div class="flex flex-col gap-4 max-w-[511px]">
+      <section
+        class="py-[60px] sm:py-[100px] bg-[#F9F9F9] text-[#1C2A53] font-light"
+      >
+        <div
+          class="homeContainer flex items-center justify-between mx-auto flex-col-reverse lg:flex-row"
+        >
+          <div class="flex flex-col gap-4 max-w-[698px] lg:max-w-[511px]">
             <div>
-              <span class="text-[20px]">Rent2Rent</span>
-              <h3 class="text-[40px] leading-tight">
+              <span class="text-[15px] sm:text-[20px]">Rent2Rent</span>
+              <h3 class="text-[28px] sm:text-[40px] leading-tight">
                 <span class="font-semibold">Fill your property</span>
                 quickly and easily
               </h3>
             </div>
-            <p class="text-[20px]">
+            <p class="text-[15px] sm:text-[20px]">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
               erat, sed diam voluptua. At vero eos et accusam et justo duo
             </p>
             <button
-              class="bg-[#F8B84E] rounded-lg py-[16px] px-10 text-white w-fit mt-4"
+              class="bg-[#F8B84E] rounded-lg py-[16px] px-10 text-white w-full sm:w-fit mt-4"
             >
               Sign up today
             </button>
@@ -238,27 +302,27 @@
 
       <!-- Investors section -->
       <section
-        class="max-w-[1364px] py-[100px] mx-auto text-[#1C2A53] font-light"
+        class="homeContainer pt-[60px] sm:py-[100px] mx-auto text-[#1C2A53] font-light"
       >
-        <div class="flex items-center justify-between">
+        <div class="flex items-center justify-between flex-col lg:flex-row">
           <div class="max-w-[698px]">
             <img src="assets/images/Investors.png" alt="Investors" />
           </div>
-          <div class="flex flex-col gap-4 max-w-[511px]">
+          <div class="flex flex-col gap-4 max-w-[698px] lg:max-w-[511px]">
             <div>
-              <span class="text-[20px]">Investors</span>
-              <h3 class="text-[40px] leading-tight">
+              <span class="text-[15px] sm:text-[20px]">Investors</span>
+              <h3 class="text-[28px] sm:text-[40px] leading-tight">
                 Browse hundreds of
                 <span class="font-semibold">verified properties</span>
               </h3>
             </div>
-            <p class="text-[20px]">
+            <p class="text-[15px] sm:text-[20px]">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
               erat, sed diam voluptua. At vero eos et accusam et justo duo
             </p>
             <button
-              class="bg-[#F8B84E] rounded-lg py-[16px] px-10 text-white w-fit mt-4"
+              class="bg-[#F8B84E] rounded-lg py-[16px] px-10 text-white w-full sm:w-fit mt-4"
             >
               Sign up today
             </button>
@@ -267,25 +331,29 @@
       </section>
 
       <!-- Landlords section -->
-      <section class="py-[100px] bg-[#F9F9F9] text-[#1C2A53] font-light">
-        <div class="flex items-center justify-between max-w-[1364px] mx-auto">
-          <div class="flex flex-col gap-4 max-w-[511px]">
+      <section
+        class="py-[60px] sm:py-[100px] bg-[#F9F9F9] text-[#1C2A53] font-light"
+      >
+        <div
+          class="flex items-center justify-between homeContainer mx-auto flex-col-reverse lg:flex-row"
+        >
+          <div class="flex flex-col gap-4 max-w-[698px] lg:max-w-[511px]">
             <div>
-              <span class="text-[20px]">Landlords</span>
-              <h3 class="text-[40px] leading-tight">
+              <span class="text-[15px] sm:text-[20px]">Landlords</span>
+              <h3 class="text-[28px] sm:text-[40px] leading-tight">
                 <span class="font-semibold"
                   >Sell your whole portfolio directly to investors with zero
                   fees</span
                 >
               </h3>
             </div>
-            <p class="text-[20px]">
+            <p class="text-[15px] sm:text-[20px]">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
               erat, sed diam voluptua. At vero eos et accusam et justo duo
             </p>
             <button
-              class="bg-[#F8B84E] rounded-lg py-[16px] px-10 text-white w-fit mt-4"
+              class="bg-[#F8B84E] rounded-lg py-[16px] px-10 text-white w-full sm:w-fit mt-4"
             >
               Sign up today
             </button>
@@ -299,69 +367,85 @@
       <!-- Latest news section -->
 
       <section
-        class="flex flex-col max-w-[1364px] mx-auto text-[#1C2A53] font-light py-[67px]"
+        class="flex flex-col homeContainer mx-auto text-[#1C2A53] font-light py-[67px]"
       >
         <div class="w-full text-center">
-          <span class="text-[20px]">Latest news</span>
-          <h5 class="text-[40px] font-semibold">Stay In the know</h5>
+          <span class="text-[15px] sm:text-[20px]">Latest news</span>
+          <h5 class="text-[28px] sm:text-[40px] font-semibold">
+            Stay In the know
+          </h5>
           <span class="text-[18px] underline text-[#F8B84E] cursor-pointer"
             >See all news</span
           >
         </div>
 
         <!-- cards -->
-        <div class="grid grid-cols-4 gap-4 my-[70px]">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 my-[70px]"
+        >
           <div
-            class="flex flex-col rounded-xl shadow-[0px_5px_40px_rgba(0,0,0,0.13)] overflow-hidden max-w-[323px] h-[432px]"
+            class="flex flex-col rounded-xl shadow-[0px_5px_40px_rgba(0,0,0,0.13)] overflow-hidden w-full h-fit sm:max-w-[323px] sm:h-[432px]"
           >
             <img src="assets/images/CardImage.png" alt="card image" />
             <div class="py-[30px] px-[38px] flex flex-col gap-4">
-              <span class="text-[20px] text-[#1D3710] font-light"
+              <span
+                class="text-[20px] text-[#1D3710] font-light line-clamp-4 sm:line-clamp-3"
                 >How to make good investments property flipping...</span
               >
-              <p class="text-[14px] text-[#7D8395] font-extralight">
+              <p
+                class="text-[14px] text-[#7D8395] line-clamp-6 sm:line-clamp-2"
+              >
                 Lorem ipsum dolor sit amet, consetetur sadipscing...
               </p>
             </div>
           </div>
 
           <div
-            class="flex flex-col rounded-xl shadow-[0px_5px_40px_rgba(0,0,0,0.13)] overflow-hidden max-w-[323px] h-[432px]"
+            class="flex flex-col rounded-xl shadow-[0px_5px_40px_rgba(0,0,0,0.13)] overflow-hidden w-full h-fit sm:max-w-[323px] sm:h-[432px]"
           >
             <img src="assets/images/CardImage.png" alt="card image" />
             <div class="py-[30px] px-[38px] flex flex-col gap-4">
-              <span class="text-[20px] text-[#1D3710] font-light"
+              <span
+                class="text-[20px] text-[#1D3710] font-light line-clamp-4 sm:line-clamp-3"
                 >How to make good investments property flipping...</span
               >
-              <p class="text-[14px] text-[#7D8395] font-extralight">
+              <p
+                class="text-[14px] text-[#7D8395] font-extralight line-clamp-6 sm:line-clamp-2"
+              >
                 Lorem ipsum dolor sit amet, consetetur sadipscing...
               </p>
             </div>
           </div>
 
           <div
-            class="flex flex-col rounded-xl shadow-[0px_5px_40px_rgba(0,0,0,0.13)] overflow-hidden max-w-[323px] h-[432px]"
+            class="flex flex-col rounded-xl shadow-[0px_5px_40px_rgba(0,0,0,0.13)] overflow-hidden w-full h-fit sm:max-w-[323px] sm:h-[432px]"
           >
             <img src="assets/images/CardImage.png" alt="card image" />
             <div class="py-[30px] px-[38px] flex flex-col gap-4">
-              <span class="text-[20px] text-[#1D3710] font-light"
+              <span
+                class="text-[20px] text-[#1D3710] font-light line-clamp-4 sm:line-clamp-3"
                 >How to make good investments property flipping...</span
               >
-              <p class="text-[14px] text-[#7D8395] font-extralight">
+              <p
+                class="text-[14px] text-[#7D8395] font-extralight line-clamp-6 sm:line-clamp-2"
+              >
                 Lorem ipsum dolor sit amet, consetetur sadipscing...
               </p>
             </div>
           </div>
 
           <div
-            class="flex flex-col rounded-xl shadow-[0px_5px_40px_rgba(0,0,0,0.13)] overflow-hidden max-w-[323px] h-[432px]"
+            class="flex flex-col rounded-xl shadow-[0px_5px_40px_rgba(0,0,0,0.13)] overflow-hidden w-full h-fit sm:max-w-[323px] sm:h-[432px]"
           >
             <img src="assets/images/CardImage.png" alt="card image" />
             <div class="py-[30px] px-[38px] flex flex-col gap-4">
-              <span class="text-[20px] text-[#1D3710] font-light"
+              <span
+                class="text-[20px] text-[#1D3710] font-light line-clamp-4 sm:line-clamp-3"
                 >How to make good investments property flipping...</span
               >
-              <p class="text-[14px] text-[#7D8395] font-extralight">
+              <p
+                class="text-[14px] text-[#7D8395] font-extralight line-clamp-6 sm:line-clamp-2"
+              >
                 Lorem ipsum dolor sit amet, consetetur sadipscing...
               </p>
             </div>
@@ -369,5 +453,148 @@
         </div>
       </section>
     </main>
+    <footer>
+      <div class="flex flex-col font-stolzl">
+        <!-- Blue bar -->
+        <div class="bg-[#16234A] text-white py-4 text-[20px] font-light">
+          <ul
+            class="homeContainer flex flex-col sm:flex-row sm:justify-between text-center sm:text-left"
+          >
+            <li>Leave Feedback</li>
+            <li>List Your Deal</li>
+            <li>Find Investors</li>
+          </ul>
+        </div>
+        <!-- grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-[220px_245px_238px_235px_1fr] -->
+        <!-- Nav -->
+        <div
+          class="flex justify-between sm:flex-row flex-wrap max-w-[1530px] w-full mx-auto py-11 px-[10px] font-stolzl text-[#7D8395] font-light items-center gap-7 sm:gap-6 xl:gap-0"
+        >
+          <div
+            class="flex flex-col gap-8 items-center sm:items-baseline w-full sm:w-[180px]"
+          >
+            <div class="max-w-[134px]">
+              <img src="assets/vectors/LogoSvgBlueFont.svg" alt="logo" />
+            </div>
+
+            <!-- socials -->
+            <div class="flex gap-3">
+              <div
+                class="flex justify-center items-center w-[39px] h-[39px] rounded-full bg-[#F8B84E]"
+              >
+                <img src="assets/vectors/facebook.svg" alt="facebook" />
+              </div>
+              <div
+                class="flex justify-center items-center w-[39px] h-[39px] rounded-full bg-[#F8B84E]"
+              >
+                <img src="assets/vectors/linkedIn.svg" alt="linkedIn" />
+              </div>
+              <div
+                class="flex justify-center items-center w-[39px] h-[39px] rounded-full bg-[#F8B84E]"
+              >
+                <img src="assets/vectors/instagram.svg" alt="instagram" />
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col sm:flex-row justify-between md:justify-around flex-grow flex-wrap gap-6 sm:gap-4">
+            <div
+              class="flex flex-col gap-4 text-center sm:text-left"
+            >
+              <span class="text-[#1C2A53] text-[17px] font-medium">
+                About Aquila Connect
+              </span>
+              <ul
+                class="text-[16px] text-[#7D8395] flex flex-col gap-3 font-extralight"
+              >
+                <li class="hover:underline cursor-pointer">Media</li>
+                <li class="hover:underline cursor-pointer">About Us</li>
+                <li class="hover:underline cursor-pointer">Careers</li>
+                <li class="hover:underline cursor-pointer">Pricing</li>
+                <li class="hover:underline cursor-pointer">
+                  Referral Programme
+                </li>
+                <li class="hover:underline cursor-pointer">Contact Us</li>
+              </ul>
+            </div>
+
+            <div
+              class="flex flex-col gap-4 text-center sm:text-left"
+            >
+              <span class="text-[#1C2A53] text-[17px] font-medium">
+                Resources
+              </span>
+              <ul
+                class="text-[16px] text-[#7D8395] flex flex-col gap-3 font-extralight"
+              >
+                <li class="hover:underline cursor-pointer">Q&A</li>
+                <li class="hover:underline cursor-pointer">Glossary</li>
+                <li class="hover:underline cursor-pointer">
+                  International Investors
+                </li>
+                <li class="hover:underline cursor-pointer">Blog</li>
+                <li class="hover:underline cursor-pointer">Social Media</li>
+                <!-- <li class="hidden sm:block opacity-0 cursor-default">___</li> -->
+              </ul>
+            </div>
+
+            <div
+              class="flex flex-col gap-4 text-center sm:text-left"
+            >
+              <span class="text-[#1C2A53] text-[17px] font-medium">
+                Product
+              </span>
+              <ul
+                class="text-[16px] text-[#7D8395] flex flex-col gap-3 font-extralight"
+              >
+                <li class="hover:underline cursor-pointer">Join Us</li>
+                <li class="hover:underline cursor-pointer">
+                  Advertise With Us
+                </li>
+                <li class="hover:underline cursor-pointer">Work With Us</li>
+                <li class="hover:underline cursor-pointer">Investors</li>
+                <li class="hover:underline cursor-pointer">Sourcers</li>
+                <li class="hover:underline cursor-pointer">Landlords</li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col text-[#7D8395] gap-4 font-extralight lg:pb-[57px] text-center sm:text-left"
+          >
+            <span class="text-[#1C2A53] text-[17px] font-medium">
+              Subscribe to our newsletter
+            </span>
+
+            <span class="text-[15px] mb-3">
+              Enter your email below to receive the latest industry news
+            </span>
+
+            <div class="flex flex-col sm:flex-row gap-6">
+              <input
+                placeholder="Your email address*"
+                type="text"
+                class="rounded-xl border-[#9B9B9B] border-[1px] py-[10px] pl-6 pr-[10px] w-full"
+              />
+              <button
+                class="bg-[#F8B84E] rounded-lg py-[16px] px-10 text-white w-full sm:w-fit"
+              >
+                Submit
+              </button>
+            </div>
+
+            <div class="flex gap-5">
+              <input type="radio" />
+              <span
+                >I accept the Privacy & Cookies Policy and
+                <span class="underline">Terms & Conditions</span>*</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div></div>
+      </div>
+    </footer>
   </body>
 </html>
