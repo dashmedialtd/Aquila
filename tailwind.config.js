@@ -4,6 +4,7 @@ module.exports = {
   content: [
     "./index.html",
     "./pages/sourcers.html",
+    "./pages/createListing.html",
   ],
   theme: {
     fontFamily: {

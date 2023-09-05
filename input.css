@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  font-family: stolzl, sans-serif;
+  font-weight: 300;
+}
+
 .homeContainer {
   max-width: 1364px;
   padding-left: 10px;
@@ -14,6 +19,7 @@
   padding-left: 10px;
   padding-right: 10px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .headerCategory-active {
