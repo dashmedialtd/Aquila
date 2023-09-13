@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aquila</title>
+    <link rel="stylesheet" href="../output.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/mbg1zau.css" />
+  </head>
+  <body>
+    <header class="font-stolzl font-light text-[#16234A] flex shadow-md">
+      <div
+        class="navbar customContainer relative flex items-center justify-between py-6"
+      >
+        <div
+          class="absolute hidden sm:flex items-center -top-2 right-[10px] gap-6"
+        >
+          <div class="flex gap-2 items-center">
+            <img src="../assets/vectors/phoneBlue.svg" alt="phone" />
+            <span>0203 693 3811</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="flex gap-2 items-center">
+              <img src="../assets/vectors/facebookBlue.svg" alt="phone" />
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="../assets/vectors/instagramBlue.svg" alt="phone" />
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="../assets/vectors/linkedInBlue.svg" alt="phone" />
+            </div>
+          </div>
+          <button
+            class="bg-[#16234A] text-[14px] font-light text-white py-3 px-5 rounded-b-lg rounded-bl-lg"
+          >
+            Investor Lounge
+          </button>
+        </div>
+        <div class="logoContainer max-w-[134px]">
+          <!-- <img src="assets/images/Logo.png" alt="Logo" /> -->
+          <img src="../assets/vectors/LogoSvgBlueFont.svg" alt="Logo" />
+        </div>
+        <div class="flex items-center gap-16">
+          <nav class="hidden lg:flex">
+            <ul class="flex items-center gap-8 text-lg">
+              <li><a href="sourcers.html">Sourcers</a></li>
+              <li><a href="#">Landlords</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Our Services</a></li>
+              <li><a href="#">Our Partners</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </nav>
+          <div class="flex items-center gap-7 text=[18px]">
+            <div class="hidden sm:flex items-center gap-6">
+              <button
+                class="bg-none border-2 border-[#16234A] flex items-center gap-2 py-3 px-4 rounded-md"
+              >
+                <img src="../assets/vectors/user.svg" alt="user" />
+                Sign In
+              </button>
+              <button
+                class="bg-[#F8B84E] flex items-center gap-2 py-3 px-4 rounded-md text-white border-2 border-[#F8B84E]"
+              >
+                <img src="../assets/vectors/edit.svg" alt="edit" />
+                Create Account
+              </button>
+            </div>
+
+            <!-- Burger button -->
+            <div class="inline-block lg:hidden">
+              <button class="relative group">
+                <div
+                  class="relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all bg-[#F8B84E] ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md"
+                >
+                  <div
+                    class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden"
+                  >
+                    <div
+                      class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10"
+                    ></div>
+                    <div
+                      class="bg-white h-[2px] w-7 rounded transform transition-all duration-300 group-focus:translate-x-10 delay-75"
+                    ></div>
+                    <div
+                      class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10 delay-150"
+                    ></div>
+
+                    <div
+                      class="absolute items-center justify-between transform transition-all duration-500 top-2.5 -translate-x-10 group-focus:translate-x-0 flex w-0 group-focus:w-12"
+                    >
+                      <div
+                        class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 rotate-0 delay-300 group-focus:rotate-45"
+                      ></div>
+                      <div
+                        class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 -rotate-0 delay-300 group-focus:-rotate-45"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- plans -->
+    <section class="py-24">
+      <div class="px-[15px] mx-auto w-full max-w-[1364px]">
+        <!-- title/switch -->
+        <div
+          class="flex justify-between items-center flex-col md:flex-row mb-12 gap-4"
+        >
+          <h2 class="text-[39px] sm:text-[44px] lg:text-[50px] text-[#16234A]">
+            Pricing
+          </h2>
+
+          <div
+            class="w-full md:w-[650px] flex items-center border-2 border-[#F8B84E] rounded"
+          >
+            <button
+              class="bg-none text-[#F8B84E] py-5 w-1/2 text-[19px] md:text-[22px] rounded"
+            >
+              Pay Monthly
+            </button>
+            <button
+              class="bg-[#F8B84E] text-white py-5 w-1/2 text-[19px] md:text-[22px] rounded"
+            >
+              Pay Quarterly
+            </button>
+          </div>
+        </div>
+
+        <!-- cards -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-12"
+        >
+          <!-- card #1 -->
+          <div
+            class="flex flex-col w-full relative shadow-xl rounded-bl-[10px] rounded-br-[10px]"
+          >
+            <!-- heading -->
+            <div
+              class="rounded-tr-[10px] rounded-tl-[10px] bg-primary w-full text-center py-5"
+            >
+              <span class="text-secondary text-[20px]">Essential</span>
+            </div>
+
+            <!-- list/price -->
+            <div class="flex flex-col relative px-6 py-8 flex-grow">
+              <!-- triangle -->
+              <div
+                class="bg-[url('../assets/vectors/redTriangle.svg')] absolute top-0 right-0 text-white w-[128px] h-[94px] flex"
+              >
+                <div
+                  class="text-[17px] w-[40px] flex translate-x-[54px] translate-y-[7px]"
+                >
+                  <span class="font-semibold rotate-[35deg] leading-5"
+                    >Save 20%</span
+                  >
+                </div>
+              </div>
+
+              <!-- price -->
+              <div class="flex flex-col gap-5 text-secondary">
+                <div class="flex items-baseline justify-center">
+                  <span class="text-[50px] font-semibold">£33</span>
+                  <span class="text-[24px]">+vat</span>
+                </div>
+
+                <div class="flex flex-col items-center text-center">
+                  <span class="text-[20px] text-primary"
+                    >15 Credits / Month</span
+                  >
+                  <span class="text-[14px]"
+                    >(Enough to list 5 deals for 4 weeks)</span
+                  >
+                </div>
+              </div>
+
+              <!-- divider -->
+              <div class="w-full my-9 h-[1px] bg-[#E2E2E2]"></div>
+
+              <!-- list -->
+              <div class="flex flex-col gap-3 text-secondary text-[15px]">
+                <div class="flex items-baseline gap-3">
+                  <img
+                    class="w-[18px]"
+                    src="../assets/vectors/listGoldCheck.svg"
+                    alt="check"
+                  />
+                  <span>List your deals </span>
+                </div>
+                <div class="flex items-baseline gap-3">
+                  <img
+                    class="w-[18px]"
+                    src="../assets/vectors/listGoldCheck.svg"
+                    alt="check"
+                  />
+                  <span>Log In with Facebook </span>
+                </div>
+                <div class="flex items-baseline gap-3">
+                  <img
+                    class="w-[18px]"
+                    src="../assets/vectors/listGoldCheck.svg"
+                    alt="check"
+                  />
+                  <span>Share your deals to Facebook and WhatsApp</span>
+                </div>
+                <div class="flex items-baseline gap-3">
+                  <img
+                    class="w-[18px]"
+                    src="../assets/vectors/listGoldCheck.svg"
+                    alt="check"
+                  />
+                  <span>Send DMs to other Members </span>
+                </div>
+                <div class="flex items-baseline gap-3">
+                  <img
+                    class="w-[18px]"
+                    src="../assets/vectors/listGoldCheck.svg"
+                    alt="check"
+                  />
+                  <span>Get access to all discounts from our partners </span>
+                </div>
+                <div class="flex items-baseline gap-3">
+                  <img
+                    class="w-[18px]"
+                    src="../assets/vectors/listGoldCheck.svg"
+                    alt="check"
+                  />
+                  <span>Set Deal Alarms</span>
+                </div>
+                <div class="flex items-baseline gap-3">
+                  <img
+                    class="w-[18px]"
+                    src="../assets/vectors/listGoldCheck.svg"
+                    alt="check"
+                  />
+                  <span>Access our community of sourcers and investors </span>
+                </div>
+                <div class="flex items-baseline gap-3">
+                  <img
+                    class="w-[18px]"
+                    src="../assets/vectors/listGoldCheck.svg"
+                    alt="check"
+                  />
+                  <span>Build your reputation </span>
+                </div>
+                <div class="flex items-baseline gap-3">
+                  <img
+                    class="w-[18px]"
+                    src="../assets/vectors/listGoldCheck.svg"
+                    alt="check"
+                  />
+                  <span
+                    >Make yourself Visible - join our open list of sources
+                  </span>
+                </div>
+                <div class="flex items-baseline gap-3">
+                  <img
+                    class="w-[18px]"
+                    src="../assets/vectors/listGoldCheck.svg"
+                    alt="check"
+                  />
+                  <span>1 free property alert every month </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- button -->
+            <div class="py-8 flex items-center justify-center">
+              <button
+                class="text-secondary border-2 border-secondary py-3 px-7 rounded-[7px]"
+              >
+                Start Today
+              </button>
+            </div>
+          </div>
+
+          <!-- card #2 -->
+          <div
+            class="flex flex-col w-full relative shadow-xl rounded-bl-[10px] rounded-br-[10px]"
+          >
+            <!-- heading -->
+            <div
+              class="rounded-tr-[10px] rounded-tl-[10px] bg-primary w-full text-center py-5"
+            >
+              <span class="text-secondary text-[20px]">Advanced</span>
+            </div>
+
+            <!-- is popular -->
+            <div
+              class="bg-secondary text-white text-center rounded-tr-[60px] rounded-tl-[60px] w-[86%] left-1/2 right-1/2 -translate-x-1/2 -top-9 absolute flex justify-center -z-[1]"
+            >
+              <span class="text-[15px] font-medium py-2">Most Popular</span>
+            </div>
+
+            <!-- list/price -->
+            <div class="flex flex-col relative px-6 py-8 flex-grow">
+              <!-- triangle -->
+              <div
+                class="bg-[url('../assets/vectors/redTriangle.svg')] absolute top-0 right-0 text-white w-[128px] h-[94px] flex"
+              >
+                <div
+                  class="text-[17px] w-[40px] flex translate-x-[54px] translate-y-[7px]"
+                >
+                  <span class="font-semibold rotate-[35deg] leading-5"
+                    >Save 20%</span
+                  >
+                </div>
+              </div>
+
+              <!-- price -->
+              <div class="flex flex-col gap-5 text-secondary">
+                <div class="flex items-baseline justify-center">
+                  <span class="text-[50px] font-semibold">£95</span>
+                  <span class="text-[24px]">+vat</span>
+                </div>
+
+                <div class="flex flex-col items-center text-center">
+                  <span class="text-[20px] text-primary"
+                    >50 Credits / Month</span
+                  >
+                  <span class="text-[14px]"
+                    >(Enough to list 16 deals for4 weeks)</span
+                  >
+                </div>
+              </div>
+
+              <!-- divider -->
+              <div class="w-full my-9 h-[1px] bg-[#E2E2E2]"></div>
+
+              <!-- list -->
+              <div class="flex flex-col gap-3 text-secondary text-[15px]">
+                <div class="flex items-baseline gap-3">
+                  <img
+                    class="w-[18px]"
+                    src="../assets/vectors/listGoldCheck.svg"
+                    alt="check"
+                  />
+                  <span>All Essential Features</span>
+                </div>
+                <div class="flex items-baseline gap-3">
+                  <img
+                    class="w-[18px]"
+                    src="../assets/vectors/listGoldCheck.svg"
+                    alt="check"
+                  />
+                  <span>Edit already listed deals</span>
+                </div>
+                <div class="flex items-baseline gap-3">
+                  <img
+                    class="w-[18px]"
+                    src="../assets/vectors/listGoldCheck.svg"
+                    alt="check"
+                  />
+                  <span>Verify your ID for free</span>
+                </div>
+                <div class="flex items-baseline gap-3">
+                  <img
+                    class="w-[18px]"
+                    src="../assets/vectors/listGoldCheck.svg"
+                    alt="check"
+                  />
+                  <span>Download deals in .pdf format</span>
+                </div>
+                <div class="flex items-baseline gap-3">
+                  <img
+                    class="w-[18px]"
+                    src="../assets/vectors/listGoldCheck.svg"
+                    alt="check"
+                  />
+                  <span>Unlimited Property Alerts every month</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- button -->
+            <div class="py-8 flex items-center justify-center">
+              <button
+                class="text-secondary border-2 border-secondary py-3 px-7 rounded-[7px]"
+              >
+                Start Today
+              </button>
+            </div>
+          </div>
+
+          <!-- card #3 -->
+          <div
+            class="flex flex-col w-full relative shadow-xl rounded-bl-[10px] rounded-br-[10px]"
+          >
+            <!-- heading -->
+            <div
+              class="rounded-tr-[10px] rounded-tl-[10px] bg-primary w-full text-center py-5"
+            >
+              <span class="text-secondary text-[20px]">Professional</span>
+            </div>
+
+            <!-- list/price -->
+            <div class="flex flex-col relative px-6 py-8 flex-grow">
+              <!-- triangle -->
+              <div
+                class="bg-[url('../assets/vectors/redTriangle.svg')] absolute top-0 right-0 text-white w-[128px] h-[94px] flex"
+              >
+                <div
+                  class="text-[17px] w-[40px] flex translate-x-[54px] translate-y-[7px]"
+                >
+                  <span class="font-semibold rotate-[35deg] leading-5"
+                    >Save 24%</span
+                  >
+                </div>
+              </div>
+
+              <!-- price -->
+              <div class="flex flex-col gap-5 text-secondary">
+                <div class="flex items-baseline justify-center">
+                  <span class="text-[50px] font-semibold">£250</span>
+                  <span class="text-[24px]">+vat</span>
+                </div>
+
+                <div class="flex flex-col items-center text-center">
+                  <span class="text-[20px] text-primary"
+                    >150 Credits / Month</span
+                  >
+                  <span class="text-[14px]"
+                    >(Enough to list 16 deals for4 weeks)</span
+                  >
+                </div>
+              </div>
+
+              <!-- divider -->
+              <div class="w-full my-9 h-[1px] bg-[#E2E2E2]"></div>
+
+              <!-- list -->
+              <div class="flex flex-col gap-3 text-secondary text-[15px]">
+                <div class="flex items-baseline gap-3">
+                  <img
+                    class="w-[18px]"
+                    src="../assets/vectors/listGoldCheck.svg"
+                    alt="check"
+                  />
+                  <span>All Essential Features</span>
+                </div>
+                <div class="flex items-baseline gap-3">
+                  <img
+                    class="w-[18px]"
+                    src="../assets/vectors/listGoldCheck.svg"
+                    alt="check"
+                  />
+                  <span>All Advanced Features</span>
+                </div>
+                <div class="flex items-baseline gap-3">
+                  <img
+                    class="w-[18px]"
+                    src="../assets/vectors/listGoldCheck.svg"
+                    alt="check"
+                  />
+                  <span>30% off most of our paid services*</span>
+                </div>
+                <div class="flex items-baseline gap-3">
+                  <img
+                    class="w-[18px]"
+                    src="../assets/vectors/listGoldCheck.svg"
+                    alt="check"
+                  />
+                  <span>50% off when placing adverts</span>
+                </div>
+              </div>
+
+              <!-- *note -->
+              <p
+                class="text-[12px] text-secondary lg:absolute bottom-[75px] lg:w-[65%] mt-11"
+              >
+                *full list of discounted services available in Q&A below
+              </p>
+            </div>
+
+            <!-- button -->
+            <div class="py-8 flex items-center justify-center">
+              <button
+                class="text-secondary border-2 border-secondary py-3 px-7 rounded-[7px]"
+              >
+                Start Today
+              </button>
+            </div>
+          </div>
+
+          <!-- card #4 -->
+          <div
+            class="flex flex-col w-full relative shadow-xl rounded-bl-[10px] rounded-br-[10px] overflow-hidden"
+          >
+            <!-- heading -->
+            <div
+              class="rounded-tr-[10px] rounded-tl-[10px] bg-primary w-full text-center py-5"
+            >
+              <span class="text-secondary text-[20px]">Unlimited</span>
+            </div>
+
+            <div class="bg-[#FBD089] flex-grow flex flex-col">
+              <!-- list/price -->
+              <div class="flex flex-col relative px-6 py-8 flex-grow">
+                <!-- triangle -->
+                <div
+                  class="bg-[url('../assets/vectors/redTriangle.svg')] absolute top-0 right-0 text-white w-[128px] h-[94px] flex"
+                >
+                  <div
+                    class="text-[17px] w-[40px] flex translate-x-[54px] translate-y-[7px]"
+                  >
+                    <span class="font-semibold rotate-[35deg] leading-5"
+                      >Save 22%</span
+                    >
+                  </div>
+                </div>
+
+                <!-- price -->
+                <div class="flex flex-col gap-5 text-secondary">
+                  <div class="flex items-baseline justify-center">
+                    <span class="text-[50px] font-semibold">£699</span>
+                    <span class="text-[24px]">+vat</span>
+                  </div>
+
+                  <div class="flex flex-col items-center text-center pb-[20px]">
+                    <span class="text-[20px]">Unlimited</span>
+                  </div>
+                </div>
+
+                <!-- divider -->
+                <div class="w-full my-9 h-[1px] bg-secondary"></div>
+
+                <!-- list -->
+                <div class="flex flex-col gap-3 text-secondary text-[15px]">
+                  <div class="flex items-baseline gap-3">
+                    <img
+                      class="w-[18px]"
+                      src="../assets/vectors/listSecondaryCheck.svg"
+                      alt="check"
+                    />
+                    <span>All Essential Features</span>
+                  </div>
+                  <div class="flex items-baseline gap-3">
+                    <img
+                      class="w-[18px]"
+                      src="../assets/vectors/listSecondaryCheck.svg"
+                      alt="check"
+                    />
+                    <span>All Advanced Features</span>
+                  </div>
+                  <div class="flex items-baseline gap-3">
+                    <img
+                      class="w-[18px]"
+                      src="../assets/vectors/listSecondaryCheck.svg"
+                      alt="check"
+                    />
+                    <span>All Professional Features</span>
+                  </div>
+                  <div class="flex items-baseline gap-3">
+                    <img
+                      class="w-[18px]"
+                      src="../assets/vectors/listSecondaryCheck.svg"
+                      alt="check"
+                    />
+                    <span>Free advert in 'our partners' section</span>
+                  </div>
+                  <div class="flex items-baseline gap-3">
+                    <img
+                      class="w-[18px]"
+                      src="../assets/vectors/listSecondaryCheck.svg"
+                      alt="check"
+                    />
+                    <span>Unlimited Listings</span>
+                  </div>
+                  <div class="flex items-baseline gap-3">
+                    <img
+                      class="w-[18px]"
+                      src="../assets/vectors/listSecondaryCheck.svg"
+                      alt="check"
+                    />
+                    <span>Unlimited Direct Messages</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- button -->
+              <div class="py-8 flex items-center justify-center">
+                <button
+                  class="text-white bg-secondary border-2 border-secondary py-3 px-7 rounded-[7px]"
+                >
+                  Start Today
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Q&A -->
+    <section class="bg-secondary">
+      <div class="px-[15px] mx-auto w-full max-w-[1364px] py-16">
+        <!-- title -->
+        <div class="text-center">
+          <h2
+            class="text-[37px] sm:text-[40px] md:text-[46px] lg:text-[50px] text-white"
+          >
+            Frequently Asked Questions
+          </h2>
+        </div>
+
+        <!-- accordions -->
+        <div class="flex flex-col text-white mt-[80px]">
+          <div class="border-t-[3px] border-primary py-7">
+            <!-- title -->
+            <button class="flex justify-between text-left items-center gap-3 w-full">
+              <span class="text-[18px] md:text-[21px] lg:text-[25px]">
+                What type of payments do you accept?
+              </span>
+
+              <img src="../assets/vectors/arrowDownGold.svg" alt="arrow" />
+            </button>
+
+            <!-- answer -->
+            <div class="pt-6">
+              <p class="text-[16px] md:text-[18px] lg:text-[20px] lg:w-[88%]">
+                Aquila Connect accepts various types of payment methods to
+                provide flexibility and convenience to our users. We understand
+                the importance of offering multiple options to accommodate
+                different preferences. Currently, we accept major credit cards,
+                such as Visa, Mastercard, and American Express, providing a
+                secure and seamless checkout process. Additionally, we also
+                support online payment systems such as PayPal, ensuring a
+                reliable and trusted payment experience. We are continuously
+                evaluating and exploring new payment options to expand our
+                offerings and cater to the diverse needs of our users.
+              </p>
+            </div>
+          </div>
+
+          <div class="border-t-[3px] border-primary py-7">
+            <!-- title -->
+            <button class="flex justify-between items-center gap-3 w-full text-left">
+              <span class="text-[18px] md:text-[21px] lg:text-[25px]">
+                Can I change my plan later?
+              </span>
+
+              <img src="../assets/vectors/arrowDownGold.svg" alt="arrow" />
+            </button>
+          </div>
+
+          <div class="border-t-[3px] border-primary py-7">
+            <!-- title -->
+            <button class="flex justify-between items-center gap-3 w-full text-left">
+              <span class="text-[18px] md:text-[21px] lg:text-[25px]">
+                Can I cancel my plan?
+              </span>
+
+              <img src="../assets/vectors/arrowDownGold.svg" alt="arrow" />
+            </button>
+          </div>
+
+          <div class="border-t-[3px] border-primary py-7">
+            <!-- title -->
+            <button class="flex justify-between items-center gap-3 w-full text-left">
+              <span class="text-[18px] md:text-[21px] lg:text-[25px]">
+                How much am I saving if I pay annually?
+              </span>
+
+              <img src="../assets/vectors/arrowDownGold.svg" alt="arrow" />
+            </button>
+          </div>
+
+          <div class="border-t-[3px] border-primary py-7">
+            <!-- title -->
+            <button class="flex justify-between items-center gap-3 w-full text-left">
+              <span class="text-[18px] md:text-[21px] lg:text-[25px]">
+                Refund policy
+              </span>
+
+              <img src="../assets/vectors/arrowDownGold.svg" alt="arrow" />
+            </button>
+          </div>
+
+          <div class="border-t-[3px] border-primary py-7">
+            <!-- title -->
+            <button class="flex justify-between items-center gap-3 w-full text-left">
+              <span class="text-[18px] md:text-[21px] lg:text-[25px]">
+                Can I use Credits to pay for your other services?
+              </span>
+
+              <img src="../assets/vectors/arrowDownGold.svg" alt="arrow" />
+            </button>
+          </div>
+          <div class="border-t-[3px] border-primary py-7">
+            <!-- title -->
+            <button class="flex justify-between items-center gap-3 w-full text-left">
+              <span class="text-[18px] md:text-[21px] lg:text-[25px]">
+                Can I transfer my Credits to different account?
+              </span>
+
+              <img src="../assets/vectors/arrowDownGold.svg" alt="arrow" />
+            </button>
+          </div>
+
+          <div class="border-t-[3px] border-primary py-7">
+            <!-- title -->
+            <button class="flex justify-between items-center gap-3 w-full text-left">
+              <span class="text-[18px] md:text-[21px] lg:text-[25px]">
+                Do my credits roll over to the next month?
+              </span>
+
+              <img src="../assets/vectors/arrowDownGold.svg" alt="arrow" />
+            </button>
+          </div>
+
+          <div class="border-t-[3px] border-primary py-7">
+            <!-- title -->
+            <button class="flex justify-between items-center gap-3 w-full text-left">
+              <span class="text-[18px] md:text-[21px] lg:text-[25px]">
+                What services are discounted with the "Professional"
+                subscription offer?
+              </span>
+
+              <img src="../assets/vectors/arrowDownGold.svg" alt="arrow" />
+            </button>
+          </div>
+        </div>
+
+        <!-- form -->
+        <div class="w-full mt-[60px] bg-white rounded-2xl flex flex-col lg:flex-row px-3 xs:px-7 sm:px-14 md:px-[80px] lg:px-[113px] py-5 xs:py-14 text-secondary gap-5 lg:gap-[82px]">
+          <div class="lg:w-1/2">
+            <h4 class="text-[30px] md:text-[36px] lg:text-[40px]">
+              Got More Questions?
+            </h4>
+            <p class="text-[16px] md:text-[18px] lg:text-[20px]  font-extralight mt-3">
+              If you have a question that isn't answered above, please get in touch using our form and a team member will be able to help you.
+            </p>
+          </div>
+
+          <div class="lg:w-1/2 flex flex-col gap-3 items-end">
+            <input type="text" placeholder="Name" class="border border-secondary rounded-md w-full py-2 px-3">
+            <input type="text" placeholder="Email" class="border border-secondary rounded-md w-full py-2 px-3">
+            <textarea placeholder="Message" rows="4" class="resize-none border border-secondary rounded-md w-full py-2 px-3"></textarea>
+            <button class="rounded-md bg-primary text-white text-[20px] py-2 px-8 w-fit">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

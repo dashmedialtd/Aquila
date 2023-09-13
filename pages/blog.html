@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aquila</title>
+    <link rel="stylesheet" href="../output.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/mbg1zau.css" />
+  </head>
+  <body>
+    <header class="font-stolzl font-light text-[#16234A] flex shadow-md">
+      <div
+        class="navbar customContainer relative flex items-center justify-between py-6"
+      >
+        <div
+          class="absolute hidden sm:flex items-center -top-2 right-[10px] gap-6"
+        >
+          <div class="flex gap-2 items-center">
+            <img src="../assets/vectors/phoneBlue.svg" alt="phone" />
+            <span>0203 693 3811</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="flex gap-2 items-center">
+              <img src="../assets/vectors/facebookBlue.svg" alt="phone" />
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="../assets/vectors/instagramBlue.svg" alt="phone" />
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="../assets/vectors/linkedInBlue.svg" alt="phone" />
+            </div>
+          </div>
+          <button
+            class="bg-[#16234A] text-[14px] font-light text-white py-3 px-5 rounded-b-lg rounded-bl-lg"
+          >
+            Investor Lounge
+          </button>
+        </div>
+        <div class="logoContainer max-w-[134px]">
+          <!-- <img src="assets/images/Logo.png" alt="Logo" /> -->
+          <img src="../assets/vectors/LogoSvgBlueFont.svg" alt="Logo" />
+        </div>
+        <div class="flex items-center gap-16">
+          <nav class="hidden lg:flex">
+            <ul class="flex items-center gap-8 text-lg">
+              <li><a href="sourcers.html">Sourcers</a></li>
+              <li><a href="#">Landlords</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Our Services</a></li>
+              <li><a href="#">Our Partners</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </nav>
+          <div class="flex items-center gap-7 text=[18px]">
+            <div class="hidden sm:flex items-center gap-6">
+              <button
+                class="bg-none border-2 border-[#16234A] flex items-center gap-2 py-3 px-4 rounded-md"
+              >
+                <img src="../assets/vectors/user.svg" alt="user" />
+                Sign In
+              </button>
+              <button
+                class="bg-[#F8B84E] flex items-center gap-2 py-3 px-4 rounded-md text-white border-2 border-[#F8B84E]"
+              >
+                <img src="../assets/vectors/edit.svg" alt="edit" />
+                Create Account
+              </button>
+            </div>
+
+            <!-- Burger button -->
+            <div class="inline-block lg:hidden">
+              <button class="relative group">
+                <div
+                  class="relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all bg-[#F8B84E] ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md"
+                >
+                  <div
+                    class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden"
+                  >
+                    <div
+                      class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10"
+                    ></div>
+                    <div
+                      class="bg-white h-[2px] w-7 rounded transform transition-all duration-300 group-focus:translate-x-10 delay-75"
+                    ></div>
+                    <div
+                      class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10 delay-150"
+                    ></div>
+
+                    <div
+                      class="absolute items-center justify-between transform transition-all duration-500 top-2.5 -translate-x-10 group-focus:translate-x-0 flex w-0 group-focus:w-12"
+                    >
+                      <div
+                        class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 rotate-0 delay-300 group-focus:rotate-45"
+                      ></div>
+                      <div
+                        class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 -rotate-0 delay-300 group-focus:-rotate-45"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- heading -->
+    <section class="bg-[#16234A] w-full">
+      <div class="max-w-[1347px] mx-auto px-[15px]">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center gap-2 md:gap-5 text-white pt-5 sm:pt-8 lg:pt-10 pb-3 sm:pb-4 lg:pb-6"
+        >
+          <h2 class="text-[35px] sm:text-[40px] md:text-[45px] lg:text-[50px]">
+            Blog
+          </h2>
+
+          <div class="flex gap-3 items-center w-full md:w-fit">
+            <input
+              placeholder="Search blog posts"
+              type="text"
+              class="py-[1.1rem] px-3 rounded-md text-secondary w-full md:w-[450px]"
+            />
+            <button
+              class="w-[60px] h-[60px] rounded-md bg-primary flex items-center justify-center flex-shrink"
+            >
+              <img src="../assets/vectors/search.svg" alt="search" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- hero -->
+    <section>
+      <div class="max-w-[1347px] mx-auto px-[15px] py-14">
+        <div class="flex items-center lg:flex-row flex-col gap-14">
+          <div
+            class="w-full lg:w-[690px] lg:h-[500px] xl:w-[746px] xl:h-[578px] rounded-[18px] overflow-hidden flex shrink-0"
+          >
+            <img
+              class="w-full object-cover object-center"
+              src="../assets/images/town.png"
+              alt="town"
+            />
+          </div>
+
+          <div class="flex-grow flex flex-col gap-6 text-secondary">
+            <div>
+              <span
+                class="text-[16px] sm:text-[18px] lg:text-[20px] text-primary"
+                >Featured Post</span
+              >
+              <h2
+                class="text-[26px] sm:text-[29px] md:text-[34px] lg:text-[40px]"
+              >
+                Why buy off-market?
+              </h2>
+            </div>
+
+            <div
+              class="flex items-center md:flex-row flex-col p-4 justify-between bg-lightGrey gap-3 rounded-lg overflow-hidden"
+            >
+              <div class="flex items-center gap-2">
+                <span class="text-primary font-medium text-[14px]"
+                  >Written by</span
+                >
+                <span class="text-[15px]">Lukasz Rybak</span>
+              </div>
+
+              <div class="flex items-center gap-2">
+                <span class="text-primary font-medium text-[14px]">Posted</span>
+                <span class="text-[15px]">May 2023</span>
+              </div>
+            </div>
+
+            <p class="text-[15px]">
+              In the world of real estate investing and sourcing, the quest to
+              discover off-market properties is a heart-pounding adventure.
+              Hours dissolve into days as you delve into the depths of the
+              market, tirelessly seeking those hidden gems that lie beyond the
+              reach of traditional property listings. Yet, even in this exciting
+              pursuit, the challenges can be daunting, and the stakes higher
+              than ever.
+              <br />
+              Imagine this: you stumble upon a property that holds untapped
+              potential—an off-market gem, shielded from the prying eyes of
+              mainstream investors...
+            </p>
+
+            <button
+              class="py-2 px-8 bg-primary text-white rounded-md w-full sm:w-fit"
+            >
+              Read Post
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- cards -->
+    <section>
+      <div class="max-w-[1347px] mx-auto px-[15px]">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-8 my-[70px]"
+        >
+          <div
+            class="flex flex-col rounded-xl shadow-[0px_5px_40px_rgba(0,0,0,0.13)] overflow-hidden w-full h-fit sm:max-w-[323px] sm:h-[432px]"
+          >
+            <img src="../assets/images/CardImage.png" alt="card image" />
+            <div class="py-[30px] px-[38px] flex flex-col gap-4">
+              <span
+                class="text-[20px] text-[#1D3710] font-light line-clamp-4 sm:line-clamp-3"
+                >How to make good investments property flipping...</span
+              >
+              <p
+                class="text-[14px] text-[#7D8395] line-clamp-6 sm:line-clamp-2"
+              >
+                Lorem ipsum dolor sit amet, consetetur sadipscing...
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col rounded-xl shadow-[0px_5px_40px_rgba(0,0,0,0.13)] overflow-hidden w-full h-fit sm:max-w-[323px] sm:h-[432px]"
+          >
+            <img src="../assets/images/CardImage.png" alt="card image" />
+            <div class="py-[30px] px-[38px] flex flex-col gap-4">
+              <span
+                class="text-[20px] text-[#1D3710] font-light line-clamp-4 sm:line-clamp-3"
+                >How to make good investments property flipping...</span
+              >
+              <p
+                class="text-[14px] text-[#7D8395] font-extralight line-clamp-6 sm:line-clamp-2"
+              >
+                Lorem ipsum dolor sit amet, consetetur sadipscing...
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col rounded-xl shadow-[0px_5px_40px_rgba(0,0,0,0.13)] overflow-hidden w-full h-fit sm:max-w-[323px] sm:h-[432px]"
+          >
+            <img src="../assets/images/CardImage.png" alt="card image" />
+            <div class="py-[30px] px-[38px] flex flex-col gap-4">
+              <span
+                class="text-[20px] text-[#1D3710] font-light line-clamp-4 sm:line-clamp-3"
+                >How to make good investments property flipping...</span
+              >
+              <p
+                class="text-[14px] text-[#7D8395] font-extralight line-clamp-6 sm:line-clamp-2"
+              >
+                Lorem ipsum dolor sit amet, consetetur sadipscing...
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col rounded-xl shadow-[0px_5px_40px_rgba(0,0,0,0.13)] overflow-hidden w-full h-fit sm:max-w-[323px] sm:h-[432px]"
+          >
+            <img src="../assets/images/CardImage.png" alt="card image" />
+            <div class="py-[30px] px-[38px] flex flex-col gap-4">
+              <span
+                class="text-[20px] text-[#1D3710] font-light line-clamp-4 sm:line-clamp-3"
+                >How to make good investments property flipping...</span
+              >
+              <p
+                class="text-[14px] text-[#7D8395] font-extralight line-clamp-6 sm:line-clamp-2"
+              >
+                Lorem ipsum dolor sit amet, consetetur sadipscing...
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col rounded-xl shadow-[0px_5px_40px_rgba(0,0,0,0.13)] overflow-hidden w-full h-fit sm:max-w-[323px] sm:h-[432px]"
+          >
+            <img src="../assets/images/CardImage.png" alt="card image" />
+            <div class="py-[30px] px-[38px] flex flex-col gap-4">
+              <span
+                class="text-[20px] text-[#1D3710] font-light line-clamp-4 sm:line-clamp-3"
+                >How to make good investments property flipping...</span
+              >
+              <p
+                class="text-[14px] text-[#7D8395] line-clamp-6 sm:line-clamp-2"
+              >
+                Lorem ipsum dolor sit amet, consetetur sadipscing...
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col rounded-xl shadow-[0px_5px_40px_rgba(0,0,0,0.13)] overflow-hidden w-full h-fit sm:max-w-[323px] sm:h-[432px]"
+          >
+            <img src="../assets/images/CardImage.png" alt="card image" />
+            <div class="py-[30px] px-[38px] flex flex-col gap-4">
+              <span
+                class="text-[20px] text-[#1D3710] font-light line-clamp-4 sm:line-clamp-3"
+                >How to make good investments property flipping...</span
+              >
+              <p
+                class="text-[14px] text-[#7D8395] font-extralight line-clamp-6 sm:line-clamp-2"
+              >
+                Lorem ipsum dolor sit amet, consetetur sadipscing...
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col rounded-xl shadow-[0px_5px_40px_rgba(0,0,0,0.13)] overflow-hidden w-full h-fit sm:max-w-[323px] sm:h-[432px]"
+          >
+            <img src="../assets/images/CardImage.png" alt="card image" />
+            <div class="py-[30px] px-[38px] flex flex-col gap-4">
+              <span
+                class="text-[20px] text-[#1D3710] font-light line-clamp-4 sm:line-clamp-3"
+                >How to make good investments property flipping...</span
+              >
+              <p
+                class="text-[14px] text-[#7D8395] font-extralight line-clamp-6 sm:line-clamp-2"
+              >
+                Lorem ipsum dolor sit amet, consetetur sadipscing...
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col rounded-xl shadow-[0px_5px_40px_rgba(0,0,0,0.13)] overflow-hidden w-full h-fit sm:max-w-[323px] sm:h-[432px]"
+          >
+            <img src="../assets/images/CardImage.png" alt="card image" />
+            <div class="py-[30px] px-[38px] flex flex-col gap-4">
+              <span
+                class="text-[20px] text-[#1D3710] font-light line-clamp-4 sm:line-clamp-3"
+                >How to make good investments property flipping...</span
+              >
+              <p
+                class="text-[14px] text-[#7D8395] font-extralight line-clamp-6 sm:line-clamp-2"
+              >
+                Lorem ipsum dolor sit amet, consetetur sadipscing...
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col rounded-xl shadow-[0px_5px_40px_rgba(0,0,0,0.13)] overflow-hidden w-full h-fit sm:max-w-[323px] sm:h-[432px]"
+          >
+            <img src="../assets/images/CardImage.png" alt="card image" />
+            <div class="py-[30px] px-[38px] flex flex-col gap-4">
+              <span
+                class="text-[20px] text-[#1D3710] font-light line-clamp-4 sm:line-clamp-3"
+                >How to make good investments property flipping...</span
+              >
+              <p
+                class="text-[14px] text-[#7D8395] line-clamp-6 sm:line-clamp-2"
+              >
+                Lorem ipsum dolor sit amet, consetetur sadipscing...
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col rounded-xl shadow-[0px_5px_40px_rgba(0,0,0,0.13)] overflow-hidden w-full h-fit sm:max-w-[323px] sm:h-[432px]"
+          >
+            <img src="../assets/images/CardImage.png" alt="card image" />
+            <div class="py-[30px] px-[38px] flex flex-col gap-4">
+              <span
+                class="text-[20px] text-[#1D3710] font-light line-clamp-4 sm:line-clamp-3"
+                >How to make good investments property flipping...</span
+              >
+              <p
+                class="text-[14px] text-[#7D8395] font-extralight line-clamp-6 sm:line-clamp-2"
+              >
+                Lorem ipsum dolor sit amet, consetetur sadipscing...
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col rounded-xl shadow-[0px_5px_40px_rgba(0,0,0,0.13)] overflow-hidden w-full h-fit sm:max-w-[323px] sm:h-[432px]"
+          >
+            <img src="../assets/images/CardImage.png" alt="card image" />
+            <div class="py-[30px] px-[38px] flex flex-col gap-4">
+              <span
+                class="text-[20px] text-[#1D3710] font-light line-clamp-4 sm:line-clamp-3"
+                >How to make good investments property flipping...</span
+              >
+              <p
+                class="text-[14px] text-[#7D8395] font-extralight line-clamp-6 sm:line-clamp-2"
+              >
+                Lorem ipsum dolor sit amet, consetetur sadipscing...
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col rounded-xl shadow-[0px_5px_40px_rgba(0,0,0,0.13)] overflow-hidden w-full h-fit sm:max-w-[323px] sm:h-[432px]"
+          >
+            <img src="../assets/images/CardImage.png" alt="card image" />
+            <div class="py-[30px] px-[38px] flex flex-col gap-4">
+              <span
+                class="text-[20px] text-[#1D3710] font-light line-clamp-4 sm:line-clamp-3"
+                >How to make good investments property flipping...</span
+              >
+              <p
+                class="text-[14px] text-[#7D8395] font-extralight line-clamp-6 sm:line-clamp-2"
+              >
+                Lorem ipsum dolor sit amet, consetetur sadipscing...
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- pagination -->
+    <section>
+      <div class="max-w-[1347px] mx-auto px-[15px] rounded-xl bg-[#F9F9F9] py-4 my-4">
+        <div class="flex items-center justify-center gap-3">
+          <img class="p-4" src="../assets/vectors/arrowLeftGold.svg" alt="arrow left gold">
+
+          <div class="paginationItem-active">
+            1
+          </div>
+
+          <div class="paginationItem">
+            2
+          </div>
+
+          <div class="paginationItem">
+            3
+          </div>
+
+          <div class="paginationItem">
+            4
+          </div>
+
+          <img class="p-4" src="../assets/vectors/arrowRightGold.svg" alt="arrow right gold">
+
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
