@@ -1,0 +1,1796 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aquila</title>
+    <link rel="stylesheet" href="../output.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/mbg1zau.css" />
+  </head>
+  <body>
+    <header class="font-stolzl font-light text-[#16234A] flex shadow-md">
+      <div
+        class="navbar customContainer relative flex items-center justify-between py-6"
+      >
+        <div
+          class="absolute hidden sm:flex items-center -top-2 right-[10px] gap-6"
+        >
+          <div class="flex gap-2 items-center">
+            <img src="../assets/vectors/phoneBlue.svg" alt="phone" />
+            <span>0203 693 3811</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="flex gap-2 items-center">
+              <img src="../assets/vectors/facebookBlue.svg" alt="phone" />
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="../assets/vectors/instagramBlue.svg" alt="phone" />
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="../assets/vectors/linkedInBlue.svg" alt="phone" />
+            </div>
+          </div>
+          <button
+            class="bg-[#16234A] text-[14px] font-light text-white py-3 px-5 rounded-b-lg rounded-bl-lg"
+          >
+            Investor Lounge
+          </button>
+        </div>
+        <div class="logoContainer max-w-[134px]">
+          <!-- <img src="assets/images/Logo.png" alt="Logo" /> -->
+          <img src="../assets/vectors/LogoSvgBlueFont.svg" alt="Logo" />
+        </div>
+        <div class="flex items-center gap-16">
+          <nav class="hidden lg:flex">
+            <ul class="flex items-center gap-8 text-lg">
+              <li><a href="sourcers.html">Sourcers</a></li>
+              <li><a href="#">Landlords</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Our Services</a></li>
+              <li><a href="#">Our Partners</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </nav>
+          <div class="flex items-center gap-7 text=[18px]">
+            <div class="hidden sm:flex items-center gap-6">
+              <button
+                class="bg-none border-2 border-[#16234A] flex items-center gap-2 py-3 px-4 rounded-md"
+              >
+                <img src="../assets/vectors/user.svg" alt="user" />
+                Sign In
+              </button>
+              <button
+                class="bg-[#F8B84E] flex items-center gap-2 py-3 px-4 rounded-md text-white border-2 border-[#F8B84E]"
+              >
+                <img src="../assets/vectors/edit.svg" alt="edit" />
+                Create Account
+              </button>
+            </div>
+
+            <!-- Burger button -->
+            <div class="inline-block lg:hidden">
+              <button class="relative group">
+                <div
+                  class="relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all bg-[#F8B84E] ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md"
+                >
+                  <div
+                    class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden"
+                  >
+                    <div
+                      class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10"
+                    ></div>
+                    <div
+                      class="bg-white h-[2px] w-7 rounded transform transition-all duration-300 group-focus:translate-x-10 delay-75"
+                    ></div>
+                    <div
+                      class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10 delay-150"
+                    ></div>
+
+                    <div
+                      class="absolute items-center justify-between transform transition-all duration-500 top-2.5 -translate-x-10 group-focus:translate-x-0 flex w-0 group-focus:w-12"
+                    >
+                      <div
+                        class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 rotate-0 delay-300 group-focus:rotate-45"
+                      ></div>
+                      <div
+                        class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 -rotate-0 delay-300 group-focus:-rotate-45"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- filters -->
+    <section class="bg-secondary text-secondary">
+      <div class="customContainer">
+        <div
+          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-[repeat(5,_minmax(150px,_300px))] gap-[8px] sm:gap-x-[20px] md:gap-x-[28px] lg:gap-x-[37px] gap-y-[15px] sm:gap-y-[32px] py-[55px] items-end"
+        >
+          <div class="w-full flex flex-col gap-1">
+            <label class="text-primary text-[17px]" for="location"
+              >Location</label
+            >
+            <select
+              id="location"
+              class="rounded-[7px] bg-white p-4 w-full text-[15px]"
+            >
+              <option value="placeholder" selected disabled>Select</option>
+            </select>
+          </div>
+
+          <div class="w-full flex flex-col gap-1">
+            <label class="text-primary text-[17px]" for="distance"
+              >Distance</label
+            >
+            <select
+              id="distance"
+              class="rounded-[7px] bg-white p-4 w-full text-[15px]"
+            >
+              <option value="placeholder" selected disabled>Select</option>
+            </select>
+          </div>
+
+          <div class="w-full flex flex-col gap-1">
+            <label class="text-primary text-[17px]" for="strategy"
+              >Strategy</label
+            >
+            <select
+              id="strategy"
+              class="rounded-[7px] bg-white p-4 w-full text-[15px]"
+            >
+              <option value="placeholder" selected disabled>Select</option>
+            </select>
+          </div>
+
+          <div class="w-full flex flex-col gap-1">
+            <label class="text-primary text-[17px]" for="propertyType"
+              >Property Type</label
+            >
+            <select
+              id="propertyType"
+              class="rounded-[7px] bg-white p-4 w-full text-[15px]"
+            >
+              <option value="placeholder" selected disabled>Select</option>
+            </select>
+          </div>
+
+          <!-- empty -->
+          <div class="lg:flex hidden"></div>
+
+          <div class="w-full flex flex-col gap-1">
+            <label class="text-primary text-[17px]" for="bedrooms"
+              >Bedrooms</label
+            >
+            <select
+              id="bedrooms"
+              class="rounded-[7px] bg-white p-4 w-full text-[15px]"
+            >
+              <option value="placeholder" selected disabled>Select</option>
+            </select>
+          </div>
+
+          <div class="w-full flex flex-col gap-1">
+            <label class="text-primary text-[17px]" for="price">Price</label>
+            <select
+              id="price"
+              class="rounded-[7px] bg-white p-4 w-full text-[15px]"
+            >
+              <option value="placeholder" selected disabled>Select</option>
+            </select>
+          </div>
+
+          <div class="w-full flex flex-col gap-1">
+            <label class="text-primary text-[17px]" for="yield">Yield</label>
+            <select
+              id="yield"
+              class="rounded-[7px] bg-white p-4 w-full text-[15px]"
+            >
+              <option value="placeholder" selected disabled>Select</option>
+            </select>
+          </div>
+
+          <div class="w-full flex flex-col gap-1">
+            <label class="text-primary text-[17px]" for="offMarket"
+              >Off-Market</label
+            >
+            <select
+              id="offMarket"
+              class="rounded-[7px] bg-white p-4 w-full text-[15px]"
+            >
+              <option value="placeholder" selected disabled>Select</option>
+            </select>
+          </div>
+
+          <button
+            class="p-[.87rem] md:max-w-[148px] w-full bg-primary rounded-[7px] text-[15px] text-white h-fit col-start-1 col-end-3 sm:col-start-auto sm:col-end-auto"
+          >
+            Search
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- sort -->
+    <section>
+      <div class="customContainer">
+        <div
+          class="w-full flex sm:flex-row flex-col sm:items-center sm:justify-end gap-3 mt-12"
+        >
+          <label class="text-[17px] text-secondary" for="sort">Sort by</label>
+          <select
+            id="sort"
+            class="border border-primary rounded-[7px] w-full max-w-[213px] p-3 text-[17px]"
+          >
+            <option selected disabled value="placeholder">Select</option>
+            <option value="Popularity">Popularity</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- cards -->
+    <section>
+      <div class="customContainer">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-10 gap-3 sm:gap-x-6 md:gap-x-10 py-8 sm:my-14"
+        >
+          <div class="flex flex-col rounded-[10px] shadow-xl">
+            <!-- image -->
+            <div class="relative w-full flex flex-grow">
+              <img
+                class="object-cover object-center aspect-[2/1] w-full rounded-tl-[10px] rounded-tr-[10px]"
+                src="../assets/images/propertyPhoto.png"
+                alt="property"
+              />
+              <div
+                class="bg-[#C06ADB] text-right sm:w-[120px] lg:w-[135px] px-3 py-1 rounded-br-md rounded-tr-md overflow-hidden absolute left-0 top-2"
+              >
+                <span
+                  class="text-[15px] sm:text-[15px] lg:text-[17px] text-white font-medium"
+                  >BRRR Comm</span
+                >
+              </div>
+              <div
+                class="bg-[#BFC420] text-right sm:w-[120px] lg:w-[135px] px-3 py-1 rounded-br-md rounded-tr-md overflow-hidden absolute left-0 top-12"
+              >
+                <span
+                  class="text-[15px] sm:text-[15px] lg:text-[17px] text-white font-medium"
+                  >BRRR HMO</span
+                >
+              </div>
+              <div
+                class="absolute top-0 right-0 bg-[#767f97] rounded-bl-[20px] py-2 pl-4 pr-10"
+              >
+                <span
+                  class="text-[15px] md:text-[16px] lg:text-[17px] text-white font-medium"
+                  >Off Market</span
+                >
+              </div>
+              <div class="absolute -top-1 -right-4 w-[50px] h-[50px]">
+                <img
+                  class="w-full"
+                  src="../assets/vectors/offGrey.svg"
+                  alt="off"
+                />
+              </div>
+            </div>
+
+            <!-- info -->
+            <div class="flex flex-col gap-6 p-4 sm:p-7 text-[#16234A]">
+              <!-- price/verifications -->
+              <div
+                class="flex sm:flex-row sm:items-center flex-col justify-between gap-3"
+              >
+                <!-- price -->
+                <div class="flex flex-col">
+                  <span class="text-[13px]">Burnley</span>
+                  <span class="text-[25px] font-medium mt-1 sm:mt-3"
+                    >£75,000</span
+                  >
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <img
+                    class="w-[40px]"
+                    src="../assets/vectors/grayCheck.svg"
+                    alt="grayCheck"
+                  />
+                  <img
+                    class="w-[44px]"
+                    src="../assets/vectors/goldCheck.svg"
+                    alt="goldCheck"
+                  />
+                  <img
+                    class="w-[44px]"
+                    src="../assets/vectors/goldId.svg"
+                    alt="goldId"
+                  />
+                </div>
+              </div>
+
+              <!-- type of the apartment -->
+              <div class="flex flex-col flex-wrap gap-3">
+                <span class="text-[14px]"> 2 Bed Apartment </span>
+                <div class="flex items-center gap-3 xs:gap-6">
+                  <div class="flex items-center gap-1">
+                    <img src="../assets/vectors/couch.svg" alt="couch" />
+                    <span class="text-[14px]">1</span>
+                  </div>
+
+                  <div class="flex items-center gap-1">
+                    <img src="../assets/vectors/bed.svg" alt="bed" />
+                    <span class="text-[14px]">2</span>
+                  </div>
+
+                  <div class="flex items-center gap-1">
+                    <img src="../assets/vectors/bath.svg" alt="bath" />
+                    <span class="text-[14px]">1</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- buttons sm:flex-row flex-col  -->
+              <div class="flex items-center gap-3 text-white">
+                <button
+                  class="rounded-md bg-[#1C2A53] bg-opacity-60 py-3 sm:py-4 text-[13px] w-full"
+                >
+                  More Info
+                </button>
+                <button
+                  class="rounded-md bg-[#F8B84E] p-[.88rem] sm:p-[1.15rem] text-[13px]"
+                >
+                  <img src="../assets/vectors/bookmark.svg" alt="bookmark" />
+                </button>
+              </div>
+
+              <!-- posted time -->
+              <span class="text-[10px] text-[#1C2A53] font-extralight"
+                >Posted 2 Days Ago</span
+              >
+            </div>
+          </div>
+
+          <div class="flex flex-col rounded-[10px] shadow-xl">
+            <!-- image -->
+            <div class="relative w-full flex">
+              <img
+                class="object-cover object-center aspect-[2/1] w-full rounded-tl-[10px] rounded-tr-[10px]"
+                src="../assets/images/propertyPhoto.png"
+                alt="property"
+              />
+              <div
+                class="bg-[#C06ADB] text-right sm:w-[120px] lg:w-[135px] px-3 py-1 rounded-br-md rounded-tr-md overflow-hidden absolute left-0 top-2"
+              >
+                <span
+                  class="text-[15px] sm:text-[15px] lg:text-[17px] text-white font-medium"
+                  >BRRR Comm</span
+                >
+              </div>
+              <div
+                class="bg-[#BFC420] text-right sm:w-[120px] lg:w-[135px] px-3 py-1 rounded-br-md rounded-tr-md overflow-hidden absolute left-0 top-12"
+              >
+                <span
+                  class="text-[15px] sm:text-[15px] lg:text-[17px] text-white font-medium"
+                  >BRRR HMO</span
+                >
+              </div>
+              <div
+                class="absolute top-0 right-0 bg-[#767f97] rounded-bl-[20px] py-2 pl-4 pr-10"
+              >
+                <span
+                  class="text-[15px] md:text-[16px] lg:text-[17px] text-white font-medium"
+                  >Off Market</span
+                >
+              </div>
+              <div class="absolute -top-1 -right-4 w-[50px] h-[50px]">
+                <img
+                  class="w-full"
+                  src="../assets/vectors/offGrey.svg"
+                  alt="off"
+                />
+              </div>
+            </div>
+
+            <!-- verified -->
+            <div
+              class="w-full bg-[#F8B84E] text-white flex items-center justify-end gap-3 h-[32px] px-3"
+            >
+              <span class="text-[13px] font-normal">Compliance Verified</span>
+              <img
+                class="z-[1]"
+                src="../assets/vectors/goldCheck.svg"
+                alt="goldCheck"
+              />
+            </div>
+
+            <!-- info -->
+            <div class="flex flex-col gap-6 p-4 sm:p-7 text-[#16234A]">
+              <!-- price/verifications -->
+              <div
+                class="flex sm:flex-row sm:items-center flex-col justify-between gap-3"
+              >
+                <!-- price -->
+                <div class="flex flex-col">
+                  <span class="text-[13px]">Burnley</span>
+                  <span class="text-[25px] font-medium mt-1 sm:mt-3"
+                    >£75,000</span
+                  >
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <img
+                    class="w-[40px]"
+                    src="../assets/vectors/grayCheck.svg"
+                    alt="grayCheck"
+                  />
+                  <img
+                    class="w-[44px]"
+                    src="../assets/vectors/goldCheck.svg"
+                    alt="goldCheck"
+                  />
+                  <img
+                    class="w-[44px]"
+                    src="../assets/vectors/goldId.svg"
+                    alt="goldId"
+                  />
+                </div>
+              </div>
+
+              <!-- type of the apartment -->
+              <div class="flex flex-col flex-wrap gap-3">
+                <span class="text-[14px]"> 2 Bed Apartment </span>
+                <div class="flex items-center gap-3 xs:gap-6">
+                  <div class="flex items-center gap-1">
+                    <img src="../assets/vectors/couch.svg" alt="couch" />
+                    <span class="text-[14px]">1</span>
+                  </div>
+
+                  <div class="flex items-center gap-1">
+                    <img src="../assets/vectors/bed.svg" alt="bed" />
+                    <span class="text-[14px]">2</span>
+                  </div>
+
+                  <div class="flex items-center gap-1">
+                    <img src="../assets/vectors/bath.svg" alt="bath" />
+                    <span class="text-[14px]">1</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- buttons sm:flex-row flex-col  -->
+              <div class="flex items-center gap-3 text-white">
+                <button
+                  class="rounded-md bg-[#1C2A53] bg-opacity-60 py-3 sm:py-4 text-[13px] w-full"
+                >
+                  More Info
+                </button>
+                <button
+                  class="rounded-md bg-[#F8B84E] p-[.88rem] sm:p-[1.15rem] text-[13px]"
+                >
+                  <img src="../assets/vectors/bookmark.svg" alt="bookmark" />
+                </button>
+              </div>
+
+              <!-- posted time -->
+              <span class="text-[10px] text-[#1C2A53] font-extralight"
+                >Posted 2 Days Ago</span
+              >
+            </div>
+          </div>
+
+          <div class="flex flex-col rounded-[10px] shadow-xl">
+            <!-- image -->
+            <div class="relative w-full flex">
+              <img
+                class="object-cover object-center aspect-[2/1] w-full rounded-tl-[10px] rounded-tr-[10px]"
+                src="../assets/images/propertyPhoto.png"
+                alt="property"
+              />
+              <div
+                class="bg-[#C06ADB] text-right sm:w-[120px] lg:w-[135px] px-3 py-1 rounded-br-md rounded-tr-md overflow-hidden absolute left-0 top-2"
+              >
+                <span
+                  class="text-[15px] sm:text-[15px] lg:text-[17px] text-white font-medium"
+                  >BRRR Comm</span
+                >
+              </div>
+              <div
+                class="bg-[#BFC420] text-right sm:w-[120px] lg:w-[135px] px-3 py-1 rounded-br-md rounded-tr-md overflow-hidden absolute left-0 top-12"
+              >
+                <span
+                  class="text-[15px] sm:text-[15px] lg:text-[17px] text-white font-medium"
+                  >BRRR HMO</span
+                >
+              </div>
+              <div
+                class="absolute top-0 right-0 bg-[#767f97] rounded-bl-[20px] py-2 pl-4 pr-10"
+              >
+                <span
+                  class="text-[15px] md:text-[16px] lg:text-[17px] text-white font-medium"
+                  >Off Market</span
+                >
+              </div>
+              <div class="absolute -top-1 -right-4 w-[50px] h-[50px]">
+                <img
+                  class="w-full"
+                  src="../assets/vectors/offGrey.svg"
+                  alt="off"
+                />
+              </div>
+            </div>
+
+            <!-- verified -->
+            <div
+              class="w-full bg-[#F8B84E] text-white flex items-center justify-end gap-3 h-[32px] px-3"
+            >
+              <span class="text-[13px] font-normal">Compliance Verified</span>
+              <img
+                class="z-[1]"
+                src="../assets/vectors/goldCheck.svg"
+                alt="goldCheck"
+              />
+            </div>
+
+            <!-- info -->
+            <div class="flex flex-col gap-6 p-4 sm:p-7 text-[#16234A]">
+              <!-- price/verifications -->
+              <div
+                class="flex sm:flex-row sm:items-center flex-col justify-between gap-3"
+              >
+                <!-- price -->
+                <div class="flex flex-col">
+                  <span class="text-[13px]">Burnley</span>
+                  <span class="text-[25px] font-medium mt-1 sm:mt-3"
+                    >£75,000</span
+                  >
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <img
+                    class="w-[40px]"
+                    src="../assets/vectors/grayCheck.svg"
+                    alt="grayCheck"
+                  />
+                  <img
+                    class="w-[44px]"
+                    src="../assets/vectors/goldCheck.svg"
+                    alt="goldCheck"
+                  />
+                  <img
+                    class="w-[44px]"
+                    src="../assets/vectors/goldId.svg"
+                    alt="goldId"
+                  />
+                </div>
+              </div>
+
+              <!-- type of the apartment -->
+              <div class="flex flex-col flex-wrap gap-3">
+                <span class="text-[14px]"> 2 Bed Apartment </span>
+                <div class="flex items-center gap-3 xs:gap-6">
+                  <div class="flex items-center gap-1">
+                    <img src="../assets/vectors/couch.svg" alt="couch" />
+                    <span class="text-[14px]">1</span>
+                  </div>
+
+                  <div class="flex items-center gap-1">
+                    <img src="../assets/vectors/bed.svg" alt="bed" />
+                    <span class="text-[14px]">2</span>
+                  </div>
+
+                  <div class="flex items-center gap-1">
+                    <img src="../assets/vectors/bath.svg" alt="bath" />
+                    <span class="text-[14px]">1</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- buttons sm:flex-row flex-col  -->
+              <div class="flex items-center gap-3 text-white">
+                <button
+                  class="rounded-md bg-[#1C2A53] bg-opacity-60 py-3 sm:py-4 text-[13px] w-full"
+                >
+                  More Info
+                </button>
+                <button
+                  class="rounded-md bg-[#F8B84E] p-[.88rem] sm:p-[1.15rem] text-[13px]"
+                >
+                  <img src="../assets/vectors/bookmark.svg" alt="bookmark" />
+                </button>
+              </div>
+
+              <!-- posted time -->
+              <span class="text-[10px] text-[#1C2A53] font-extralight"
+                >Posted 2 Days Ago</span
+              >
+            </div>
+          </div>
+
+          <div class="flex flex-col rounded-[10px] shadow-xl">
+            <!-- image -->
+            <div class="relative w-full flex">
+              <img
+                class="object-cover object-center aspect-[2/1] w-full rounded-tl-[10px] rounded-tr-[10px]"
+                src="../assets/images/propertyPhoto.png"
+                alt="property"
+              />
+              <div
+                class="bg-[#C06ADB] text-right sm:w-[120px] lg:w-[135px] px-3 py-1 rounded-br-md rounded-tr-md overflow-hidden absolute left-0 top-2"
+              >
+                <span
+                  class="text-[15px] sm:text-[15px] lg:text-[17px] text-white font-medium"
+                  >BRRR Comm</span
+                >
+              </div>
+              <div
+                class="bg-[#BFC420] text-right sm:w-[120px] lg:w-[135px] px-3 py-1 rounded-br-md rounded-tr-md overflow-hidden absolute left-0 top-12"
+              >
+                <span
+                  class="text-[15px] sm:text-[15px] lg:text-[17px] text-white font-medium"
+                  >BRRR HMO</span
+                >
+              </div>
+              <div
+                class="absolute top-0 right-0 bg-[#767f97] rounded-bl-[20px] py-2 pl-4 pr-10"
+              >
+                <span
+                  class="text-[15px] md:text-[16px] lg:text-[17px] text-white font-medium"
+                  >Off Market</span
+                >
+              </div>
+              <div class="absolute -top-1 -right-4 w-[50px] h-[50px]">
+                <img
+                  class="w-full"
+                  src="../assets/vectors/offGrey.svg"
+                  alt="off"
+                />
+              </div>
+            </div>
+
+            <!-- verified -->
+            <div
+              class="w-full bg-[#F8B84E] text-white flex items-center justify-end gap-3 h-[32px] px-3"
+            >
+              <span class="text-[13px] font-normal">Compliance Verified</span>
+              <img
+                class="z-[1]"
+                src="../assets/vectors/goldCheck.svg"
+                alt="goldCheck"
+              />
+            </div>
+
+            <!-- info -->
+            <div class="flex flex-col gap-6 p-4 sm:p-7 text-[#16234A]">
+              <!-- price/verifications -->
+              <div
+                class="flex sm:flex-row sm:items-center flex-col justify-between gap-3"
+              >
+                <!-- price -->
+                <div class="flex flex-col">
+                  <span class="text-[13px]">Burnley</span>
+                  <span class="text-[25px] font-medium mt-1 sm:mt-3"
+                    >£75,000</span
+                  >
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <img
+                    class="w-[40px]"
+                    src="../assets/vectors/grayCheck.svg"
+                    alt="grayCheck"
+                  />
+                  <img
+                    class="w-[44px]"
+                    src="../assets/vectors/goldCheck.svg"
+                    alt="goldCheck"
+                  />
+                  <img
+                    class="w-[44px]"
+                    src="../assets/vectors/goldId.svg"
+                    alt="goldId"
+                  />
+                </div>
+              </div>
+
+              <!-- type of the apartment -->
+              <div class="flex flex-col flex-wrap gap-3">
+                <span class="text-[14px]"> 2 Bed Apartment </span>
+                <div class="flex items-center gap-3 xs:gap-6">
+                  <div class="flex items-center gap-1">
+                    <img src="../assets/vectors/couch.svg" alt="couch" />
+                    <span class="text-[14px]">1</span>
+                  </div>
+
+                  <div class="flex items-center gap-1">
+                    <img src="../assets/vectors/bed.svg" alt="bed" />
+                    <span class="text-[14px]">2</span>
+                  </div>
+
+                  <div class="flex items-center gap-1">
+                    <img src="../assets/vectors/bath.svg" alt="bath" />
+                    <span class="text-[14px]">1</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- buttons sm:flex-row flex-col  -->
+              <div class="flex items-center gap-3 text-white">
+                <button
+                  class="rounded-md bg-[#1C2A53] bg-opacity-60 py-3 sm:py-4 text-[13px] w-full"
+                >
+                  More Info
+                </button>
+                <button
+                  class="rounded-md bg-[#F8B84E] p-[.88rem] sm:p-[1.15rem] text-[13px]"
+                >
+                  <img src="../assets/vectors/bookmark.svg" alt="bookmark" />
+                </button>
+              </div>
+
+              <!-- posted time -->
+              <span class="text-[10px] text-[#1C2A53] font-extralight"
+                >Posted 2 Days Ago</span
+              >
+            </div>
+          </div>
+
+          <div class="flex flex-col rounded-[10px] shadow-xl">
+            <!-- image -->
+            <div class="relative w-full flex">
+              <img
+                class="object-cover object-center aspect-[2/1] w-full rounded-tl-[10px] rounded-tr-[10px]"
+                src="../assets/images/propertyPhoto.png"
+                alt="property"
+              />
+              <div
+                class="bg-[#C06ADB] text-right sm:w-[120px] lg:w-[135px] px-3 py-1 rounded-br-md rounded-tr-md overflow-hidden absolute left-0 top-2"
+              >
+                <span
+                  class="text-[15px] sm:text-[15px] lg:text-[17px] text-white font-medium"
+                  >BRRR Comm</span
+                >
+              </div>
+              <div
+                class="bg-[#BFC420] text-right sm:w-[120px] lg:w-[135px] px-3 py-1 rounded-br-md rounded-tr-md overflow-hidden absolute left-0 top-12"
+              >
+                <span
+                  class="text-[15px] sm:text-[15px] lg:text-[17px] text-white font-medium"
+                  >BRRR HMO</span
+                >
+              </div>
+              <div
+                class="absolute top-0 right-0 bg-[#767f97] rounded-bl-[20px] py-2 pl-4 pr-10"
+              >
+                <span
+                  class="text-[15px] md:text-[16px] lg:text-[17px] text-white font-medium"
+                  >Off Market</span
+                >
+              </div>
+              <div class="absolute -top-1 -right-4 w-[50px] h-[50px]">
+                <img
+                  class="w-full"
+                  src="../assets/vectors/offGrey.svg"
+                  alt="off"
+                />
+              </div>
+            </div>
+
+            <!-- verified -->
+            <div
+              class="w-full bg-[#F8B84E] text-white flex items-center justify-end gap-3 h-[32px] px-3"
+            >
+              <span class="text-[13px] font-normal">Compliance Verified</span>
+              <img
+                class="z-[1]"
+                src="../assets/vectors/goldCheck.svg"
+                alt="goldCheck"
+              />
+            </div>
+
+            <!-- info -->
+            <div class="flex flex-col gap-6 p-4 sm:p-7 text-[#16234A]">
+              <!-- price/verifications -->
+              <div
+                class="flex sm:flex-row sm:items-center flex-col justify-between gap-3"
+              >
+                <!-- price -->
+                <div class="flex flex-col">
+                  <span class="text-[13px]">Burnley</span>
+                  <span class="text-[25px] font-medium mt-1 sm:mt-3"
+                    >£75,000</span
+                  >
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <img
+                    class="w-[40px]"
+                    src="../assets/vectors/grayCheck.svg"
+                    alt="grayCheck"
+                  />
+                  <img
+                    class="w-[44px]"
+                    src="../assets/vectors/goldCheck.svg"
+                    alt="goldCheck"
+                  />
+                  <img
+                    class="w-[44px]"
+                    src="../assets/vectors/goldId.svg"
+                    alt="goldId"
+                  />
+                </div>
+              </div>
+
+              <!-- type of the apartment -->
+              <div class="flex flex-col flex-wrap gap-3">
+                <span class="text-[14px]"> 2 Bed Apartment </span>
+                <div class="flex items-center gap-3 xs:gap-6">
+                  <div class="flex items-center gap-1">
+                    <img src="../assets/vectors/couch.svg" alt="couch" />
+                    <span class="text-[14px]">1</span>
+                  </div>
+
+                  <div class="flex items-center gap-1">
+                    <img src="../assets/vectors/bed.svg" alt="bed" />
+                    <span class="text-[14px]">2</span>
+                  </div>
+
+                  <div class="flex items-center gap-1">
+                    <img src="../assets/vectors/bath.svg" alt="bath" />
+                    <span class="text-[14px]">1</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- buttons sm:flex-row flex-col  -->
+              <div class="flex items-center gap-3 text-white">
+                <button
+                  class="rounded-md bg-[#1C2A53] bg-opacity-60 py-3 sm:py-4 text-[13px] w-full"
+                >
+                  More Info
+                </button>
+                <button
+                  class="rounded-md bg-[#F8B84E] p-[.88rem] sm:p-[1.15rem] text-[13px]"
+                >
+                  <img src="../assets/vectors/bookmark.svg" alt="bookmark" />
+                </button>
+              </div>
+
+              <!-- posted time -->
+              <span class="text-[10px] text-[#1C2A53] font-extralight"
+                >Posted 2 Days Ago</span
+              >
+            </div>
+          </div>
+
+          <div class="flex flex-col rounded-[10px] shadow-xl">
+            <!-- image -->
+            <div class="relative w-full flex">
+              <img
+                class="object-cover object-center aspect-[2/1] w-full rounded-tl-[10px] rounded-tr-[10px]"
+                src="../assets/images/propertyPhoto.png"
+                alt="property"
+              />
+              <div
+                class="bg-[#C06ADB] text-right sm:w-[120px] lg:w-[135px] px-3 py-1 rounded-br-md rounded-tr-md overflow-hidden absolute left-0 top-2"
+              >
+                <span
+                  class="text-[15px] sm:text-[15px] lg:text-[17px] text-white font-medium"
+                  >BRRR Comm</span
+                >
+              </div>
+              <div
+                class="bg-[#BFC420] text-right sm:w-[120px] lg:w-[135px] px-3 py-1 rounded-br-md rounded-tr-md overflow-hidden absolute left-0 top-12"
+              >
+                <span
+                  class="text-[15px] sm:text-[15px] lg:text-[17px] text-white font-medium"
+                  >BRRR HMO</span
+                >
+              </div>
+              <div
+                class="absolute top-0 right-0 bg-[#767f97] rounded-bl-[20px] py-2 pl-4 pr-10"
+              >
+                <span
+                  class="text-[15px] md:text-[16px] lg:text-[17px] text-white font-medium"
+                  >Off Market</span
+                >
+              </div>
+              <div class="absolute -top-1 -right-4 w-[50px] h-[50px]">
+                <img
+                  class="w-full"
+                  src="../assets/vectors/offGrey.svg"
+                  alt="off"
+                />
+              </div>
+            </div>
+
+            <!-- verified -->
+            <div
+              class="w-full bg-[#F8B84E] text-white flex items-center justify-end gap-3 h-[32px] px-3"
+            >
+              <span class="text-[13px] font-normal">Compliance Verified</span>
+              <img
+                class="z-[1]"
+                src="../assets/vectors/goldCheck.svg"
+                alt="goldCheck"
+              />
+            </div>
+
+            <!-- info -->
+            <div class="flex flex-col gap-6 p-4 sm:p-7 text-[#16234A]">
+              <!-- price/verifications -->
+              <div
+                class="flex sm:flex-row sm:items-center flex-col justify-between gap-3"
+              >
+                <!-- price -->
+                <div class="flex flex-col">
+                  <span class="text-[13px]">Burnley</span>
+                  <span class="text-[25px] font-medium mt-1 sm:mt-3"
+                    >£75,000</span
+                  >
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <img
+                    class="w-[40px]"
+                    src="../assets/vectors/grayCheck.svg"
+                    alt="grayCheck"
+                  />
+                  <img
+                    class="w-[44px]"
+                    src="../assets/vectors/goldCheck.svg"
+                    alt="goldCheck"
+                  />
+                  <img
+                    class="w-[44px]"
+                    src="../assets/vectors/goldId.svg"
+                    alt="goldId"
+                  />
+                </div>
+              </div>
+
+              <!-- type of the apartment -->
+              <div class="flex flex-col flex-wrap gap-3">
+                <span class="text-[14px]"> 2 Bed Apartment </span>
+                <div class="flex items-center gap-3 xs:gap-6">
+                  <div class="flex items-center gap-1">
+                    <img src="../assets/vectors/couch.svg" alt="couch" />
+                    <span class="text-[14px]">1</span>
+                  </div>
+
+                  <div class="flex items-center gap-1">
+                    <img src="../assets/vectors/bed.svg" alt="bed" />
+                    <span class="text-[14px]">2</span>
+                  </div>
+
+                  <div class="flex items-center gap-1">
+                    <img src="../assets/vectors/bath.svg" alt="bath" />
+                    <span class="text-[14px]">1</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- buttons sm:flex-row flex-col  -->
+              <div class="flex items-center gap-3 text-white">
+                <button
+                  class="rounded-md bg-[#1C2A53] bg-opacity-60 py-3 sm:py-4 text-[13px] w-full"
+                >
+                  More Info
+                </button>
+                <button
+                  class="rounded-md bg-[#F8B84E] p-[.88rem] sm:p-[1.15rem] text-[13px]"
+                >
+                  <img src="../assets/vectors/bookmark.svg" alt="bookmark" />
+                </button>
+              </div>
+
+              <!-- posted time -->
+              <span class="text-[10px] text-[#1C2A53] font-extralight"
+                >Posted 2 Days Ago</span
+              >
+            </div>
+          </div>
+
+          <div class="flex flex-col rounded-[10px] shadow-xl">
+            <!-- image -->
+            <div class="relative w-full flex">
+              <img
+                class="object-cover object-center aspect-[2/1] w-full rounded-tl-[10px] rounded-tr-[10px]"
+                src="../assets/images/propertyPhoto.png"
+                alt="property"
+              />
+              <div
+                class="bg-[#C06ADB] text-right sm:w-[120px] lg:w-[135px] px-3 py-1 rounded-br-md rounded-tr-md overflow-hidden absolute left-0 top-2"
+              >
+                <span
+                  class="text-[15px] sm:text-[15px] lg:text-[17px] text-white font-medium"
+                  >BRRR Comm</span
+                >
+              </div>
+              <div
+                class="bg-[#BFC420] text-right sm:w-[120px] lg:w-[135px] px-3 py-1 rounded-br-md rounded-tr-md overflow-hidden absolute left-0 top-12"
+              >
+                <span
+                  class="text-[15px] sm:text-[15px] lg:text-[17px] text-white font-medium"
+                  >BRRR HMO</span
+                >
+              </div>
+              <div
+                class="absolute top-0 right-0 bg-[#767f97] rounded-bl-[20px] py-2 pl-4 pr-10"
+              >
+                <span
+                  class="text-[15px] md:text-[16px] lg:text-[17px] text-white font-medium"
+                  >Off Market</span
+                >
+              </div>
+              <div class="absolute -top-1 -right-4 w-[50px] h-[50px]">
+                <img
+                  class="w-full"
+                  src="../assets/vectors/offGrey.svg"
+                  alt="off"
+                />
+              </div>
+            </div>
+
+            <!-- verified -->
+            <div
+              class="w-full bg-[#F8B84E] text-white flex items-center justify-end gap-3 h-[32px] px-3"
+            >
+              <span class="text-[13px] font-normal">Compliance Verified</span>
+              <img
+                class="z-[1]"
+                src="../assets/vectors/goldCheck.svg"
+                alt="goldCheck"
+              />
+            </div>
+
+            <!-- info -->
+            <div class="flex flex-col gap-6 p-4 sm:p-7 text-[#16234A]">
+              <!-- price/verifications -->
+              <div
+                class="flex sm:flex-row sm:items-center flex-col justify-between gap-3"
+              >
+                <!-- price -->
+                <div class="flex flex-col">
+                  <span class="text-[13px]">Burnley</span>
+                  <span class="text-[25px] font-medium mt-1 sm:mt-3"
+                    >£75,000</span
+                  >
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <img
+                    class="w-[40px]"
+                    src="../assets/vectors/grayCheck.svg"
+                    alt="grayCheck"
+                  />
+                  <img
+                    class="w-[44px]"
+                    src="../assets/vectors/goldCheck.svg"
+                    alt="goldCheck"
+                  />
+                  <img
+                    class="w-[44px]"
+                    src="../assets/vectors/goldId.svg"
+                    alt="goldId"
+                  />
+                </div>
+              </div>
+
+              <!-- type of the apartment -->
+              <div class="flex flex-col flex-wrap gap-3">
+                <span class="text-[14px]"> 2 Bed Apartment </span>
+                <div class="flex items-center gap-3 xs:gap-6">
+                  <div class="flex items-center gap-1">
+                    <img src="../assets/vectors/couch.svg" alt="couch" />
+                    <span class="text-[14px]">1</span>
+                  </div>
+
+                  <div class="flex items-center gap-1">
+                    <img src="../assets/vectors/bed.svg" alt="bed" />
+                    <span class="text-[14px]">2</span>
+                  </div>
+
+                  <div class="flex items-center gap-1">
+                    <img src="../assets/vectors/bath.svg" alt="bath" />
+                    <span class="text-[14px]">1</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- buttons sm:flex-row flex-col  -->
+              <div class="flex items-center gap-3 text-white">
+                <button
+                  class="rounded-md bg-[#1C2A53] bg-opacity-60 py-3 sm:py-4 text-[13px] w-full"
+                >
+                  More Info
+                </button>
+                <button
+                  class="rounded-md bg-[#F8B84E] p-[.88rem] sm:p-[1.15rem] text-[13px]"
+                >
+                  <img src="../assets/vectors/bookmark.svg" alt="bookmark" />
+                </button>
+              </div>
+
+              <!-- posted time -->
+              <span class="text-[10px] text-[#1C2A53] font-extralight"
+                >Posted 2 Days Ago</span
+              >
+            </div>
+          </div>
+
+          <div class="flex flex-col rounded-[10px] shadow-xl">
+            <!-- image -->
+            <div class="relative w-full flex">
+              <img
+                class="object-cover object-center aspect-[2/1] w-full rounded-tl-[10px] rounded-tr-[10px]"
+                src="../assets/images/propertyPhoto.png"
+                alt="property"
+              />
+              <div
+                class="bg-[#C06ADB] text-right sm:w-[120px] lg:w-[135px] px-3 py-1 rounded-br-md rounded-tr-md overflow-hidden absolute left-0 top-2"
+              >
+                <span
+                  class="text-[15px] sm:text-[15px] lg:text-[17px] text-white font-medium"
+                  >BRRR Comm</span
+                >
+              </div>
+              <div
+                class="bg-[#BFC420] text-right sm:w-[120px] lg:w-[135px] px-3 py-1 rounded-br-md rounded-tr-md overflow-hidden absolute left-0 top-12"
+              >
+                <span
+                  class="text-[15px] sm:text-[15px] lg:text-[17px] text-white font-medium"
+                  >BRRR HMO</span
+                >
+              </div>
+              <div
+                class="absolute top-0 right-0 bg-[#767f97] rounded-bl-[20px] py-2 pl-4 pr-10"
+              >
+                <span
+                  class="text-[15px] md:text-[16px] lg:text-[17px] text-white font-medium"
+                  >Off Market</span
+                >
+              </div>
+              <div class="absolute -top-1 -right-4 w-[50px] h-[50px]">
+                <img
+                  class="w-full"
+                  src="../assets/vectors/offGrey.svg"
+                  alt="off"
+                />
+              </div>
+            </div>
+
+            <!-- verified -->
+            <div
+              class="w-full bg-[#F8B84E] text-white flex items-center justify-end gap-3 h-[32px] px-3"
+            >
+              <span class="text-[13px] font-normal">Compliance Verified</span>
+              <img
+                class="z-[1]"
+                src="../assets/vectors/goldCheck.svg"
+                alt="goldCheck"
+              />
+            </div>
+
+            <!-- info -->
+            <div class="flex flex-col gap-6 p-4 sm:p-7 text-[#16234A]">
+              <!-- price/verifications -->
+              <div
+                class="flex sm:flex-row sm:items-center flex-col justify-between gap-3"
+              >
+                <!-- price -->
+                <div class="flex flex-col">
+                  <span class="text-[13px]">Burnley</span>
+                  <span class="text-[25px] font-medium mt-1 sm:mt-3"
+                    >£75,000</span
+                  >
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <img
+                    class="w-[40px]"
+                    src="../assets/vectors/grayCheck.svg"
+                    alt="grayCheck"
+                  />
+                  <img
+                    class="w-[44px]"
+                    src="../assets/vectors/goldCheck.svg"
+                    alt="goldCheck"
+                  />
+                  <img
+                    class="w-[44px]"
+                    src="../assets/vectors/goldId.svg"
+                    alt="goldId"
+                  />
+                </div>
+              </div>
+
+              <!-- type of the apartment -->
+              <div class="flex flex-col flex-wrap gap-3">
+                <span class="text-[14px]"> 2 Bed Apartment </span>
+                <div class="flex items-center gap-3 xs:gap-6">
+                  <div class="flex items-center gap-1">
+                    <img src="../assets/vectors/couch.svg" alt="couch" />
+                    <span class="text-[14px]">1</span>
+                  </div>
+
+                  <div class="flex items-center gap-1">
+                    <img src="../assets/vectors/bed.svg" alt="bed" />
+                    <span class="text-[14px]">2</span>
+                  </div>
+
+                  <div class="flex items-center gap-1">
+                    <img src="../assets/vectors/bath.svg" alt="bath" />
+                    <span class="text-[14px]">1</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- buttons sm:flex-row flex-col  -->
+              <div class="flex items-center gap-3 text-white">
+                <button
+                  class="rounded-md bg-[#1C2A53] bg-opacity-60 py-3 sm:py-4 text-[13px] w-full"
+                >
+                  More Info
+                </button>
+                <button
+                  class="rounded-md bg-[#F8B84E] p-[.88rem] sm:p-[1.15rem] text-[13px]"
+                >
+                  <img src="../assets/vectors/bookmark.svg" alt="bookmark" />
+                </button>
+              </div>
+
+              <!-- posted time -->
+              <span class="text-[10px] text-[#1C2A53] font-extralight"
+                >Posted 2 Days Ago</span
+              >
+            </div>
+          </div>
+
+          <div class="flex flex-col rounded-[10px] shadow-xl">
+            <!-- image -->
+            <div class="relative w-full flex">
+              <img
+                class="object-cover object-center aspect-[2/1] w-full rounded-tl-[10px] rounded-tr-[10px]"
+                src="../assets/images/propertyPhoto.png"
+                alt="property"
+              />
+              <div
+                class="bg-[#C06ADB] text-right sm:w-[120px] lg:w-[135px] px-3 py-1 rounded-br-md rounded-tr-md overflow-hidden absolute left-0 top-2"
+              >
+                <span
+                  class="text-[15px] sm:text-[15px] lg:text-[17px] text-white font-medium"
+                  >BRRR Comm</span
+                >
+              </div>
+              <div
+                class="bg-[#BFC420] text-right sm:w-[120px] lg:w-[135px] px-3 py-1 rounded-br-md rounded-tr-md overflow-hidden absolute left-0 top-12"
+              >
+                <span
+                  class="text-[15px] sm:text-[15px] lg:text-[17px] text-white font-medium"
+                  >BRRR HMO</span
+                >
+              </div>
+              <div
+                class="absolute top-0 right-0 bg-[#767f97] rounded-bl-[20px] py-2 pl-4 pr-10"
+              >
+                <span
+                  class="text-[15px] md:text-[16px] lg:text-[17px] text-white font-medium"
+                  >Off Market</span
+                >
+              </div>
+              <div class="absolute -top-1 -right-4 w-[50px] h-[50px]">
+                <img
+                  class="w-full"
+                  src="../assets/vectors/offGrey.svg"
+                  alt="off"
+                />
+              </div>
+            </div>
+
+            <!-- verified -->
+            <div
+              class="w-full bg-[#F8B84E] text-white flex items-center justify-end gap-3 h-[32px] px-3"
+            >
+              <span class="text-[13px] font-normal">Compliance Verified</span>
+              <img
+                class="z-[1]"
+                src="../assets/vectors/goldCheck.svg"
+                alt="goldCheck"
+              />
+            </div>
+
+            <!-- info -->
+            <div class="flex flex-col gap-6 p-4 sm:p-7 text-[#16234A]">
+              <!-- price/verifications -->
+              <div
+                class="flex sm:flex-row sm:items-center flex-col justify-between gap-3"
+              >
+                <!-- price -->
+                <div class="flex flex-col">
+                  <span class="text-[13px]">Burnley</span>
+                  <span class="text-[25px] font-medium mt-1 sm:mt-3"
+                    >£75,000</span
+                  >
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <img
+                    class="w-[40px]"
+                    src="../assets/vectors/grayCheck.svg"
+                    alt="grayCheck"
+                  />
+                  <img
+                    class="w-[44px]"
+                    src="../assets/vectors/goldCheck.svg"
+                    alt="goldCheck"
+                  />
+                  <img
+                    class="w-[44px]"
+                    src="../assets/vectors/goldId.svg"
+                    alt="goldId"
+                  />
+                </div>
+              </div>
+
+              <!-- type of the apartment -->
+              <div class="flex flex-col flex-wrap gap-3">
+                <span class="text-[14px]"> 2 Bed Apartment </span>
+                <div class="flex items-center gap-3 xs:gap-6">
+                  <div class="flex items-center gap-1">
+                    <img src="../assets/vectors/couch.svg" alt="couch" />
+                    <span class="text-[14px]">1</span>
+                  </div>
+
+                  <div class="flex items-center gap-1">
+                    <img src="../assets/vectors/bed.svg" alt="bed" />
+                    <span class="text-[14px]">2</span>
+                  </div>
+
+                  <div class="flex items-center gap-1">
+                    <img src="../assets/vectors/bath.svg" alt="bath" />
+                    <span class="text-[14px]">1</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- buttons sm:flex-row flex-col  -->
+              <div class="flex items-center gap-3 text-white">
+                <button
+                  class="rounded-md bg-[#1C2A53] bg-opacity-60 py-3 sm:py-4 text-[13px] w-full"
+                >
+                  More Info
+                </button>
+                <button
+                  class="rounded-md bg-[#F8B84E] p-[.88rem] sm:p-[1.15rem] text-[13px]"
+                >
+                  <img src="../assets/vectors/bookmark.svg" alt="bookmark" />
+                </button>
+              </div>
+
+              <!-- posted time -->
+              <span class="text-[10px] text-[#1C2A53] font-extralight"
+                >Posted 2 Days Ago</span
+              >
+            </div>
+          </div>
+
+          <div class="flex flex-col rounded-[10px] shadow-xl">
+            <!-- image -->
+            <div class="relative w-full flex">
+              <img
+                class="object-cover object-center aspect-[2/1] w-full rounded-tl-[10px] rounded-tr-[10px]"
+                src="../assets/images/propertyPhoto.png"
+                alt="property"
+              />
+              <div
+                class="bg-[#C06ADB] text-right sm:w-[120px] lg:w-[135px] px-3 py-1 rounded-br-md rounded-tr-md overflow-hidden absolute left-0 top-2"
+              >
+                <span
+                  class="text-[15px] sm:text-[15px] lg:text-[17px] text-white font-medium"
+                  >BRRR Comm</span
+                >
+              </div>
+              <div
+                class="bg-[#BFC420] text-right sm:w-[120px] lg:w-[135px] px-3 py-1 rounded-br-md rounded-tr-md overflow-hidden absolute left-0 top-12"
+              >
+                <span
+                  class="text-[15px] sm:text-[15px] lg:text-[17px] text-white font-medium"
+                  >BRRR HMO</span
+                >
+              </div>
+              <div
+                class="absolute top-0 right-0 bg-[#767f97] rounded-bl-[20px] py-2 pl-4 pr-10"
+              >
+                <span
+                  class="text-[15px] md:text-[16px] lg:text-[17px] text-white font-medium"
+                  >Off Market</span
+                >
+              </div>
+              <div class="absolute -top-1 -right-4 w-[50px] h-[50px]">
+                <img
+                  class="w-full"
+                  src="../assets/vectors/offGrey.svg"
+                  alt="off"
+                />
+              </div>
+            </div>
+
+            <!-- verified -->
+            <div
+              class="w-full bg-[#F8B84E] text-white flex items-center justify-end gap-3 h-[32px] px-3"
+            >
+              <span class="text-[13px] font-normal">Compliance Verified</span>
+              <img
+                class="z-[1]"
+                src="../assets/vectors/goldCheck.svg"
+                alt="goldCheck"
+              />
+            </div>
+
+            <!-- info -->
+            <div class="flex flex-col gap-6 p-4 sm:p-7 text-[#16234A]">
+              <!-- price/verifications -->
+              <div
+                class="flex sm:flex-row sm:items-center flex-col justify-between gap-3"
+              >
+                <!-- price -->
+                <div class="flex flex-col">
+                  <span class="text-[13px]">Burnley</span>
+                  <span class="text-[25px] font-medium mt-1 sm:mt-3"
+                    >£75,000</span
+                  >
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <img
+                    class="w-[40px]"
+                    src="../assets/vectors/grayCheck.svg"
+                    alt="grayCheck"
+                  />
+                  <img
+                    class="w-[44px]"
+                    src="../assets/vectors/goldCheck.svg"
+                    alt="goldCheck"
+                  />
+                  <img
+                    class="w-[44px]"
+                    src="../assets/vectors/goldId.svg"
+                    alt="goldId"
+                  />
+                </div>
+              </div>
+
+              <!-- type of the apartment -->
+              <div class="flex flex-col flex-wrap gap-3">
+                <span class="text-[14px]"> 2 Bed Apartment </span>
+                <div class="flex items-center gap-3 xs:gap-6">
+                  <div class="flex items-center gap-1">
+                    <img src="../assets/vectors/couch.svg" alt="couch" />
+                    <span class="text-[14px]">1</span>
+                  </div>
+
+                  <div class="flex items-center gap-1">
+                    <img src="../assets/vectors/bed.svg" alt="bed" />
+                    <span class="text-[14px]">2</span>
+                  </div>
+
+                  <div class="flex items-center gap-1">
+                    <img src="../assets/vectors/bath.svg" alt="bath" />
+                    <span class="text-[14px]">1</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- buttons sm:flex-row flex-col  -->
+              <div class="flex items-center gap-3 text-white">
+                <button
+                  class="rounded-md bg-[#1C2A53] bg-opacity-60 py-3 sm:py-4 text-[13px] w-full"
+                >
+                  More Info
+                </button>
+                <button
+                  class="rounded-md bg-[#F8B84E] p-[.88rem] sm:p-[1.15rem] text-[13px]"
+                >
+                  <img src="../assets/vectors/bookmark.svg" alt="bookmark" />
+                </button>
+              </div>
+
+              <!-- posted time -->
+              <span class="text-[10px] text-[#1C2A53] font-extralight"
+                >Posted 2 Days Ago</span
+              >
+            </div>
+          </div>
+
+          <div class="flex flex-col rounded-[10px] shadow-xl">
+            <!-- image -->
+            <div class="relative w-full flex">
+              <img
+                class="object-cover object-center aspect-[2/1] w-full rounded-tl-[10px] rounded-tr-[10px]"
+                src="../assets/images/propertyPhoto.png"
+                alt="property"
+              />
+              <div
+                class="bg-[#C06ADB] text-right sm:w-[120px] lg:w-[135px] px-3 py-1 rounded-br-md rounded-tr-md overflow-hidden absolute left-0 top-2"
+              >
+                <span
+                  class="text-[15px] sm:text-[15px] lg:text-[17px] text-white font-medium"
+                  >BRRR Comm</span
+                >
+              </div>
+              <div
+                class="bg-[#BFC420] text-right sm:w-[120px] lg:w-[135px] px-3 py-1 rounded-br-md rounded-tr-md overflow-hidden absolute left-0 top-12"
+              >
+                <span
+                  class="text-[15px] sm:text-[15px] lg:text-[17px] text-white font-medium"
+                  >BRRR HMO</span
+                >
+              </div>
+              <div
+                class="absolute top-0 right-0 bg-[#767f97] rounded-bl-[20px] py-2 pl-4 pr-10"
+              >
+                <span
+                  class="text-[15px] md:text-[16px] lg:text-[17px] text-white font-medium"
+                  >Off Market</span
+                >
+              </div>
+              <div class="absolute -top-1 -right-4 w-[50px] h-[50px]">
+                <img
+                  class="w-full"
+                  src="../assets/vectors/offGrey.svg"
+                  alt="off"
+                />
+              </div>
+            </div>
+
+            <!-- verified -->
+            <div
+              class="w-full bg-[#F8B84E] text-white flex items-center justify-end gap-3 h-[32px] px-3"
+            >
+              <span class="text-[13px] font-normal">Compliance Verified</span>
+              <img
+                class="z-[1]"
+                src="../assets/vectors/goldCheck.svg"
+                alt="goldCheck"
+              />
+            </div>
+
+            <!-- info -->
+            <div class="flex flex-col gap-6 p-4 sm:p-7 text-[#16234A]">
+              <!-- price/verifications -->
+              <div
+                class="flex sm:flex-row sm:items-center flex-col justify-between gap-3"
+              >
+                <!-- price -->
+                <div class="flex flex-col">
+                  <span class="text-[13px]">Burnley</span>
+                  <span class="text-[25px] font-medium mt-1 sm:mt-3"
+                    >£75,000</span
+                  >
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <img
+                    class="w-[40px]"
+                    src="../assets/vectors/grayCheck.svg"
+                    alt="grayCheck"
+                  />
+                  <img
+                    class="w-[44px]"
+                    src="../assets/vectors/goldCheck.svg"
+                    alt="goldCheck"
+                  />
+                  <img
+                    class="w-[44px]"
+                    src="../assets/vectors/goldId.svg"
+                    alt="goldId"
+                  />
+                </div>
+              </div>
+
+              <!-- type of the apartment -->
+              <div class="flex flex-col flex-wrap gap-3">
+                <span class="text-[14px]"> 2 Bed Apartment </span>
+                <div class="flex items-center gap-3 xs:gap-6">
+                  <div class="flex items-center gap-1">
+                    <img src="../assets/vectors/couch.svg" alt="couch" />
+                    <span class="text-[14px]">1</span>
+                  </div>
+
+                  <div class="flex items-center gap-1">
+                    <img src="../assets/vectors/bed.svg" alt="bed" />
+                    <span class="text-[14px]">2</span>
+                  </div>
+
+                  <div class="flex items-center gap-1">
+                    <img src="../assets/vectors/bath.svg" alt="bath" />
+                    <span class="text-[14px]">1</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- buttons sm:flex-row flex-col  -->
+              <div class="flex items-center gap-3 text-white">
+                <button
+                  class="rounded-md bg-[#1C2A53] bg-opacity-60 py-3 sm:py-4 text-[13px] w-full"
+                >
+                  More Info
+                </button>
+                <button
+                  class="rounded-md bg-[#F8B84E] p-[.88rem] sm:p-[1.15rem] text-[13px]"
+                >
+                  <img src="../assets/vectors/bookmark.svg" alt="bookmark" />
+                </button>
+              </div>
+
+              <!-- posted time -->
+              <span class="text-[10px] text-[#1C2A53] font-extralight"
+                >Posted 2 Days Ago</span
+              >
+            </div>
+          </div>
+
+          <div class="flex flex-col rounded-[10px] shadow-xl">
+            <!-- image -->
+            <div class="relative w-full flex">
+              <img
+                class="object-cover object-center aspect-[2/1] w-full rounded-tl-[10px] rounded-tr-[10px]"
+                src="../assets/images/propertyPhoto.png"
+                alt="property"
+              />
+              <div
+                class="bg-[#C06ADB] text-right sm:w-[120px] lg:w-[135px] px-3 py-1 rounded-br-md rounded-tr-md overflow-hidden absolute left-0 top-2"
+              >
+                <span
+                  class="text-[15px] sm:text-[15px] lg:text-[17px] text-white font-medium"
+                  >BRRR Comm</span
+                >
+              </div>
+              <div
+                class="bg-[#BFC420] text-right sm:w-[120px] lg:w-[135px] px-3 py-1 rounded-br-md rounded-tr-md overflow-hidden absolute left-0 top-12"
+              >
+                <span
+                  class="text-[15px] sm:text-[15px] lg:text-[17px] text-white font-medium"
+                  >BRRR HMO</span
+                >
+              </div>
+              <div
+                class="absolute top-0 right-0 bg-[#767f97] rounded-bl-[20px] py-2 pl-4 pr-10"
+              >
+                <span
+                  class="text-[15px] md:text-[16px] lg:text-[17px] text-white font-medium"
+                  >Off Market</span
+                >
+              </div>
+              <div class="absolute -top-1 -right-4 w-[50px] h-[50px]">
+                <img
+                  class="w-full"
+                  src="../assets/vectors/offGrey.svg"
+                  alt="off"
+                />
+              </div>
+            </div>
+
+            <!-- verified -->
+            <div
+              class="w-full bg-[#F8B84E] text-white flex items-center justify-end gap-3 h-[32px] px-3"
+            >
+              <span class="text-[13px] font-normal">Compliance Verified</span>
+              <img
+                class="z-[1]"
+                src="../assets/vectors/goldCheck.svg"
+                alt="goldCheck"
+              />
+            </div>
+
+            <!-- info -->
+            <div class="flex flex-col gap-6 p-4 sm:p-7 text-[#16234A]">
+              <!-- price/verifications -->
+              <div
+                class="flex sm:flex-row sm:items-center flex-col justify-between gap-3"
+              >
+                <!-- price -->
+                <div class="flex flex-col">
+                  <span class="text-[13px]">Burnley</span>
+                  <span class="text-[25px] font-medium mt-1 sm:mt-3"
+                    >£75,000</span
+                  >
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <img
+                    class="w-[40px]"
+                    src="../assets/vectors/grayCheck.svg"
+                    alt="grayCheck"
+                  />
+                  <img
+                    class="w-[44px]"
+                    src="../assets/vectors/goldCheck.svg"
+                    alt="goldCheck"
+                  />
+                  <img
+                    class="w-[44px]"
+                    src="../assets/vectors/goldId.svg"
+                    alt="goldId"
+                  />
+                </div>
+              </div>
+
+              <!-- type of the apartment -->
+              <div class="flex flex-col flex-wrap gap-3">
+                <span class="text-[14px]"> 2 Bed Apartment </span>
+                <div class="flex items-center gap-3 xs:gap-6">
+                  <div class="flex items-center gap-1">
+                    <img src="../assets/vectors/couch.svg" alt="couch" />
+                    <span class="text-[14px]">1</span>
+                  </div>
+
+                  <div class="flex items-center gap-1">
+                    <img src="../assets/vectors/bed.svg" alt="bed" />
+                    <span class="text-[14px]">2</span>
+                  </div>
+
+                  <div class="flex items-center gap-1">
+                    <img src="../assets/vectors/bath.svg" alt="bath" />
+                    <span class="text-[14px]">1</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- buttons sm:flex-row flex-col  -->
+              <div class="flex items-center gap-3 text-white">
+                <button
+                  class="rounded-md bg-[#1C2A53] bg-opacity-60 py-3 sm:py-4 text-[13px] w-full"
+                >
+                  More Info
+                </button>
+                <button
+                  class="rounded-md bg-[#F8B84E] p-[.88rem] sm:p-[1.15rem] text-[13px]"
+                >
+                  <img src="../assets/vectors/bookmark.svg" alt="bookmark" />
+                </button>
+              </div>
+
+              <!-- posted time -->
+              <span class="text-[10px] text-[#1C2A53] font-extralight"
+                >Posted 2 Days Ago</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- pagination -->
+    <section>
+      <div class="customContainer rounded-xl bg-[#F9F9F9] p-4 mt-9 md:my-14">
+        <div class="flex items-center justify-center gap-3">
+          <img
+            class="p-4"
+            src="../assets/vectors/arrowLeftGold.svg"
+            alt="arrow left gold"
+          />
+
+          <div class="paginationItem-active">1</div>
+
+          <div class="paginationItem">2</div>
+
+          <div class="paginationItem">3</div>
+
+          <div class="paginationItem">4</div>
+
+          <img
+            class="p-4"
+            src="../assets/vectors/arrowRightGold.svg"
+            alt="arrow right gold"
+          />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

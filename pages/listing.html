@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aquila</title>
+    <link rel="stylesheet" href="../output.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/mbg1zau.css" />
+  </head>
+  <body>
+    <header class="font-stolzl font-light text-[#16234A] flex shadow-md">
+      <div
+        class="navbar customContainer relative flex items-center justify-between py-6"
+      >
+        <div
+          class="absolute hidden sm:flex items-center -top-2 right-[10px] gap-6"
+        >
+          <div class="flex gap-2 items-center">
+            <img src="../assets/vectors/phoneBlue.svg" alt="phone" />
+            <span>0203 693 3811</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="flex gap-2 items-center">
+              <img src="../assets/vectors/facebookBlue.svg" alt="phone" />
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="../assets/vectors/instagramBlue.svg" alt="phone" />
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="../assets/vectors/linkedInBlue.svg" alt="phone" />
+            </div>
+          </div>
+          <button
+            class="bg-[#16234A] text-[14px] font-light text-white py-3 px-5 rounded-b-lg rounded-bl-lg"
+          >
+            Investor Lounge
+          </button>
+        </div>
+        <div class="logoContainer max-w-[134px]">
+          <!-- <img src="assets/images/Logo.png" alt="Logo" /> -->
+          <img src="../assets/vectors/LogoSvgBlueFont.svg" alt="Logo" />
+        </div>
+        <div class="flex items-center gap-16">
+          <nav class="hidden lg:flex">
+            <ul class="flex items-center gap-8 text-lg">
+              <li><a href="sourcers.html">Sourcers</a></li>
+              <li><a href="#">Landlords</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Our Services</a></li>
+              <li><a href="#">Our Partners</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </nav>
+          <div class="flex items-center gap-7 text=[18px]">
+            <div class="hidden sm:flex items-center gap-6">
+              <button
+                class="bg-none border-2 border-[#16234A] flex items-center gap-2 py-3 px-4 rounded-md"
+              >
+                <img src="../assets/vectors/user.svg" alt="user" />
+                Sign In
+              </button>
+              <button
+                class="bg-[#F8B84E] flex items-center gap-2 py-3 px-4 rounded-md text-white border-2 border-[#F8B84E]"
+              >
+                <img src="../assets/vectors/edit.svg" alt="edit" />
+                Create Account
+              </button>
+            </div>
+
+            <!-- Burger button -->
+            <div class="inline-block lg:hidden">
+              <button class="relative group">
+                <div
+                  class="relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all bg-[#F8B84E] ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md"
+                >
+                  <div
+                    class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden"
+                  >
+                    <div
+                      class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10"
+                    ></div>
+                    <div
+                      class="bg-white h-[2px] w-7 rounded transform transition-all duration-300 group-focus:translate-x-10 delay-75"
+                    ></div>
+                    <div
+                      class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10 delay-150"
+                    ></div>
+
+                    <div
+                      class="absolute items-center justify-between transform transition-all duration-500 top-2.5 -translate-x-10 group-focus:translate-x-0 flex w-0 group-focus:w-12"
+                    >
+                      <div
+                        class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 rotate-0 delay-300 group-focus:rotate-45"
+                      ></div>
+                      <div
+                        class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 -rotate-0 delay-300 group-focus:-rotate-45"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- nav back -->
+    <section>
+      <div class="customContainer">
+        <button class="flex items-center gap-2 py-9">
+          <img
+            class="w-[10px] h-[13px]"
+            src="../assets/vectors/arrowLeftSecondaryShort.svg"
+            alt="arrowLeft"
+          />
+          <span class="font-medium text-secondary text-[13px]">Go Back</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- photos/pricing/address -->
+    <section>
+      <div class="customContainer">
+        <div class="flex lg:flex-row flex-col gap-[59px]">
+          <!-- photos -->
+          <div class="flex lg:flex-row flex-col gap-[15px]">
+            <!-- main photo -->
+            <div
+              class="lg:max-w-[615px] xl:max-w-[715px] w-full flex aspect-[2/1.8] relative"
+            >
+              <img
+                class="w-full object-cover object-center rounded-[10px]"
+                src="../assets/images/listingMain.png"
+                alt="listing photo"
+              />
+              <div
+                class="absolute top-0 right-0 bg-[#767f97] rounded-bl-[5px] py-1 pl-4 pr-10"
+              >
+                <span class="text-[12px] text-white font-medium"
+                  >Off Market</span
+                >
+              </div>
+              <div class="absolute -top-1 -right-3 w-[43px] h-[43px]">
+                <img
+                  class="w-full"
+                  src="../assets/vectors/offGrey.svg"
+                  alt="off"
+                />
+              </div>
+            </div>
+
+            <!-- side photos -->
+            <div
+              class="flex flex-row lg:flex-col gap-[12px] lg:max-w-[251px] w-full flex-shrink-0"
+            >
+              <button
+                class="bg-primary rounded-[10px] w-full flex items-center justify-center"
+              >
+                <img
+                  class="w-[10px] lg:rotate-90"
+                  src="../assets/vectors/arrowLeftWhiteShort.svg"
+                  alt=""
+                />
+              </button>
+
+              <div
+                class="max-w-[252px] w-full rounded-[10px] overflow-hidden flex aspect-[2/1.8]"
+              >
+                <img
+                  class="w-full object-cover object-center"
+                  src="../assets/images/listingSide1.png"
+                  alt="listing photo"
+                />
+              </div>
+
+              <div
+                class="max-w-[252px] w-full rounded-[10px] overflow-hidden flex aspect-[2/1.8]"
+              >
+                <img
+                  class="w-full object-cover object-center"
+                  src="../assets/images/listingSide2.png"
+                  alt="listing photo"
+                />
+              </div>
+
+              <div
+                class="max-w-[252px] w-full rounded-[10px] overflow-hidden flex aspect-[2/1.8]"
+              >
+                <img
+                  class="w-full object-cover object-center"
+                  src="../assets/images/listingSide3.png"
+                  alt="listing photo"
+                />
+              </div>
+
+              <button
+                class="bg-primary rounded-[10px] w-full flex items-center justify-center"
+              >
+                <img
+                  class="w-[10px] rotate-180 lg:rotate-[270deg]"
+                  src="../assets/vectors/arrowLeftWhiteShort.svg"
+                  alt=""
+                />
+              </button>
+            </div>
+          </div>
+
+          <!-- pricing/address -->
+          <div
+            class="flex flex-col justify-between gap-3 text-secondary flex-grow lg:max-w-[594px] w-full"
+          >
+            <!-- labels/nav -->
+            <div
+              class="flex sm:flex-row flex-col-reverse sm:items-center gap-[14px] sm:justify-between"
+            >
+              <!-- labels -->
+              <div class="flex items-center gap-[14px]">
+                <div class="rounded-md bg-[#646BD6] w-[110px] text-center p-1">
+                  <span class="text-[13px] font-medium text-white">R2SA</span>
+                </div>
+
+                <div class="relative bg-[#767f97] rounded-[5px] p-1 pl-4 pr-10">
+                  <span
+                    class="text-[13px] text-white font-medium whitespace-nowrap"
+                    >Off Market</span
+                  >
+                  <div
+                    class="absolute top-1/2 -translate-y-1/2 -right-3 w-[43px] h-[43px]"
+                  >
+                    <img
+                      class="w-full"
+                      src="../assets/vectors/offGrey.svg"
+                      alt="off"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- nav next/prev -->
+              <div class="flex items-center gap-3 sm:justify-between">
+                <button class="flex items-center gap-1.5">
+                  <img
+                    class="w-[10px] h-[11px]"
+                    src="../assets/vectors/arrowLeftSecondaryShort.svg"
+                    alt="arrowLeft"
+                  />
+                  <span
+                    class="font-medium text-secondary text-[12px] whitespace-nowrap"
+                    >Previous Property</span
+                  >
+                </button>
+
+                <button class="flex items-center gap-1.5">
+                  <span
+                    class="font-medium text-secondary text-[12px] whitespace-nowrap"
+                    >Next Property</span
+                  >
+                  <img
+                    class="w-[10px] h-[11px] rotate-180"
+                    src="../assets/vectors/arrowLeftSecondaryShort.svg"
+                    alt="arrowLeft"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <!-- title/price -->
+            <div class="flex flex-col py-4">
+              <!-- title -->
+              <h1
+                class="text-[26px] sm:text-[30px] md:text-[34px] lg:text-[40px] font-medium"
+              >
+                Redcliffe, Bristol, BS1
+              </h1>
+
+              <!-- price/downloads -->
+              <div
+                class="flex sm:flex-row flex-col sm:items-center sm:justify-between sm:gap-0 gap-3"
+              >
+                <span
+                  class="text-primary text-[20px] sm:text-[22px] md:text-[26px] lg:text-[30px]"
+                  >£6,000</span
+                >
+
+                <div class="flex flex-col xs:flex-row xs:items-center gap-5">
+                  <button class="flex items-center gap-2">
+                    <img
+                      src="../assets/vectors/downloadSecondary.svg"
+                      alt="download"
+                    />
+                    <span class="text-[12px] font-medium text-left"
+                      >Download Offer As PDF</span
+                    >
+                  </button>
+
+                  <button class="flex items-center gap-2">
+                    <img
+                      src="../assets/vectors/downloadSecondary.svg"
+                      alt="download"
+                    />
+                    <span class="text-[12px] font-medium text-left"
+                      >Floor Plan</span
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- stats -->
+            <div
+              class="border-y border-secondary py-3 grid-cols-1 xs:grid-cols-2 grid sm:grid-cols-[82px_125px_142px_78px] gap-3 justify-between items-center"
+            >
+              <div class="flex flex-col">
+                <span class="text-[11px] font-extralight text-lightBlue"
+                  >Cashflow pcm</span
+                >
+                <span class="text-[17px] font-medium">£740</span>
+              </div>
+
+              <div class="flex flex-col">
+                <span class="text-[11px] font-extralight text-lightBlue"
+                  >Return On Investment</span
+                >
+                <span class="text-[17px] font-medium">344%</span>
+              </div>
+
+              <div class="flex flex-col">
+                <span class="text-[11px] font-extralight text-lightBlue"
+                  >Profitable At Occupancy</span
+                >
+                <span class="text-[17px] font-medium">50%</span>
+              </div>
+
+              <button
+                class="flex items-center justify-center gap-2 text-[11px] bg-secondary rounded-[7px] py-1 px-3 text-white"
+              >
+                <img
+                  class="w-[13px]"
+                  src="../assets/vectors/bookmark.svg"
+                  alt="bookmark"
+                />
+                <span class="mt-[2px]">Save</span>
+              </button>
+            </div>
+
+            <!-- sourcer info -->
+            <div
+              class="px-[22px] py-[26px] bg-lightGrey rounded-[10px] relative group"
+            >
+              <div
+                class="absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 flex flex-col gap-1 w-full text-center group-hover:opacity-0"
+              >
+                <span class="text-[15px] font-medium"
+                  >Spend Credit To View Sourcer Information</span
+                >
+                <span class="text-[11px] font-extralight text-lightBlue"
+                  >(1 Credit)</span
+                >
+              </div>
+              <div
+                class="flex flex-col sm:flex-row gap-[20px] blur-[20px] transition-all group-hover:blur-0 relative"
+              >
+                <!-- image -->
+                <div class="w-[82px] h-[82px] flex">
+                  <img
+                    class="w-full object-center object-cover"
+                    src="../assets/images/sourcer.png"
+                    alt="sourcer"
+                  />
+                </div>
+
+                <!-- info -->
+                <div class="flex flex-col flex-grow">
+                  <div class="flex justify-between">
+                    <span class="text-[17px] font-medium"
+                      >Sourcer Information</span
+                    >
+                    <button
+                      class="text-[11px] py-1 px-4 bg-secondary rounded-[7px] text-white font-medium hidden sm:flex"
+                    >
+                      View Full Profile
+                    </button>
+                  </div>
+
+                  <span class="text-[19px]">Dave Hawkins</span>
+                  <span class="text-[13px] font-medium"
+                    >Director at Hawkins Properties</span
+                  >
+
+                  <!-- verifications -->
+                  <div class="flex flex-wrap gap-2.5 mt-3">
+                    <div
+                      class="relative rounded-xl w-fit pl-3 pr-8 bg-[#F8B84E] flex py-1"
+                    >
+                      <span class="text-white font-normal text-[10px]"
+                        >Compliance Verified</span
+                      >
+                      <img
+                        class="absolute w-[34px] h-[34px] top-1/2 -translate-y-1/2 -right-1.5"
+                        src="../assets/vectors/goldCheck.svg"
+                        alt="gold check"
+                      />
+                    </div>
+                    <div
+                      class="relative rounded-xl w-fit pl-3 pr-8 bg-[#F8B84E] flex py-1"
+                    >
+                      <span class="text-white font-normal text-[10px]"
+                        >ID Verified</span
+                      >
+                      <img
+                        class="absolute w-[34px] h-[34px] top-1/2 -translate-y-1/2 -right-1.5"
+                        src="../assets/vectors/idVerified.svg"
+                        alt="idVerified"
+                      />
+                    </div>
+                    <div
+                      class="relative rounded-xl w-fit pl-3 pr-8 bg-[#BEBEBE] flex py-1"
+                    >
+                      <span class="text-white font-normal text-[10px]"
+                        >Compliant</span
+                      >
+                      <img
+                        class="absolute w-[29px] h-[29px] top-1/2 -translate-y-1/2 -right-1.5"
+                        src="../assets/vectors/grayCheck.svg"
+                        alt="compilant"
+                      />
+                    </div>
+                  </div>
+
+                  <button
+                    class="text-[11px] py-1 px-4 bg-secondary rounded-[7px] text-white font-medium mt-5 block sm:hidden"
+                  >
+                    View Full Profile
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- init investment -->
+            <div
+              class="rounded-[10px] bg-secondary text-white pt-6 pb-[12.5px] px-[10px]"
+            >
+              <!-- title -->
+              <span class="text-[17px] font-medium px-2"
+                >Initial Investment</span
+              >
+
+              <!-- table -->
+              <div
+                class="flex xs:flex-row flex-col gap-1 xs:gap-[38px] mt-4 px-2"
+              >
+                <div class="xs:w-[40%] flex flex-col gap-1">
+                  <div class="w-full flex items-center justify-between">
+                    <span class="text-[15px] font-medium">Refurbishment</span>
+                    <span class="text-[15px] font-extralight">0</span>
+                  </div>
+
+                  <div class="w-full flex items-center justify-between">
+                    <span class="text-[15px] font-medium">Staging</span>
+                    <span class="text-[15px] font-extralight">500</span>
+                  </div>
+
+                  <div class="w-full flex items-center justify-between">
+                    <span class="text-[15px] font-medium">Furniture</span>
+                    <span class="text-[15px] font-extralight">2500</span>
+                  </div>
+                </div>
+
+                <div class="xs:w-[60%] flex flex-col gap-1">
+                  <div class="w-full flex items-center justify-between">
+                    <span class="text-[15px] font-medium"
+                      >Landlord Deposit
+                    </span>
+                    <span class="text-[15px] font-extralight">0</span>
+                  </div>
+
+                  <div class="w-full flex items-center justify-between">
+                    <span class="text-[15px] font-medium">Sourcing Fee </span>
+                    <span class="text-[15px] font-extralight">500</span>
+                  </div>
+
+                  <div
+                    class="w-full flex items-center justify-between text-secondary bg-white px-1 rounded-[5px]"
+                  >
+                    <span class="text-[15px] font-medium"
+                      >Total Investment Required
+                    </span>
+                    <span class="text-[15px] font-extralight">2500</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- button -->
+              <button
+                class="bg-primary rounded-[7px] w-full p-3 text-secondary mt-[25px]"
+              >
+                <span class="text-[15px] font-medium">Contact Sourcer</span>
+                <span class="text-[11px] font-extralight">(1 Credit)</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- details -->
+    <section class="mt-[59px] mb-[30px]">
+      <div class="customContainer">
+        <div class="flex xl:flex-row flex-col gap-[34.5px] xl:gap-[59px]">
+          <!-- description/location -->
+          <div
+            class="flex flex-col md:flex-row gap-[34.5px] max-w-full xl:max-w-[983.5px] w-full"
+          >
+            <!-- description -->
+            <div
+              class="md:max-w-full xl:max-w-[498px] w-full rounded-[10px] overflow-hidden bg-lightGrey px-[15px] xs:px-[45px] py-[20px] xs:py-[36px] flex flex-col text-secondary"
+            >
+              <!-- title -->
+              <div class="flex flex-col gap-2">
+                <span class="text-[17px] md:text-[20px] font-medium"
+                  >Property Description</span
+                >
+                <p class="text-[15px]">
+                  Welcome to this charming apartment nestled in the heart of
+                  Redcliffe, Bristol. This delightful two-bedroom, one-bathroom
+                  residence offers an idyllic urban retreat that seamlessly
+                  combines comfort, convenience, and a touch of nature.
+                  <span class="uppercase font-medium cursor-pointer"
+                    >Read More</span
+                  >
+                </p>
+              </div>
+
+              <!-- specs -->
+              <div class="flex flex-col gap-2 mt-20">
+                <span class="text-[17px] md:text-[20px] font-medium"
+                  >Property Specifications</span
+                >
+
+                <div class="flex flex-col mt-1 gap-1">
+                  <div
+                    class="flex flex-col xs:flex-row xs:items-center justify-between"
+                  >
+                    <div class="flex items-center gap-2">
+                      <div
+                        class="w-[20px] h-[20px] flex items-center justify-center"
+                      >
+                        <img
+                          src="../assets/vectors/homeSecondary.svg"
+                          alt="home"
+                        />
+                      </div>
+                      <span class="font-medium text-[15px]">Property Type</span>
+                    </div>
+                    <div class="w-full xs:w-[96px] ml-[28px] xs:ml-0">
+                      <span class="font-extralight text-[15px]">Apartment</span>
+                    </div>
+                  </div>
+
+                  <div
+                    class="flex flex-col xs:flex-row xs:items-center justify-between"
+                  >
+                    <div class="flex items-center gap-2">
+                      <div
+                        class="w-[20px] h-[20px] flex items-center justify-center"
+                      >
+                        <img
+                          src="../assets/vectors/locationSecondary.svg"
+                          alt="location"
+                        />
+                      </div>
+                      <span class="font-medium text-[15px]">Location</span>
+                    </div>
+                    <div class="w-full xs:w-[96px] ml-[28px] xs:ml-0">
+                      <span class="font-extralight text-[15px]">BS1</span>
+                    </div>
+                  </div>
+
+                  <div
+                    class="flex flex-col xs:flex-row xs:items-center justify-between"
+                  >
+                    <div class="flex items-center gap-2">
+                      <div
+                        class="w-[20px] h-[20px] flex items-center justify-center"
+                      >
+                        <img
+                          src="../assets/vectors/penSecondary.svg"
+                          alt="pen"
+                        />
+                      </div>
+                      <span class="font-medium text-[15px]"
+                        >Length of Contract</span
+                      >
+                    </div>
+                    <div class="w-full xs:w-[96px] ml-[28px] xs:ml-0">
+                      <span class="font-extralight text-[15px]">3</span>
+                    </div>
+                  </div>
+
+                  <div
+                    class="flex flex-col xs:flex-row xs:items-center justify-between"
+                  >
+                    <div class="flex items-center gap-2">
+                      <div
+                        class="w-[20px] h-[20px] flex items-center justify-center"
+                      >
+                        <img
+                          src="../assets/vectors/bedSecondary.svg"
+                          alt="bed"
+                        />
+                      </div>
+                      <span class="font-medium text-[15px]">Bedrooms</span>
+                    </div>
+                    <div class="w-full xs:w-[96px] ml-[28px] xs:ml-0">
+                      <span class="font-extralight text-[15px]">2</span>
+                    </div>
+                  </div>
+
+                  <div
+                    class="flex flex-col xs:flex-row xs:items-center justify-between"
+                  >
+                    <div class="flex items-center gap-2">
+                      <div
+                        class="w-[20px] h-[20px] flex items-center justify-center"
+                      >
+                        <img
+                          src="../assets/vectors/bathSecondary.svg"
+                          alt="bath"
+                        />
+                      </div>
+                      <span class="font-medium text-[15px]">Bathrooms</span>
+                    </div>
+                    <div class="w-full xs:w-[96px] ml-[28px] xs:ml-0">
+                      <span class="font-extralight text-[15px]">1</span>
+                    </div>
+                  </div>
+
+                  <div
+                    class="flex flex-col xs:flex-row xs:items-center justify-between"
+                  >
+                    <div class="flex items-center gap-2">
+                      <div
+                        class="w-[20px] h-[20px] flex items-center justify-center"
+                      >
+                        <img
+                          src="../assets/vectors/couchSecondary.svg"
+                          alt="couch"
+                        />
+                      </div>
+                      <span class="font-medium text-[15px]">Living Rooms</span>
+                    </div>
+                    <div class="w-full xs:w-[96px] ml-[28px] xs:ml-0">
+                      <span class="font-extralight text-[15px]">1</span>
+                    </div>
+                  </div>
+
+                  <div
+                    class="flex flex-col xs:flex-row xs:items-center justify-between"
+                  >
+                    <div class="flex items-center gap-2">
+                      <div
+                        class="w-[20px] h-[20px] flex items-center justify-center"
+                      >
+                        <img
+                          src="../assets/vectors/epcSecondary.svg"
+                          alt="epc"
+                        />
+                      </div>
+                      <span class="font-medium text-[15px]">EPC</span>
+                    </div>
+                    <div class="w-full xs:w-[96px] ml-[28px] xs:ml-0">
+                      <span class="font-extralight text-[15px]">C</span>
+                    </div>
+                  </div>
+
+                  <div
+                    class="flex flex-col xs:flex-row xs:items-center justify-between"
+                  >
+                    <div class="flex items-center gap-2">
+                      <div
+                        class="w-[20px] h-[20px] flex items-center justify-center"
+                      >
+                        <img src="../assets/vectors/garden.svg" alt="garden" />
+                      </div>
+                      <span class="font-medium text-[15px]">Garden</span>
+                    </div>
+                    <div class="w-full xs:w-[96px] ml-[28px] xs:ml-0">
+                      <span class="font-extralight text-[15px]">Yes</span>
+                    </div>
+                  </div>
+
+                  <div
+                    class="flex flex-col xs:flex-row xs:items-center justify-between"
+                  >
+                    <div class="flex items-center gap-2">
+                      <div
+                        class="w-[20px] h-[20px] flex items-center justify-center"
+                      >
+                        <img
+                          src="../assets/vectors/balconySecondary.svg"
+                          alt="balcony"
+                        />
+                      </div>
+                      <span class="font-medium text-[15px]"
+                        >Balcony / Terrace</span
+                      >
+                    </div>
+                    <div class="w-full xs:w-[96px] ml-[28px] xs:ml-0">
+                      <span class="font-extralight text-[15px]">No</span>
+                    </div>
+                  </div>
+
+                  <div
+                    class="flex flex-col xs:flex-row xs:items-center justify-between"
+                  >
+                    <div class="flex items-center gap-2">
+                      <div
+                        class="w-[20px] h-[20px] flex items-center justify-center"
+                      >
+                        <img
+                          src="../assets/vectors/carSecondary.svg"
+                          alt="car"
+                        />
+                      </div>
+                      <span class="font-medium text-[15px]">Parking</span>
+                    </div>
+                    <div class="w-full xs:w-[96px] ml-[28px] xs:ml-0">
+                      <span class="font-extralight text-[15px]">On Road</span>
+                    </div>
+                  </div>
+
+                  <div
+                    class="flex flex-col xs:flex-row xs:items-center justify-between"
+                  >
+                    <div class="flex items-center gap-2">
+                      <div
+                        class="w-[20px] h-[20px] flex items-center justify-center"
+                      >
+                        <img
+                          src="../assets/vectors/keySecondary.svg"
+                          alt="key"
+                        />
+                      </div>
+                      <span class="font-medium text-[15px]"
+                        >Property Availability</span
+                      >
+                    </div>
+                    <div class="w-full xs:w-[96px] ml-[28px] xs:ml-0">
+                      <span class="font-extralight text-[15px]"
+                        >Immediately</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- location -->
+            <div
+              class="md:max-w-[454px] w-full rounded-[10px] overflow-hidden bg-secondary p-[13px] text-secondary flex flex-col gap-[22px]"
+            >
+              <div
+                class="flex flex-col w-full rounded-[10px] bg-white px-[13px] pt-[20px]"
+              >
+                <!-- switch -->
+                <div
+                  class="rounded-md border-2 border-secondary bg-white text-secondary flex max-w-[280px] w-full"
+                >
+                  <button
+                    class="text-white bg-secondary rounded-[4px] text-[15px] py-1 px-5"
+                  >
+                    Education
+                  </button>
+                  <button class="rounded-[4px] text-[15px] py-1 px-5">
+                    Transportation
+                  </button>
+                </div>
+
+                <!-- distance -->
+                <div class="flex flex-col gap-4 mt-6">
+                  <span class="text-[15px] font-medium"
+                    >Education Facilities</span
+                  >
+
+                  <div
+                    class="flex flex-col gap-3 pb-6 border-b border-secondary"
+                  >
+                    <div class="flex items-center gap-[5px]">
+                      <span
+                        class="text-[15px] font-normal text-lightBlue w-[130px]"
+                        >Schools</span
+                      >
+                      <span
+                        class="text-[15px] font-extralight text-lightBlue w-[200px]"
+                        >Elmwood Junior School</span
+                      >
+                      <span class="text-[15px] font-extralight text-lightBlue">
+                        (0.3km)
+                      </span>
+                    </div>
+                    <div class="flex items-center gap-[5px]">
+                      <span
+                        class="text-[15px] font-normal text-lightBlue w-[130px]"
+                      ></span>
+                      <span
+                        class="text-[15px] font-extralight text-lightBlue w-[200px]"
+                        >Sainsbury's</span
+                      >
+                      <span class="text-[15px] font-extralight text-lightBlue">
+                        (0.5km)
+                      </span>
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-3 pb-6">
+                    <div class="flex items-center gap-[5px]">
+                      <span
+                        class="text-[15px] font-normal text-lightBlue w-[130px]"
+                        >University</span
+                      >
+                      <span
+                        class="text-[15px] font-extralight text-lightBlue w-[200px]"
+                        >Pheobe Street</span
+                      >
+                      <span class="text-[15px] font-extralight text-lightBlue">
+                        (0.3km)
+                      </span>
+                    </div>
+                    <div class="flex items-center gap-[5px]">
+                      <span
+                        class="text-[15px] font-normal text-lightBlue w-[130px]"
+                      ></span>
+                      <span
+                        class="text-[15px] font-extralight text-lightBlue w-[200px]"
+                        >Sainsbury's</span
+                      >
+                      <span class="text-[15px] font-extralight text-lightBlue">
+                        (0.5km)
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- map -->
+              <div
+                class="relative w-full bg-white aspect-[1/.75] rounded-[10px] overflow-hidden flex-grow flex"
+              >
+                <img
+                  class="w-full object-cover object-center"
+                  src="../assets/images/listingMap.png"
+                  alt="map"
+                />
+
+                <div
+                  class="absolute flex gap-3 p-2 rounded-[5px] bg-white top-3 left-3 max-w-[197px] w-full items-start"
+                >
+                  <img
+                    class="pt-[5px]"
+                    src="../assets/vectors/locationSecondary.svg"
+                    alt="location"
+                  />
+
+                  <div>
+                    <span class="text-[15px] font-extralight"
+                      >Redcliffe Bristol BS1</span
+                    >
+                    <p class="text-[15px] font-extralight">
+                      Address, Address, ABC 123
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- specs -->
+          <div
+            class="flex flex-col gap-4 text-secondary lg:max-w-full xl:max-w-[594px] w-full"
+          >
+            <!-- table -->
+            <div
+              class="flex flex-col gap-3 rounded-[10px] bg-lightGrey p-[15px] sm:p-[23px] md:p-[30px]"
+            >
+              <span class="text-[17px] md:text-[20px] font-medium"
+                >Financial Information</span
+              >
+
+              <!-- table -->
+              <div class="flex flex-col gap-1 overflow-x-auto">
+                <div class="flex flex-col sm:flex-row sm:items-center">
+                  <span class="w-[320px] lg:w-[50%] xl:w-[320px] text-[15px] font-medium">
+                    Average Night Rate
+                  </span>
+                  <span class="text-[15px] font-extralight"> 110 </span>
+                </div>
+                <div class="flex flex-col sm:flex-row sm:items-center">
+                  <span class="w-[320px] lg:w-[50%] xl:w-[320px] text-[15px] font-medium">
+                    Revenue at 70% Occupancy
+                  </span>
+                  <span class="text-[15px] font-extralight"> 2310 </span>
+                </div>
+                <div class="flex flex-col sm:flex-row sm:items-center">
+                  <span class="w-[320px] lg:w-[50%] xl:w-[320px] font-medium">
+                    Rent to Landlord
+                  </span>
+                  <span class="text-[15px] font-extralight text-danger">
+                    950
+                  </span>
+                </div>
+                <div class="flex flex-col sm:flex-row sm:items-center">
+                  <span class="w-[320px] lg:w-[50%] xl:w-[320px] font-medium">
+                    Council Tax
+                  </span>
+                  <span class="text-[15px] font-extralight text-danger">
+                    180
+                  </span>
+                </div>
+                <div class="flex flex-col sm:flex-row sm:items-center">
+                  <span class="w-[320px] lg:w-[50%] xl:w-[320px] font-medium">
+                    Utility Bills (est.)
+                  </span>
+                  <span class="text-[15px] font-extralight text-danger">
+                    250
+                  </span>
+                </div>
+                <div class="flex flex-col sm:flex-row sm:items-center">
+                  <span class="w-[320px] lg:w-[50%] xl:w-[320px] font-medium">
+                    Service Charge
+                  </span>
+                  <span class="text-[15px] font-extralight text-danger">
+                    110
+                  </span>
+                </div>
+                <div class="flex flex-col sm:flex-row sm:items-center">
+                  <span class="w-[320px] lg:w-[50%] xl:w-[320px] font-medium">
+                    Insurance
+                  </span>
+                  <span class="text-[15px] font-extralight text-danger">
+                    35
+                  </span>
+                </div>
+                <div class="flex flex-col sm:flex-row sm:items-center">
+                  <span class="w-[320px] lg:w-[50%] xl:w-[320px] font-medium">
+                    Broadband
+                  </span>
+                  <span class="text-[15px] font-extralight text-danger">
+                    45
+                  </span>
+                </div>
+                <div class="flex flex-col sm:flex-row sm:items-center">
+                  <span class="w-[320px] lg:w-[50%] xl:w-[320px] font-medium">
+                    Furniture Lease
+                  </span>
+                  <span class="text-[15px] font-extralight"> 0 </span>
+                </div>
+                <div class="flex flex-col sm:flex-row sm:items-center">
+                  <span class="w-[320px] lg:w-[50%] xl:w-[320px] font-medium">
+                    TOTAL costs monthly
+                  </span>
+                  <span class="text-[15px] font-extralight"> 1570 </span>
+                </div>
+                <div class="flex flex-col sm:flex-row sm:items-center">
+                  <span class="w-[320px] lg:w-[50%] xl:w-[320px] font-medium">
+                    Gross Profit
+                    <span class="font-extralight">(self-managed)</span> pcm
+                  </span>
+                  <span class="text-[15px] font-extralight"> 740 </span>
+                </div>
+                <div class="flex flex-col sm:flex-row sm:items-center">
+                  <span class="w-[320px] lg:w-[50%] xl:w-[320px] font-medium">
+                    Yearly Profit
+                  </span>
+                  <span class="text-[15px] font-extralight"> 8880 </span>
+                </div>
+                <div class="flex flex-col sm:flex-row sm:items-center">
+                  <span class="w-[320px] lg:w-[50%] xl:w-[320px] font-medium">
+                    Revenue
+                    <span class="font-extralight"
+                      >(for the length of contract)</span
+                    >
+                  </span>
+                  <span class="text-[15px] font-extralight"> 26640 </span>
+                </div>
+                <div class="flex flex-col sm:flex-row sm:items-center">
+                  <span class="w-[320px] lg:w-[50%] xl:w-[320px] font-medium">
+                    ROI
+                    <span class="font-extralight"
+                      >(for the length of contract)</span
+                    >
+                  </span>
+                  <span class="text-[15px] font-extralight"> 26640 </span>
+                </div>
+                <div class="flex flex-col sm:flex-row sm:items-center">
+                  <span class="w-[320px] lg:w-[50%] xl:w-[320px] text-[15px] font-medium">
+                    ROI %
+                    <span class="font-extralight"
+                      >(For the length of contract)</span
+                    >
+                  </span>
+                  <span class="text-[15px] font-extralight">344% </span>
+                </div>
+                <div class="flex flex-col sm:flex-row sm:items-center">
+                  <span class="w-[320px] lg:w-[50%] xl:w-[320px] font-medium">
+                    ROI In Year One
+                  </span>
+                  <span class="text-[15px] font-extralight">2880 </span>
+                </div>
+                <div class="flex flex-col sm:flex-row sm:items-center">
+                  <span class="w-[320px] lg:w-[50%] xl:w-[320px] font-medium">
+                    ROI In Year One %
+                  </span>
+                  <span class="text-[15px] font-extralight">48% </span>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="rounded-[10px] bg-[#435485] p-[22px] flex gap-7 relative"
+            >
+              <!-- flag -->
+              <div
+                class="rounded-[50%] border-[4px] border-white flex items-center justify-center w-[80px] h-[80px] flex-shrink-0"
+              >
+                <img src="../assets/vectors/whiteFlagLg.svg" alt="flag" />
+              </div>
+
+              <!-- text -->
+              <div class="flex flex-col gap-1 text-white">
+                <button class="flex items-center gap-4">
+                  <span class="text-[17px] md:text-[20px] font-medium"
+                    >Report Listing</span
+                  >
+                  <img
+                    src="../assets/vectors/arrowRightShort.svg"
+                    alt="arrow"
+                  />
+                </button>
+                <p class="text-[15px] font-extralight lg:w-[71%]">
+                  If you believe any of the information provided is false or
+                  misleading, report it to our team who will assess the listing.
+                </p>
+              </div>
+
+              <button class="absolute top-5 right-5">
+                <img src="../assets/vectors/info2.svg" alt="info" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- help btns -->
+    <section>
+      <div class="customContainer">
+        <div
+          class="rounded-[17px] bg-secondary text-secondary grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 py-[26px] px-[19px] sm:px-[49px]"
+        >
+          <button
+            class="rounded-[7px] bg-white w-full text-[15px] font-medium py-[17px] md:py-[26px]"
+          >
+            Financial Support
+          </button>
+          <button
+            class="rounded-[7px] bg-white w-full text-[15px] font-medium py-[17px] md:py-[26px]"
+          >
+            Legal Advice
+          </button>
+          <button
+            class="rounded-[7px] bg-white w-full text-[15px] font-medium py-[17px] md:py-[26px]"
+          >
+            Book A Consultation
+          </button>
+          <button
+            class="rounded-[7px] bg-primary text-secondary w-full text-[15px] font-medium py-[17px] md:py-[26px] flex items-center gap-3 justify-center"
+          >
+            Contact Sourcer
+            <span class="font-extralight text-[12px]">(1 Credit)</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- disclaimer -->
+    <section class="my-[25px]">
+      <div class="customContainer">
+        <div class="flex flex-col gap-2 text-secondary">
+          <span class="text-[20px] font-medium">Disclaimer</span>
+
+          <p class="text-[15px] font-extralight">
+            This website is owned and operated by Aquila Connect Ltd. While we
+            strive to provide platform to display full, correct and up-to-date
+            information, we would like to emphasize that all property deals here
+            are listed by individual sourcers and it is their sole
+            responsibility to provide honest, true and full information about
+            every deal they list on this platform. Aquila Connect Ltd. does not
+            assume any responsibility or liability for any potential errors,
+            omissions, or inaccuracies present in the listings provided by the
+            sourcer. <button class="font-medium">READ MORE</button>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- comparables -->
+    <section class="my-[70px]">
+      <div class="customContainer">
+        <div class="flex flex-col gap-8 text-secondary">
+          <!-- title/switch -->
+          <div class="flex items-center justify-between md:flex-row flex-col gap-3 ">
+            <h5 class="text-[30px] md:text-[40px] font-semibold">Comparables</h5>
+
+            <div class="flex items-center bg-secondary text-white rounded-[7px] overflow-hidden">
+              <button class="text-[15px] bg-secondary rounded-[7px] w-[120px] xs:w-[185px] py-[14px] font-medium">Sold</button>
+              <button class="text-[15px] bg-primary rounded-[7px] w-[120px] xs:w-[185px] py-[14px] font-medium">Rented</button>
+
+            </div>
+          </div>
+
+          <!-- cards -->
+          <div class="grid gap-11 sm:grid-cols-2 lg:grid-cols-3">
+            <!-- card #1 -->
+            <div class="flex flex-col rounded-[10px] overflow-hidden shadow-lg">
+              <!-- img -->
+              <div class="h-[230px] flex">
+                <img class="w-full object-cover object-center" src="../assets/images/house.png" alt="card photo">
+              </div>
+
+              <!-- info -->
+              <div class="flex flex-col gap-7 py-[28px] px-[20px] sm:px-[34px]">
+                <div class="flex items-center gap-3 w-full">
+                  <div class="flex flex-col w-[40%]">
+                    <span class="text-[13px] font-extralight">Rent PMC</span>
+                    <span class="text-[21px] font-medium">£1250</span>
+                  </div>
+
+                  <div class="flex flex-col">
+                    <span class="text-[13px] font-extralight">Property Value</span>
+                    <span class="text-[21px] font-medium">£200,000</span>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-5 flex-wrap">
+                  <div class="flex items-center gap-2">
+                    <div class="bg-primary rounded-md w-[29px] h-[29px] flex items-center justify-center flex-shrink-0">
+                      <img src="../assets/vectors/home.svg" alt="home">
+                    </div>
+                    <span class="text-[14px] font-light">Dettached House</span>
+                  </div>
+
+                  <div class="flex items-center gap-2">
+                    <div class="bg-primary rounded-md w-[29px] h-[29px] flex items-center justify-center flex-shrink-0">
+                      <img src="../assets/vectors/expand.svg" alt="expand">
+                    </div>
+                    <span class="text-[14px] font-light">1492 Sq Ft</span>
+                  </div>
+
+                  <div class="flex items-center gap-2">
+                    <div class="bg-primary rounded-md w-[29px] h-[29px] flex items-center justify-center flex-shrink-0">
+                      <img src="../assets/vectors/bedWhite.svg" alt="bed">
+                    </div>
+                    <span class="text-[14px] font-light">3</span>
+                  </div>
+
+                  <div class="flex items-center gap-2">
+                    <div class="bg-primary rounded-md w-[29px] h-[29px] flex items-center justify-center flex-shrink-0">
+                      <img src="../assets/vectors/bathWhite.svg" alt="bath">
+                    </div>
+                    <span class="text-[14px] font-light">2</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card #2 -->
+            <div class="flex flex-col rounded-[10px] overflow-hidden shadow-lg">
+              <!-- img -->
+              <div class="h-[230px] flex">
+                <img class="w-full object-cover object-center" src="../assets/images/house.png" alt="card photo">
+              </div>
+
+              <!-- info -->
+              <div class="flex flex-col gap-7 py-[28px] px-[20px] sm:px-[34px]">
+                <div class="flex items-center gap-3 w-full">
+                  <div class="flex flex-col w-[40%]">
+                    <span class="text-[13px] font-extralight">Rent PMC</span>
+                    <span class="text-[21px] font-medium">£1250</span>
+                  </div>
+
+                  <div class="flex flex-col">
+                    <span class="text-[13px] font-extralight">Property Value</span>
+                    <span class="text-[21px] font-medium">£200,000</span>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-5 flex-wrap">
+                  <div class="flex items-center gap-2">
+                    <div class="bg-primary rounded-md w-[29px] h-[29px] flex items-center justify-center flex-shrink-0">
+                      <img src="../assets/vectors/home.svg" alt="home">
+                    </div>
+                    <span class="text-[14px] font-light">Dettached House</span>
+                  </div>
+
+                  <div class="flex items-center gap-2">
+                    <div class="bg-primary rounded-md w-[29px] h-[29px] flex items-center justify-center flex-shrink-0">
+                      <img src="../assets/vectors/expand.svg" alt="expand">
+                    </div>
+                    <span class="text-[14px] font-light">1492 Sq Ft</span>
+                  </div>
+
+                  <div class="flex items-center gap-2">
+                    <div class="bg-primary rounded-md w-[29px] h-[29px] flex items-center justify-center flex-shrink-0">
+                      <img src="../assets/vectors/bedWhite.svg" alt="bed">
+                    </div>
+                    <span class="text-[14px] font-light">3</span>
+                  </div>
+
+                  <div class="flex items-center gap-2">
+                    <div class="bg-primary rounded-md w-[29px] h-[29px] flex items-center justify-center flex-shrink-0">
+                      <img src="../assets/vectors/bathWhite.svg" alt="bath">
+                    </div>
+                    <span class="text-[14px] font-light">2</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card #3 -->
+            <div class="flex flex-col rounded-[10px] overflow-hidden shadow-lg">
+              <!-- img -->
+              <div class="h-[230px] flex">
+                <img class="w-full object-cover object-center" src="../assets/images/house.png" alt="card photo">
+              </div>
+
+              <!-- info -->
+              <div class="flex flex-col gap-7 py-[28px] px-[20px] sm:px-[34px]">
+                <div class="flex items-center gap-3 w-full">
+                  <div class="flex flex-col w-[40%]">
+                    <span class="text-[13px] font-extralight">Rent PMC</span>
+                    <span class="text-[21px] font-medium">£1250</span>
+                  </div>
+
+                  <div class="flex flex-col">
+                    <span class="text-[13px] font-extralight">Property Value</span>
+                    <span class="text-[21px] font-medium">£200,000</span>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-5 flex-wrap">
+                  <div class="flex items-center gap-2">
+                    <div class="bg-primary rounded-md w-[29px] h-[29px] flex items-center justify-center flex-shrink-0">
+                      <img src="../assets/vectors/home.svg" alt="home">
+                    </div>
+                    <span class="text-[14px] font-light">Dettached House</span>
+                  </div>
+
+                  <div class="flex items-center gap-2">
+                    <div class="bg-primary rounded-md w-[29px] h-[29px] flex items-center justify-center flex-shrink-0">
+                      <img src="../assets/vectors/expand.svg" alt="expand">
+                    </div>
+                    <span class="text-[14px] font-light">1492 Sq Ft</span>
+                  </div>
+
+                  <div class="flex items-center gap-2">
+                    <div class="bg-primary rounded-md w-[29px] h-[29px] flex items-center justify-center flex-shrink-0">
+                      <img src="../assets/vectors/bedWhite.svg" alt="bed">
+                    </div>
+                    <span class="text-[14px] font-light">3</span>
+                  </div>
+
+                  <div class="flex items-center gap-2">
+                    <div class="bg-primary rounded-md w-[29px] h-[29px] flex items-center justify-center flex-shrink-0">
+                      <img src="../assets/vectors/bathWhite.svg" alt="bath">
+                    </div>
+                    <span class="text-[14px] font-light">2</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+<!-- group-hover:hidden  -->

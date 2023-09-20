@@ -15,6 +15,12 @@ module.exports = {
     "./pages/blog.html",
     "./pages/blogPost.html",
     "./pages/getVerified.html",
+    "./pages/signIn.html",
+    "./pages/signUp.html",
+    "./pages/propertyListings.html",
+    "./pages/listing.html",
+    "./pages/dashboard.html",
+
   ],
   theme: {
     fontFamily: {
@@ -33,7 +39,9 @@ module.exports = {
       "secondary": "#16234A",
       "white": "#fff",
       "black": "#000",
-      "lightGrey": "#F9F9F9"
+      "lightGrey": "#F9F9F9",
+      "lightBlue": "#7D8395",
+      "danger": "#D83535"
     },
     extend: {},
   },
