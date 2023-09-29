@@ -108,9 +108,13 @@
     <!-- profile -->
     <section class="bg-secondary py-[29px]">
       <div class="customContainer">
-        <div class="flex items-center justify-between gap-3">
+        <div
+          class="flex md:flex-row flex-col items-center justify-between gap-3"
+        >
           <!-- avatar/name/username/level -->
-          <div class="flex md:flex-row flex-col md:items-center gap-7">
+          <div
+            class="flex xl:flex-row flex-col items-center md:items-start xl:items-center gap-7"
+          >
             <!-- avatar -->
             <div
               class="w-[139px] h-[139px] flex flex-shrink-0 rounded-[50%] border-2 border-white relative"
@@ -124,10 +128,11 @@
                 class="w-[24px] h-[24px] border border-white bg-[#17D938] top-3 right-[5px] rounded-[50%] absolute"
               ></div>
             </div>
-
             <!-- name/username/level -->
-            <div class="flex flex-col gap-5">
-              <div class="flex lg:flex-row flex-col gap-3 items-baseline">
+            <div class="flex items-center md:items-start flex-col gap-5">
+              <div
+                class="flex lg:flex-row flex-col gap-3 items-center md:items-baseline"
+              >
                 <h3
                   class="text-[24px] sm:text-[30px] md:text-[34px] lg:text-[39px] text-white"
                 >
@@ -137,8 +142,9 @@
                   >@DWay3000</span
                 >
               </div>
-
-              <div class="flex gap-6 items-baseline">
+              <div
+                class="flex md:flex-row flex-col gap-6 items-center md:items-baseline"
+              >
                 <div class="flex flex-col items-center gap-2">
                   <div
                     class="w-[274px] h-[19px] grid grid-cols-5 gap-1 rounded-[13px] overflow-hidden"
@@ -159,7 +165,6 @@
                     </button>
                   </div>
                 </div>
-
                 <div class="flex items-center gap-3">
                   <span
                     class="text-[#43B565] underline cursor-pointer text-[14px]"
@@ -172,13 +177,16 @@
               </div>
             </div>
           </div>
-
           <!-- verifications/credits count -->
-          <div class="flex items-center gap-5">
+          <div class="flex xl:flex-row flex-col items-center gap-5">
             <!-- verifications -->
-            <div class="flex gap-6">
+            <div
+              class="flex gap-6 md:flex-row flex-col items-center md:items-end"
+            >
               <!-- badges -->
-              <div class="flex xl:flex-row flex-col gap-5 flex-wrap w-fit xl:w-[400px] xl:justify-end md:items-end xl:items-start">
+              <div
+                class="flex xl:flex-row flex-col gap-5 flex-wrap w-fit xl:w-[400px] xl:justify-end items-center md:items-end xl:items-start"
+              >
                 <div
                   class="relative rounded-xl w-fit py-1 pl-3 pr-11 bg-[#F8B84E]"
                 >
@@ -216,7 +224,6 @@
                   />
                 </div>
               </div>
-
               <!-- add btn -->
               <div class="opacity-20 flex items-end">
                 <button
@@ -229,13 +236,15 @@
                 </button>
               </div>
             </div>
-
             <!-- credits count -->
             <div
-              class="bg-[#435485] rounded-[11px] w-[314px] py-[17px] px-[25px] flex flex-col text-white gap-1"
+              class="bg-[#435485] rounded-[11px] w-full xs:w-[314px] py-[17px] px-[25px] flex flex-col text-white gap-1"
             >
               <div class="flex items-baseline gap-2">
-                <span class="text-[28px] sm:text-[33px] md:text-[38px] lg:text-[44px] leading-[3rem]">08</span>
+                <span
+                  class="text-[28px] sm:text-[33px] md:text-[38px] lg:text-[44px] leading-[3rem]"
+                  >08</span
+                >
                 <span class="md:text-[21px]">Credits Remaining</span>
               </div>
               <p class="text-[13px]">Your Subscription renews on 12/7/2023</p>
@@ -249,116 +258,1871 @@
         </div>
       </div>
     </section>
-
     <!-- sidebar/main content -->
     <section>
-      <div class="max-w-[2500px] mx-auto relative">
-        <div class="w-[30%] bg-[#435485] h-[800px] absolute -z-10"></div>
+      <div class="max-w-[3000px] mx-auto relative">
+        <div
+          class="w-[40%] bg-[#435485] h-full absolute -z-10 hidden md:block"
+        ></div>
         <div class="customContainer">
           <div class="flex">
-            <aside class=" text-white w-[312px] h-[800px] relative">
+            <!-- sidebar -->
+            <aside
+              class="text-white w-[312px] relative hidden md:flex flex-col"
+            >
               <div class="flex flex-col py-[60px] pr-[60px] gap-7">
                 <!-- opened tab -->
-                <span class="text-[20px] sm:text-[22px] md:text-[26px] lg:text-[30px]">
+                <span
+                  class="text-[20px] sm:text-[22px] md:text-[26px] lg:text-[30px]"
+                >
                   Dashboard
                 </span>
-
                 <!-- select view -->
                 <div class="flex flex-col">
-                  <span class="text-primary text-[15px] md:text-[17px]">Switch View</span>
-                  <select class="rounded border border-primary w-full text-[15px] bg-[#435485] p-1">
+                  <span class="text-primary text-[15px] md:text-[17px]"
+                    >Switch View</span
+                  >
+                  <select
+                    class="rounded border border-primary w-full text-[15px] bg-[#435485] p-1"
+                  >
                     <option value="sourcer" selected>Sourcer</option>
                   </select>
                 </div>
-
                 <!-- list -->
                 <div class="flex flex-col gap-3">
-                  <button class="w-fit flex items-center gap-2">
+                  <button class="w-fit flex items-center gap-2 text-left">
                     <div class="w-[20px] h-[21px]">
-                      <img class="w-full" src="../assets/vectors/home.svg" alt="home">
+                      <img
+                        class="w-full"
+                        src="../assets/vectors/home.svg"
+                        alt="home"
+                      />
                     </div>
                     <span class="md:text-[17px]">Manage Listings</span>
                   </button>
-                  <button class="w-fit flex items-center gap-2">
+                  <button class="w-fit flex items-center gap-2 text-left">
                     <div class="w-[20px] h-[21px]">
-                      <img class="w-full" src="../assets/vectors/plusCircle.svg" alt="plus">
+                      <img
+                        class="w-full"
+                        src="../assets/vectors/plusCircle.svg"
+                        alt="plus"
+                      />
                     </div>
                     <span class="md:text-[17px]">Create New Listing</span>
                   </button>
-                  <button class="w-fit flex items-center gap-2">
+                  <button class="w-fit flex items-center gap-2 text-left">
                     <div class="w-[20px] h-[21px]">
-                      <img class="w-full" src="../assets/vectors/messaging.svg" alt="messaging">
+                      <img
+                        class="w-full"
+                        src="../assets/vectors/messaging.svg"
+                        alt="messaging"
+                      />
                     </div>
                     <span class="md:text-[17px]">Messages</span>
                   </button>
-                  <button class="w-fit flex items-center gap-2">
+                  <button class="w-fit flex items-center gap-2 text-left">
                     <div class="w-[20px] h-[21px]">
-                      <img class="w-full" src="../assets/vectors/questionCircle.svg" alt="question">
+                      <img
+                        class="w-full"
+                        src="../assets/vectors/questionCircle.svg"
+                        alt="question"
+                      />
                     </div>
                     <span class="md:text-[17px]">Listing Rules</span>
                   </button>
-                  <button class="w-fit flex items-center gap-2">
+                  <button class="w-fit flex items-center gap-2 text-left">
                     <div class="w-[20px] h-[21px]">
-                      <img class="w-full" src="../assets/vectors/starWhite.svg" alt="star">
+                      <img
+                        class="w-full"
+                        src="../assets/vectors/starWhite.svg"
+                        alt="star"
+                      />
                     </div>
                     <span class="md:text-[17px]">Your Aquila Reputation</span>
                   </button>
-                  <button class="w-fit flex items-center gap-2">
+                  <button class="w-fit flex items-center gap-2 text-left">
                     <div class="w-[20px] h-[21px]">
-                      <img class="w-full" src="../assets/vectors/bookmark.svg" alt="bookmark">
+                      <img
+                        class="w-full"
+                        src="../assets/vectors/bookmark.svg"
+                        alt="bookmark"
+                      />
                     </div>
                     <span class="md:text-[17px]">Bookmarks</span>
                   </button>
-                  <button class="w-fit flex items-center gap-2">
+                  <button class="w-fit flex items-center gap-2 text-left">
                     <div class="w-[20px] h-[21px]">
-                      <img class="w-full" src="../assets/vectors/archive.svg" alt="archive">
+                      <img
+                        class="w-full"
+                        src="../assets/vectors/archive.svg"
+                        alt="archive"
+                      />
                     </div>
                     <span class="md:text-[17px]">Archive</span>
                   </button>
-                  <button class="w-fit flex items-center gap-2">
+                  <button class="w-fit flex items-center gap-2 text-left">
                     <div class="w-[20px] h-[21px]">
-                      <img class="w-full" src="../assets/vectors/document.svg" alt="document">
+                      <img
+                        class="w-full"
+                        src="../assets/vectors/document.svg"
+                        alt="document"
+                      />
                     </div>
                     <span class="md:text-[17px]">Terms & Conditions</span>
                   </button>
-                  <button class="w-fit flex items-center gap-2">
+                  <button class="w-fit flex items-center gap-2 text-left">
                     <div class="w-[20px] h-[21px]">
-                      <img class="w-full" src="../assets/vectors/userAlt.svg" alt="user">
+                      <img
+                        class="w-full"
+                        src="../assets/vectors/userAlt.svg"
+                        alt="user"
+                      />
                     </div>
                     <span class="md:text-[17px]">My Profile</span>
                   </button>
                 </div>
-
                 <!-- sign out btn -->
                 <button class="flex items-center gap-2">
                   <div class="w-[20px] h-[21px]">
-                    <img class="w-full" src="../assets/vectors/exit.svg" alt="exit">
+                    <img
+                      class="w-full"
+                      src="../assets/vectors/exit.svg"
+                      alt="exit"
+                    />
                   </div>
                   <span class="md:text-[17px] text-primary">My Profile</span>
                 </button>
               </div>
-
               <!-- back btn -->
-              <button class="w-[48px] h-[48px] rounded-[50%] bg-primary flex items-center justify-center absolute top-[60px] -right-[24px]">
-                <img class="w-[26px]" src="../assets/vectors/arrowLeft.svg" alt="arrow left">
+              <button
+                class="w-[48px] h-[48px] rounded-[50%] bg-primary flex items-center justify-center absolute top-[60px] -right-[24px]"
+              >
+                <img
+                  class="w-[26px]"
+                  src="../assets/vectors/arrowLeft.svg"
+                  alt="arrow left"
+                />
               </button>
             </aside>
-            <div class="bg-white w-[1300px] h-[800px] py-[60px] pl-[60px]">
+            <!-- main -->
+            <div class="bg-white w-[1300px] py-[60px] overflow-x-hidden">
               <div class="flex flex-col">
-                <div class="flex justify-between gap-3 text-secondary">
-                  <h3 class="text-[26px] sm:text-[31px] md:text-[35px] lg:text-[39px]">Manage My Listings</h3>
-
-                  <div class="flex items-center gap-6">
+                <!-- heading -->
+                <div
+                  class="flex flex-col lg:flex-row justify-between gap-3 text-secondary md:pl-[60px]"
+                >
+                  <h3
+                    class="text-[26px] sm:text-[31px] md:text-[35px] lg:text-[39px]"
+                  >
+                    Manage My Listings
+                  </h3>
+                  <div class="flex flex-col sm:flex-row sm:items-center gap-6">
                     <div class="flex items-center gap-2">
-                      <span class="md:text-[17px] font-extralight whitespace-nowrap">Sort by</span>
-                      <select class="rounded-[7px] border-2 border-primary p-2 bg-white w-[213px] text-[17px]">
-                        <option value="Date Uploaded" selected>Date Uploaded</option>
+                      <span
+                        class="md:text-[17px] font-extralight whitespace-nowrap"
+                        >Sort by</span
+                      >
+                      <select
+                        class="rounded-[7px] border-2 border-primary p-2 bg-white w-[213px] text-[17px]"
+                      >
+                        <option value="Date Uploaded" selected>
+                          Date Uploaded
+                        </option>
                       </select>
                     </div>
-
-                    <button class="rounded-[7px] bg-secondary text-white py-2 w-[232px]">
+                    <button
+                      class="rounded-[7px] bg-secondary text-white py-2 w-[232px]"
+                    >
                       Create A Listing
                     </button>
+                  </div>
+                </div>
+
+                <!-- table/pagination -->
+                <div class="overflow-x-hidden flex flex-col gap-3 md:pl-[60px]">
+                  <div class="overflow-x-auto">
+                    <table class="text-secondary mt-5 ">
+                      <thead>
+                        <tr>
+                          <td
+                            class="py-2 min-w-[130px] border-b border-primary text-center"
+                          >
+                            <span class="text-[15px] md:text-[17px] font-medium"
+                              >Image</span
+                            >
+                          </td>
+                          <td
+                            class="py-2 min-w-[167px] border-b border-primary text-start"
+                          >
+                            <span class="text-[15px] md:text-[17px] font-medium"
+                              >Address</span
+                            >
+                          </td>
+                          <td
+                            class="py-2 min-w-[140px] border-b border-primary text-start"
+                          >
+                            <span class="text-[15px] md:text-[17px] font-medium"
+                              >Strategy</span
+                            >
+                          </td>
+                          <td
+                            class="py-2 min-w-[85px] border-b border-primary text-start"
+                          >
+                            <span class="text-[15px] md:text-[17px] font-medium"
+                              >Price</span
+                            >
+                          </td>
+                          <td
+                            class="py-2 min-w-[156px] border-b border-primary text-start"
+                          >
+                            <span class="text-[15px] md:text-[17px] font-medium"
+                              >Sourcing Fee</span
+                            >
+                          </td>
+                          <td
+                            class="py-2 min-w-[180px] border-b border-primary text-start"
+                          >
+                            <span class="text-[15px] md:text-[17px] font-medium"
+                              >Days Remaining</span
+                            >
+                          </td>
+                          <td
+                            class="py-2 min-w-[40px] border-b border-primary text-start"
+                          >
+                            <span class="text-[15px] md:text-[17px] font-medium"
+                              >Yield</span
+                            >
+                          </td>
+                          <td
+                            class="py-2 min-w-[100px] border-b border-primary px-[6px]"
+                          ></td>
+                          <td
+                            class="py-2 min-w-[106px] border-b border-primary px-[6px]"
+                          ></td>
+                          <td
+                            class="py-2 min-w-[54px] border-b border-primary px-[6px]"
+                          ></td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="py-[16px] md:py-[23px]">
+                            <div
+                              class="flex justify-center items-center flex-shrink-0"
+                            >
+                              <img
+                                class="rounded-[50%] object-cover object-center w-[74px] h-[74px]"
+                                src="../assets/images/dashboardTablePhoto.png"
+                                alt="image"
+                              />
+                            </div>
+                          </td>
+                          <td class="py-[16px] md:py-[23px]">
+                            <span
+                              class="text-[15px] md:text-[17px] font-extralight"
+                              >East London</span
+                            >
+                          </td>
+                          <td class="py-[16px] md:py-[23px]">
+                            <div
+                              class="w-full rounded-md bg-[#43B565] text-center py-1"
+                            >
+                              <span class="text-[13px] font-medium text-white"
+                                >R2R HMO</span
+                              >
+                            </div>
+                          </td>
+                          <td class="py-[16px] md:py-[23px]">
+                            <span
+                              class="text-[15px] md:text-[17px] font-extralight"
+                              >£600,000</span
+                            >
+                          </td>
+                          <td class="py-[16px] md:py-[23px]">
+                            <span
+                              class="text-[15px] md:text-[17px] font-extralight"
+                              >£200</span
+                            >
+                          </td>
+                          <td class="py-[16px] md:py-[23px]">
+                            <div class="flex gap-4">
+                              <span
+                                class="text-[15px] md:text-[17px] font-extralight"
+                                >14</span
+                              >
+                              <div
+                                class="flex justify-center items-center gap-2 bg-[#435485] rounded-[10px] text-white px-2"
+                              >
+                                <span class="text-[14px] font-extralight"
+                                  >extend</span
+                                >
+                                <img
+                                  class="w-[13px] h-[13px]"
+                                  src="../assets/vectors/plusCircle2.svg"
+                                  alt="plus"
+                                />
+                              </div>
+                            </div>
+                          </td>
+                          <td class="py-[16px] md:py-[23px]">
+                            <span
+                              class="text-[15px] md:text-[17px] font-extralight"
+                              >7%</span
+                            >
+                          </td>
+                          <td class="py-[16px] md:py-[23px] px-[5px]">
+                            <button
+                              class="flex gap-2 p-2 items-center bg-secondary rounded-[7px] text-white w-full justify-center"
+                            >
+                              <img
+                                class="w-[16px]"
+                                src="../assets/vectors/share.svg"
+                                alt="share"
+                              />
+                              <span class="text-[17px]">Share</span>
+                            </button>
+                          </td>
+                          <td class="py-[16px] md:py-[23px] px-[5px]">
+                            <button
+                              class="flex gap-2 px-1 py-2 items-center bg-[#435485] rounded-[7px] text-white w-full justify-center"
+                            >
+                              <img
+                                class="w-[20px]"
+                                src="../assets/vectors/edit.svg"
+                                alt="edit"
+                              />
+                              <span class="text-[17px] pt-[2px]">Edit</span>
+                            </button>
+                          </td>
+                          <td class="py-[16px] md:py-[23px] px-[5px]">
+                            <button
+                              class="flex gap-2 p-2 items-center bg-[#7D1341] rounded-[7px] text-white w-full justify-center"
+                            >
+                              <img
+                                class="w-[29px]"
+                                src="../assets/vectors/crossCircle.svg"
+                                alt="cross"
+                              />
+                            </button>
+                          </td>
+                        </tr>
+                        <tr class="bg-lightGrey">
+                          <td class="py-[16px] md:py-[23px]">
+                            <div
+                              class="flex justify-center items-center flex-shrink-0"
+                            >
+                              <img
+                                class="rounded-[50%] object-cover object-center w-[74px] h-[74px]"
+                                src="../assets/images/dashboardTablePhoto.png"
+                                alt="image"
+                              />
+                            </div>
+                          </td>
+                          <td class="py-[16px] md:py-[23px]">
+                            <span
+                              class="text-[15px] md:text-[17px] font-extralight"
+                              >East London</span
+                            >
+                          </td>
+                          <td class="py-[16px] md:py-[23px]">
+                            <div
+                              class="w-full rounded-md bg-[#43B565] text-center py-1"
+                            >
+                              <span class="text-[13px] font-medium text-white"
+                                >R2R HMO</span
+                              >
+                            </div>
+                          </td>
+                          <td class="py-[16px] md:py-[23px]">
+                            <span
+                              class="text-[15px] md:text-[17px] font-extralight"
+                              >£600,000</span
+                            >
+                          </td>
+                          <td class="py-[16px] md:py-[23px]">
+                            <span
+                              class="text-[15px] md:text-[17px] font-extralight"
+                              >£200</span
+                            >
+                          </td>
+                          <td class="py-[16px] md:py-[23px]">
+                            <div class="flex gap-4">
+                              <span
+                                class="text-[15px] md:text-[17px] font-extralight"
+                                >14</span
+                              >
+                              <div
+                                class="flex justify-center items-center gap-2 bg-[#435485] rounded-[10px] text-white px-2"
+                              >
+                                <span class="text-[14px] font-extralight"
+                                  >extend</span
+                                >
+                                <img
+                                  class="w-[13px] h-[13px]"
+                                  src="../assets/vectors/plusCircle2.svg"
+                                  alt="plus"
+                                />
+                              </div>
+                            </div>
+                          </td>
+                          <td class="py-[16px] md:py-[23px]">
+                            <span
+                              class="text-[15px] md:text-[17px] font-extralight"
+                              >7%</span
+                            >
+                          </td>
+                          <td class="py-[16px] md:py-[23px] px-[5px]">
+                            <button
+                              class="flex gap-2 p-2 items-center bg-secondary rounded-[7px] text-white w-full justify-center"
+                            >
+                              <img
+                                class="w-[16px]"
+                                src="../assets/vectors/share.svg"
+                                alt="share"
+                              />
+                              <span class="text-[17px]">Share</span>
+                            </button>
+                          </td>
+                          <td class="py-[16px] md:py-[23px] px-[5px]">
+                            <button
+                              class="flex gap-2 px-1 py-2 items-center bg-[#435485] rounded-[7px] text-white w-full justify-center"
+                            >
+                              <img
+                                class="w-[20px]"
+                                src="../assets/vectors/edit.svg"
+                                alt="edit"
+                              />
+                              <span class="text-[17px] pt-[2px]">Edit</span>
+                            </button>
+                          </td>
+                          <td class="py-[16px] md:py-[23px] px-[5px]">
+                            <button
+                              class="flex gap-2 p-2 items-center bg-[#7D1341] rounded-[7px] text-white w-full justify-center"
+                            >
+                              <img
+                                class="w-[29px]"
+                                src="../assets/vectors/crossCircle.svg"
+                                alt="cross"
+                              />
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="py-[16px] md:py-[23px]">
+                            <div
+                              class="flex justify-center items-center flex-shrink-0"
+                            >
+                              <img
+                                class="rounded-[50%] object-cover object-center w-[74px] h-[74px]"
+                                src="../assets/images/dashboardTablePhoto.png"
+                                alt="image"
+                              />
+                            </div>
+                          </td>
+                          <td class="py-[16px] md:py-[23px]">
+                            <span
+                              class="text-[15px] md:text-[17px] font-extralight"
+                              >East London</span
+                            >
+                          </td>
+                          <td class="py-[16px] md:py-[23px]">
+                            <div
+                              class="w-full rounded-md bg-[#43B565] text-center py-1"
+                            >
+                              <span class="text-[13px] font-medium text-white"
+                                >R2R HMO</span
+                              >
+                            </div>
+                          </td>
+                          <td class="py-[16px] md:py-[23px]">
+                            <span
+                              class="text-[15px] md:text-[17px] font-extralight"
+                              >£600,000</span
+                            >
+                          </td>
+                          <td class="py-[16px] md:py-[23px]">
+                            <span
+                              class="text-[15px] md:text-[17px] font-extralight"
+                              >£200</span
+                            >
+                          </td>
+                          <td class="py-[16px] md:py-[23px]">
+                            <div class="flex gap-4">
+                              <span
+                                class="text-[15px] md:text-[17px] font-extralight"
+                                >14</span
+                              >
+                              <div
+                                class="flex justify-center items-center gap-2 bg-[#435485] rounded-[10px] text-white px-2"
+                              >
+                                <span class="text-[14px] font-extralight"
+                                  >extend</span
+                                >
+                                <img
+                                  class="w-[13px] h-[13px]"
+                                  src="../assets/vectors/plusCircle2.svg"
+                                  alt="plus"
+                                />
+                              </div>
+                            </div>
+                          </td>
+                          <td class="py-[16px] md:py-[23px]">
+                            <span
+                              class="text-[15px] md:text-[17px] font-extralight"
+                              >7%</span
+                            >
+                          </td>
+                          <td class="py-[16px] md:py-[23px] px-[5px]">
+                            <button
+                              class="flex gap-2 p-2 items-center bg-secondary rounded-[7px] text-white w-full justify-center"
+                            >
+                              <img
+                                class="w-[16px]"
+                                src="../assets/vectors/share.svg"
+                                alt="share"
+                              />
+                              <span class="text-[17px]">Share</span>
+                            </button>
+                          </td>
+                          <td class="py-[16px] md:py-[23px] px-[5px]">
+                            <button
+                              class="flex gap-2 px-1 py-2 items-center bg-[#435485] rounded-[7px] text-white w-full justify-center"
+                            >
+                              <img
+                                class="w-[20px]"
+                                src="../assets/vectors/edit.svg"
+                                alt="edit"
+                              />
+                              <span class="text-[17px] pt-[2px]">Edit</span>
+                            </button>
+                          </td>
+                          <td class="py-[16px] md:py-[23px] px-[5px]">
+                            <button
+                              class="flex gap-2 p-2 items-center bg-[#7D1341] rounded-[7px] text-white w-full justify-center"
+                            >
+                              <img
+                                class="w-[29px]"
+                                src="../assets/vectors/crossCircle.svg"
+                                alt="cross"
+                              />
+                            </button>
+                          </td>
+                        </tr>
+                        <tr class="bg-lightGrey">
+                          <td class="py-[16px] md:py-[23px]">
+                            <div
+                              class="flex justify-center items-center flex-shrink-0"
+                            >
+                              <img
+                                class="rounded-[50%] object-cover object-center w-[74px] h-[74px]"
+                                src="../assets/images/dashboardTablePhoto.png"
+                                alt="image"
+                              />
+                            </div>
+                          </td>
+                          <td class="py-[16px] md:py-[23px]">
+                            <span
+                              class="text-[15px] md:text-[17px] font-extralight"
+                              >East London</span
+                            >
+                          </td>
+                          <td class="py-[16px] md:py-[23px]">
+                            <div
+                              class="w-full rounded-md bg-[#43B565] text-center py-1"
+                            >
+                              <span class="text-[13px] font-medium text-white"
+                                >R2R HMO</span
+                              >
+                            </div>
+                          </td>
+                          <td class="py-[16px] md:py-[23px]">
+                            <span
+                              class="text-[15px] md:text-[17px] font-extralight"
+                              >£600,000</span
+                            >
+                          </td>
+                          <td class="py-[16px] md:py-[23px]">
+                            <span
+                              class="text-[15px] md:text-[17px] font-extralight"
+                              >£200</span
+                            >
+                          </td>
+                          <td class="py-[16px] md:py-[23px]">
+                            <div class="flex gap-4">
+                              <span
+                                class="text-[15px] md:text-[17px] font-extralight"
+                                >14</span
+                              >
+                              <div
+                                class="flex justify-center items-center gap-2 bg-[#435485] rounded-[10px] text-white px-2"
+                              >
+                                <span class="text-[14px] font-extralight"
+                                  >extend</span
+                                >
+                                <img
+                                  class="w-[13px] h-[13px]"
+                                  src="../assets/vectors/plusCircle2.svg"
+                                  alt="plus"
+                                />
+                              </div>
+                            </div>
+                          </td>
+                          <td class="py-[16px] md:py-[23px]">
+                            <span
+                              class="text-[15px] md:text-[17px] font-extralight"
+                              >7%</span
+                            >
+                          </td>
+                          <td class="py-[16px] md:py-[23px] px-[5px]">
+                            <button
+                              class="flex gap-2 p-2 items-center bg-secondary rounded-[7px] text-white w-full justify-center"
+                            >
+                              <img
+                                class="w-[16px]"
+                                src="../assets/vectors/share.svg"
+                                alt="share"
+                              />
+                              <span class="text-[17px]">Share</span>
+                            </button>
+                          </td>
+                          <td class="py-[16px] md:py-[23px] px-[5px]">
+                            <button
+                              class="flex gap-2 px-1 py-2 items-center bg-[#435485] rounded-[7px] text-white w-full justify-center"
+                            >
+                              <img
+                                class="w-[20px]"
+                                src="../assets/vectors/edit.svg"
+                                alt="edit"
+                              />
+                              <span class="text-[17px] pt-[2px]">Edit</span>
+                            </button>
+                          </td>
+                          <td class="py-[16px] md:py-[23px] px-[5px]">
+                            <button
+                              class="flex gap-2 p-2 items-center bg-[#7D1341] rounded-[7px] text-white w-full justify-center"
+                            >
+                              <img
+                                class="w-[29px]"
+                                src="../assets/vectors/crossCircle.svg"
+                                alt="cross"
+                              />
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="py-[16px] md:py-[23px]">
+                            <div
+                              class="flex justify-center items-center flex-shrink-0"
+                            >
+                              <img
+                                class="rounded-[50%] object-cover object-center w-[74px] h-[74px]"
+                                src="../assets/images/dashboardTablePhoto.png"
+                                alt="image"
+                              />
+                            </div>
+                          </td>
+                          <td class="py-[16px] md:py-[23px]">
+                            <span
+                              class="text-[15px] md:text-[17px] font-extralight"
+                              >East London</span
+                            >
+                          </td>
+                          <td class="py-[16px] md:py-[23px]">
+                            <div
+                              class="w-full rounded-md bg-[#43B565] text-center py-1"
+                            >
+                              <span class="text-[13px] font-medium text-white"
+                                >R2R HMO</span
+                              >
+                            </div>
+                          </td>
+                          <td class="py-[16px] md:py-[23px]">
+                            <span
+                              class="text-[15px] md:text-[17px] font-extralight"
+                              >£600,000</span
+                            >
+                          </td>
+                          <td class="py-[16px] md:py-[23px]">
+                            <span
+                              class="text-[15px] md:text-[17px] font-extralight"
+                              >£200</span
+                            >
+                          </td>
+                          <td class="py-[16px] md:py-[23px]">
+                            <div class="flex gap-4">
+                              <span
+                                class="text-[15px] md:text-[17px] font-extralight"
+                                >14</span
+                              >
+                              <div
+                                class="flex justify-center items-center gap-2 bg-[#435485] rounded-[10px] text-white px-2"
+                              >
+                                <span class="text-[14px] font-extralight"
+                                  >extend</span
+                                >
+                                <img
+                                  class="w-[13px] h-[13px]"
+                                  src="../assets/vectors/plusCircle2.svg"
+                                  alt="plus"
+                                />
+                              </div>
+                            </div>
+                          </td>
+                          <td class="py-[16px] md:py-[23px]">
+                            <span
+                              class="text-[15px] md:text-[17px] font-extralight"
+                              >7%</span
+                            >
+                          </td>
+                          <td class="py-[16px] md:py-[23px] px-[5px]">
+                            <button
+                              class="flex gap-2 p-2 items-center bg-secondary rounded-[7px] text-white w-full justify-center"
+                            >
+                              <img
+                                class="w-[16px]"
+                                src="../assets/vectors/share.svg"
+                                alt="share"
+                              />
+                              <span class="text-[17px]">Share</span>
+                            </button>
+                          </td>
+                          <td class="py-[16px] md:py-[23px] px-[5px]">
+                            <button
+                              class="flex gap-2 px-1 py-2 items-center bg-[#435485] rounded-[7px] text-white w-full justify-center"
+                            >
+                              <img
+                                class="w-[20px]"
+                                src="../assets/vectors/edit.svg"
+                                alt="edit"
+                              />
+                              <span class="text-[17px] pt-[2px]">Edit</span>
+                            </button>
+                          </td>
+                          <td class="py-[16px] md:py-[23px] px-[5px]">
+                            <button
+                              class="flex gap-2 p-2 items-center bg-[#7D1341] rounded-[7px] text-white w-full justify-center"
+                            >
+                              <img
+                                class="w-[29px]"
+                                src="../assets/vectors/crossCircle.svg"
+                                alt="cross"
+                              />
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="rounded-xl bg-secondary p-4 mt-9 md:my-14">
+                    <div class="flex items-center justify-center gap-3">
+                      <img
+                        class="p-4"
+                        src="../assets/vectors/arrowLeftGold.svg"
+                        alt="arrow left gold"
+                      />
+                      <div
+                        class="text-secondary w-[60px] h-[60px] rounded-[8px] transition-all bg-lightGrey flex items-center justify-center text-[20px] cursor-pointer hover:bg-primary hover:text-white"
+                      >
+                        1
+                      </div>
+                      <div
+                        class="text-secondary w-[60px] h-[60px] rounded-[8px] transition-all bg-lightGrey flex items-center justify-center text-[20px] cursor-pointer hover:bg-primary hover:text-white"
+                      >
+                        2
+                      </div>
+                      <div
+                        class="text-secondary w-[60px] h-[60px] rounded-[8px] transition-all bg-lightGrey flex items-center justify-center text-[20px] cursor-pointer hover:bg-primary hover:text-white"
+                      >
+                        3
+                      </div>
+                      <div
+                        class="text-secondary w-[60px] h-[60px] rounded-[8px] transition-all bg-lightGrey flex items-center justify-center text-[20px] cursor-pointer hover:bg-primary hover:text-white"
+                      >
+                        4
+                      </div>
+                      <img
+                        class="p-4"
+                        src="../assets/vectors/arrowRightGold.svg"
+                        alt="arrow right gold"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- statistics -->
+                <div
+                  class="bg-[#EDEDED] py-[54px] md:pl-[60px] flex flex-col gap-[26px]"
+                >
+                  <!-- charts -->
+                  <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[19px]"
+                  >
+                    <!-- box #1 -->
+                    <div
+                      class="w-full rounded-[10px] bg-white p-[26px] text-secondary flex justify-center aspect-[1/1.06]"
+                    >
+                      <span class="text-[17px] md:text-[20px]"
+                        >Overall Listing Views</span
+                      >
+                    </div>
+                    <!-- box #2 -->
+                    <div
+                      class="w-full rounded-[10px] bg-white p-[26px] text-secondary flex justify-center aspect-[1/1.06]"
+                    >
+                      <span class="text-[17px] md:text-[20px]"
+                        >Profile Views</span
+                      >
+                    </div>
+                    <!-- box #3 -->
+                    <div
+                      class="w-full rounded-[10px] bg-secondary py-[26px] px-[44px] text-white flex flex-col items-center gap-[19px] md:col-span-2 lg:col-span-1"
+                    >
+                      <span class="text-[17px] md:text-[20px]"
+                        >Most Viewed Listing</span
+                      >
+                      <div
+                        class="rounded-[10px] overflow-hidden w-full bg-white"
+                      >
+                        <img
+                          class="w-full h-[132px] object-cover object-center"
+                          src="../assets/images/detailsPhoto.png"
+                          alt="flat"
+                        />
+                        <div
+                          class="py-[14px] px-[20px] text-secondary flex flex-col gap-1"
+                        >
+                          <span class="text-[13px]">West London</span>
+                          <span class="text-[17px] md:text-[20px] font-medium"
+                            >£550,000</span
+                          >
+                        </div>
+                      </div>
+                      <div class="flex justify-between gap-3 w-full">
+                        <div class="flex flex-col w-[55px]">
+                          <span class="text-[15px] font-extralight"
+                            >Total Views</span
+                          >
+                          <span
+                            class="text-[45px] font-extralight text-primary leading-[2.7rem]"
+                            >23</span
+                          >
+                        </div>
+                        <div class="flex flex-col w-[55px]">
+                          <span class="text-[15px] font-extralight"
+                            >Total Enquiries</span
+                          >
+                          <span
+                            class="text-[45px] font-extralight text-primary leading-[2.7rem]"
+                            >04</span
+                          >
+                        </div>
+                        <div class="flex flex-col w-[55px]">
+                          <span class="text-[15px] font-extralight"
+                            >Days Remaining</span
+                          >
+                          <span
+                            class="text-[45px] font-extralight text-primary leading-[2.7rem]"
+                            >07</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- referal -->
+                  <div class="flex w-full flex-wrap">
+                    <div class="w-full xl:w-[56%] p-[11px] pl-0">
+                      <div
+                        class="bg-secondary rounded-[10px] py-[15px] px-[20px]"
+                      >
+                        <!-- sides -->
+                        <div
+                          class="flex md:flex-row flex-col rounded-[10px] overflow-hidden"
+                        >
+                          <!-- side #1 -->
+                          <div
+                            class="py-[20px] px-[14px] bg-[#435485] w-full md:w-1/2 flex gap-1 flex-col text-white"
+                          >
+                            <span class="text-[18px] md:text-[20px] font-medium"
+                              >Refer Your Friends To Aquila Connect And Earn
+                              Rewards</span
+                            >
+                            <button
+                              class="bg-primary rounded-[6px] py-2 px-6 text-[15px] font-medium w-full sm:w-fit"
+                            >
+                              Find Out More
+                            </button>
+                          </div>
+                          <!-- side #2 -->
+                          <div
+                            class="py-[20px] px-[14px] bg-white w-full md:w-1/2 flex gap-2 flex-col text-secondary"
+                          >
+                            <div
+                              class="flex flex-col-reverse sm:flex-row sm:justify-between sm:items-center gap-3 md:gap-[40px] xl:gap-[70px]"
+                            >
+                              <span
+                                class="text-[18px] md:text-[20px] font-medium"
+                                >Referrals In Last 30 Days</span
+                              >
+                              <div
+                                class="rounded-[50%] bg-[#435485] flex-shrink-0 text-primary w-[70px] h-[70px] flex items-center justify-center"
+                              >
+                                <span class="font-semibold text-[46px]"
+                                  >12</span
+                                >
+                              </div>
+                            </div>
+                            <p
+                              class="text-[15px] md:text-[17px] font-extralight"
+                            >
+                              Your Referral Code:
+                              <span class="text-primary">W1201</span>
+                            </p>
+                          </div>
+                        </div>
+                        <!-- ref code -->
+                        <div
+                          class="flex flex-col md:items-center md:flex-row gap-3 pt-4"
+                        >
+                          <div
+                            class="md:w-[50%] flex flex-col gap-2 text-white"
+                          >
+                            <span class="text-[18px] md:text-[20px] font-medium"
+                              >Do You Have A Referral Code?</span
+                            >
+                            <p class="text-[15px] font-extralight lg:w-[86%]">
+                              Enter it below and you and your friend will earn
+                              great rewards
+                            </p>
+                          </div>
+                          <div
+                            class="md:w-[50%] flex flex-col md:flex-row gap-2 text-white"
+                          >
+                            <input
+                              type="text"
+                              class="py-1 px-2 rounded-md flex-grow text-[15px] min-w-0"
+                              placeholder="Enter Coded"
+                            />
+                            <button
+                              class="py-1 px-2 rounded-md w-full md:w-fit text-[15px] font-normal bg-primary"
+                            >
+                              Submit
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-full sm:w-[50%] xl:w-[22%] p-[11px]">
+                      <div
+                        class="bg-white rounded-[10px] p-[24px] flex items-center text-secondary min-h-[252px] h-full"
+                      >
+                        <div class="flex flex-col gap-2">
+                          <span
+                            class="text-[18px] md:text-[20px] font-extralight"
+                            >Money Accrued</span
+                          >
+                          <select
+                            class="rounded border border-primary w-full text-[15px] bg-white p-1"
+                          >
+                            <option value="sourcer" selected>
+                              Last 30 days
+                            </option>
+                          </select>
+                          <span
+                            class="text-primary text-[21px] md:text-[25px] font-semibold"
+                            >+£251</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-full sm:w-[50%] xl:w-[22%] p-[11px] pr-0">
+                      <div
+                        class="bg-white rounded-[10px] p-[24px] flex items-center text-secondary min-h-[252px] h-full"
+                      >
+                        <div class="flex flex-col gap-2">
+                          <span
+                            class="text-[18px] md:text-[20px] font-extralight"
+                            >Upcoming Monthly Commision</span
+                          >
+                          <div
+                            class="flex sm:flex-row flex-col gap-2 sm:justify-between sm:items-center"
+                          >
+                            <span
+                              class="text-primary text-[21px] md:text-[25px] font-semibold"
+                              >£127.45</span
+                            >
+                            <span class="text-[15px] font-extralight"
+                              >Due 31/07/23</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- messages -->
+                <div
+                  class="flex flex-col gap-10 md:pl-[60px] py-[40px] md:py-[70px]"
+                >
+                  <!-- heading -->
+                  <div
+                    class="flex lg:flex-row flex-col lg:items-center lg:justify-between gap-3"
+                  >
+                    <!-- title/alerts -->
+                    <div
+                      class="flex md:items-center md:flex-row flex-col gap-5"
+                    >
+                      <!-- title -->
+                      <div class="flex items-center gap-3">
+                        <img
+                          src="../assets/vectors/messagingSecondary.svg"
+                          alt="messaging"
+                        />
+                        <h3 class="text-[27px] md:text-[39px] text-secondary">
+                          Recent Messages
+                        </h3>
+                      </div>
+
+                      <!-- alert -->
+                      <div
+                        class="flex items-center py-2 px-3 bg-primary rounded-[11px] text-white gap-3 w-full sm:w-fit justify-center sm:justify-start"
+                      >
+                        <span class="text-[15px] md:text-[17px]"
+                          >01 Unread</span
+                        >
+                        <img
+                          class="cursor-pointer"
+                          src="../assets/vectors/infoWhite.svg"
+                          alt="info"
+                        />
+                      </div>
+                    </div>
+
+                    <!-- all messages btn -->
+                    <button
+                      class="text-white bg-secondary rounded-[7px] py-2 px-10 text-[15px] md:text-[17px] sm:w-fit w-full"
+                    >
+                      All Messages
+                    </button>
+                  </div>
+
+                  <!-- messanger -->
+                  <div
+                    class="w-full rounded-[10px] overflow-hidden flex flex-col"
+                  >
+                    <!-- heading/search bar -->
+                    <div
+                      class="w-full bg-[#435485] py-[9px] px-[20px] flex lg:items-center gap-4 lg:gap-14 flex-col lg:flex-row"
+                    >
+                      <!-- edit/search -->
+                      <div class="flex items-center gap-[30px]">
+                        <button>
+                          <img src="../assets/vectors/edit.svg" alt="edit" />
+                        </button>
+
+                        <input
+                          placeholder="Search..."
+                          type="text"
+                          class="border border-primary rounded-[4px] bg-[#435485] text-white text-[15px] py-1 px-3 w-full sm:w-[256px]"
+                        />
+                      </div>
+
+                      <!-- chat name/review, report btns -->
+                      <div
+                        class="flex xs:items-center xs:justify-between text-white flex-grow flex-col-reverse xs:flex-row gap-3"
+                      >
+                        <span class="text-[19px] md:text-[22px] font-medium"
+                          >Eric Voss</span
+                        >
+
+                        <div class="flex items-center gap-5">
+                          <button
+                            class="bg-primary rounded-[7px] py-1 px-5 w-fit text-[14px]"
+                          >
+                            Post a Review
+                          </button>
+                          <button>
+                            <img
+                              src="../assets/vectors/reportFlagWhite.svg"
+                              alt="flag"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- chat list/chat -->
+                    <div class="flex flex-col lg:flex-row">
+                      <!-- side -->
+                      <div class="flex flex-col lg:max-w-[350px] w-full">
+                        <!-- chat list -->
+                        <div
+                          class="flex flex-col max-h-[612px] h-full border-r-[5px] border-[#BEBEBE] overflow-y-auto"
+                        >
+                          <!-- active -->
+                          <div
+                            class="w-full py-[17px] px-[20px] bg-[#EAEEF6] flex gap-3"
+                          >
+                            <!-- user image -->
+                            <div
+                              class="rounded-[50%] overflow-hidden w-[47px] h-[47px] flex-shrink-0"
+                            >
+                              <img
+                                class="w-full object-cover object-center"
+                                src="../assets/images/avatar.png"
+                                alt="user image"
+                              />
+                            </div>
+
+                            <!-- name/message/last online -->
+                            <div
+                              class="flex flex-col gap-2 text-secondary flex-grow"
+                            >
+                              <!-- name/last online -->
+                              <div class="flex items-center justify-between">
+                                <!-- name/is online -->
+                                <div class="flex gap-2 items-baseline">
+                                  <span
+                                    class="text-[15px] whitespace-nowrap font-medium"
+                                    >Eric Voss</span
+                                  >
+                                  <div
+                                    class="rounded-[50%] bg-[#17D938] w-[8px] h-[8px]"
+                                  ></div>
+                                </div>
+
+                                <!-- last online -->
+                                <span class="text-[11px] font-extralight"
+                                  >3 Hours Ago</span
+                                >
+                              </div>
+
+                              <!-- message -->
+                              <p
+                                class="text-[15px] font-extralight line-clamp-2"
+                              >
+                                ...I'll text you later when I'm out of my
+                                meeting
+                              </p>
+                            </div>
+                          </div>
+
+                          <!-- chat #2 -->
+                          <div
+                            class="w-full py-[17px] px-[20px] border border-[#D9D9D9] flex gap-3"
+                          >
+                            <!-- user image -->
+                            <div
+                              class="rounded-[50%] overflow-hidden w-[47px] h-[47px] flex-shrink-0"
+                            >
+                              <img
+                                class="w-full object-cover object-center"
+                                src="../assets/images/avatar.png"
+                                alt="user image"
+                              />
+                            </div>
+
+                            <!-- name/message/last online -->
+                            <div
+                              class="flex flex-col gap-2 text-secondary flex-grow"
+                            >
+                              <!-- name/last online -->
+                              <div class="flex items-center justify-between">
+                                <!-- name/is online -->
+                                <div class="flex gap-2 items-baseline">
+                                  <span
+                                    class="text-[15px] whitespace-nowrap font-medium"
+                                    >Eric Voss</span
+                                  >
+                                  <div
+                                    class="rounded-[50%] bg-[#17D938] w-[8px] h-[8px]"
+                                  ></div>
+                                </div>
+
+                                <!-- last online -->
+                                <span class="text-[11px] font-extralight"
+                                  >3 Hours Ago</span
+                                >
+                              </div>
+
+                              <!-- message -->
+                              <p
+                                class="text-[15px] font-extralight line-clamp-2"
+                              >
+                                ...I'll text you later when I'm out of my
+                                meeting
+                              </p>
+                            </div>
+                          </div>
+
+                          <!-- chat #3 -->
+                          <div class="flex">
+                            <div class="w-full py-[17px] px-[20px] flex gap-3">
+                              <!-- user image -->
+                              <div
+                                class="rounded-[50%] overflow-hidden w-[47px] h-[47px] flex-shrink-0"
+                              >
+                                <img
+                                  class="w-full object-cover object-center"
+                                  src="../assets/images/avatar.png"
+                                  alt="user image"
+                                />
+                              </div>
+
+                              <!-- name/message/last online -->
+                              <div
+                                class="flex flex-col gap-2 text-secondary flex-grow"
+                              >
+                                <!-- name/last online -->
+                                <div class="flex items-center justify-between">
+                                  <!-- name/is online -->
+                                  <div class="flex gap-2 items-baseline">
+                                    <span
+                                      class="text-[15px] whitespace-nowrap font-medium"
+                                      >Eric Voss</span
+                                    >
+                                    <div
+                                      class="rounded-[50%] bg-[#17D938] w-[8px] h-[8px]"
+                                    ></div>
+                                  </div>
+
+                                  <!-- last online -->
+                                  <span class="text-[11px] font-extralight"
+                                    >3 Hours Ago</span
+                                  >
+                                </div>
+
+                                <!-- message -->
+                                <p
+                                  class="text-[15px] font-extralight line-clamp-2"
+                                >
+                                  ...I'll text you later when I'm out of my
+                                  meeting
+                                </p>
+                              </div>
+                            </div>
+
+                            <!-- alert -->
+                            <div
+                              class="w-[26px] bg-danger text-white flex justify-center items-center h-full"
+                            >
+                              <span class="text-[15px] font-medium">1</span>
+                            </div>
+                          </div>
+
+                          <!-- chat #4 -->
+                          <div
+                            class="w-full py-[17px] px-[20px] border border-[#D9D9D9] flex gap-3"
+                          >
+                            <!-- user image -->
+                            <div
+                              class="rounded-[50%] overflow-hidden w-[47px] h-[47px] flex-shrink-0"
+                            >
+                              <img
+                                class="w-full object-cover object-center"
+                                src="../assets/images/avatar.png"
+                                alt="user image"
+                              />
+                            </div>
+
+                            <!-- name/message/last online -->
+                            <div
+                              class="flex flex-col gap-2 text-secondary flex-grow"
+                            >
+                              <!-- name/last online -->
+                              <div class="flex items-center justify-between">
+                                <!-- name/is online -->
+                                <div class="flex gap-2 items-baseline">
+                                  <span
+                                    class="text-[15px] whitespace-nowrap font-medium"
+                                    >Eric Voss</span
+                                  >
+                                  <div
+                                    class="rounded-[50%] bg-[#17D938] w-[8px] h-[8px]"
+                                  ></div>
+                                </div>
+
+                                <!-- last online -->
+                                <span class="text-[11px] font-extralight"
+                                  >3 Hours Ago</span
+                                >
+                              </div>
+
+                              <!-- message -->
+                              <p
+                                class="text-[15px] font-extralight line-clamp-2"
+                              >
+                                ...I'll text you later when I'm out of my
+                                meeting
+                              </p>
+                            </div>
+                          </div>
+
+                          <!-- chat #5 -->
+                          <div
+                            class="w-full py-[17px] px-[20px] border border-[#D9D9D9] flex gap-3"
+                          >
+                            <!-- user image -->
+                            <div
+                              class="rounded-[50%] overflow-hidden w-[47px] h-[47px] flex-shrink-0"
+                            >
+                              <img
+                                class="w-full object-cover object-center"
+                                src="../assets/images/avatar.png"
+                                alt="user image"
+                              />
+                            </div>
+
+                            <!-- name/message/last online -->
+                            <div
+                              class="flex flex-col gap-2 text-secondary flex-grow"
+                            >
+                              <!-- name/last online -->
+                              <div class="flex items-center justify-between">
+                                <!-- name/is online -->
+                                <div class="flex gap-2 items-baseline">
+                                  <span
+                                    class="text-[15px] whitespace-nowrap font-medium"
+                                    >Eric Voss</span
+                                  >
+                                  <div
+                                    class="rounded-[50%] bg-[#17D938] w-[8px] h-[8px]"
+                                  ></div>
+                                </div>
+
+                                <!-- last online -->
+                                <span class="text-[11px] font-extralight"
+                                  >3 Hours Ago</span
+                                >
+                              </div>
+
+                              <!-- message -->
+                              <p
+                                class="text-[15px] font-extralight line-clamp-2"
+                              >
+                                ...I'll text you later when I'm out of my
+                                meeting
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- setting/is online -->
+                        <div
+                          class="flex items-center justify-between w-full bg-secondary py-[23px] px-[30px]"
+                        >
+                          <button>
+                            <img
+                              src="../assets/vectors/settingsWhite.svg"
+                              alt="settings"
+                            />
+                          </button>
+
+                          <div class="flex gap-2 items-center">
+                            <div
+                              class="rounded-[50%] border-2 border-white bg-[#17D938] w-[14px] h-[14px]"
+                            ></div>
+                            <span class="text-[15px] text-white">Online</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- chat window -->
+                      <div class="flex flex-col flex-grow">
+                        <!-- chat -->
+                        <div
+                          class="flex flex-col py-[30px] px-[38px] min-h-[577px] max-h-[577px] h-full overflow-y-auto border-r-[5px] border-[#BEBEBE] gap-4 xs:gap-2 xl:gap-0"
+                        >
+                          <!-- line -->
+                          <div class="flex w-full justify-start">
+                            <!-- message -->
+                            <div class="w-full flex gap-3 max-w-[350px]">
+                              <!-- user image -->
+                              <div
+                                class="rounded-[50%] overflow-hidden w-[47px] h-[47px] flex-shrink-0"
+                              >
+                                <img
+                                  class="w-full object-cover object-center"
+                                  src="../assets/images/avatar.png"
+                                  alt="user image"
+                                />
+                              </div>
+
+                              <!-- name/message/last online -->
+                              <div
+                                class="flex flex-col gap-2 text-secondary flex-grow"
+                              >
+                                <!-- name/last online -->
+                                <div class="flex items-center justify-between">
+                                  <!-- name -->
+                                  <span
+                                    class="text-[15px] whitespace-nowrap font-medium"
+                                    >Eric Voss</span
+                                  >
+
+                                  <!-- last online -->
+                                  <span
+                                    class="text-[11px] font-extralight hidden xs:flex"
+                                    >3 Hours Ago</span
+                                  >
+                                </div>
+
+                                <!-- message -->
+                                <p
+                                  class="text-[15px] font-extralight p-[13px] bg-[#EFEFEF] rounded-[5px]"
+                                >
+                                  ...I'll text you later when I'm out of my
+                                  meeting
+                                </p>
+
+                                <!-- last online (for mobiles) -->
+                                <span
+                                  class="text-[11px] font-extralight flex xs:hidden"
+                                  >3 Hours Ago</span
+                                >
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- line -->
+                          <div class="flex w-full justify-start xl:justify-end">
+                            <!-- message -->
+                            <div
+                              class="w-full flex gap-3 max-w-[350px] flex-row xl:flex-row-reverse"
+                            >
+                              <!-- user image -->
+                              <div
+                                class="rounded-[50%] overflow-hidden w-[47px] h-[47px] flex-shrink-0"
+                              >
+                                <img
+                                  class="w-full object-cover object-center"
+                                  src="../assets/images/avatar.png"
+                                  alt="user image"
+                                />
+                              </div>
+
+                              <!-- name/message/last online -->
+                              <div
+                                class="flex flex-col gap-2 text-secondary flex-grow"
+                              >
+                                <!-- name/last online -->
+                                <div
+                                  class="flex flex-row xl:flex-row-reverse items-center justify-between"
+                                >
+                                  <!-- name -->
+                                  <span
+                                    class="text-[15px] whitespace-nowrap font-medium"
+                                    >Eric Voss</span
+                                  >
+
+                                  <!-- last online -->
+                                  <span
+                                    class="text-[11px] font-extralight hidden xs:flex"
+                                    >3 Hours Ago</span
+                                  >
+                                </div>
+
+                                <!-- message -->
+                                <p
+                                  class="text-[15px] font-extralight p-[13px] bg-[#EFEFEF] rounded-[5px]"
+                                >
+                                  ...I'll text you later when I'm out of my
+                                  meeting
+                                </p>
+
+                                <!-- last online (for mobiles) -->
+                                <span
+                                  class="text-[11px] font-extralight flex xs:hidden"
+                                  >3 Hours Ago</span
+                                >
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- line -->
+                          <div class="flex w-full justify-start">
+                            <!-- message -->
+                            <div class="w-full flex gap-3 max-w-[350px]">
+                              <!-- user image -->
+                              <div
+                                class="rounded-[50%] overflow-hidden w-[47px] h-[47px] flex-shrink-0"
+                              >
+                                <img
+                                  class="w-full object-cover object-center"
+                                  src="../assets/images/avatar.png"
+                                  alt="user image"
+                                />
+                              </div>
+
+                              <!-- name/message/last online -->
+                              <div
+                                class="flex flex-col gap-2 text-secondary flex-grow"
+                              >
+                                <!-- name/last online -->
+                                <div class="flex items-center justify-between">
+                                  <!-- name -->
+                                  <span
+                                    class="text-[15px] whitespace-nowrap font-medium"
+                                    >Eric Voss</span
+                                  >
+
+                                  <!-- last online -->
+                                  <span
+                                    class="text-[11px] font-extralight hidden xs:flex"
+                                    >3 Hours Ago</span
+                                  >
+                                </div>
+
+                                <!-- message -->
+                                <p
+                                  class="text-[15px] font-extralight p-[13px] bg-[#EFEFEF] rounded-[5px]"
+                                >
+                                  ...I'll text you later when I'm out of my
+                                  meeting
+                                </p>
+
+                                <!-- last online (for mobiles) -->
+                                <span
+                                  class="text-[11px] font-extralight flex xs:hidden"
+                                  >3 Hours Ago</span
+                                >
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- line -->
+                          <div class="flex w-full justify-start xl:justify-end">
+                            <!-- message -->
+                            <div
+                              class="w-full flex gap-3 max-w-[350px] flex-row xl:flex-row-reverse"
+                            >
+                              <!-- user image -->
+                              <div
+                                class="rounded-[50%] overflow-hidden w-[47px] h-[47px] flex-shrink-0"
+                              >
+                                <img
+                                  class="w-full object-cover object-center"
+                                  src="../assets/images/avatar.png"
+                                  alt="user image"
+                                />
+                              </div>
+
+                              <!-- name/message/last online -->
+                              <div
+                                class="flex flex-col gap-2 text-secondary flex-grow"
+                              >
+                                <!-- name/last online -->
+                                <div
+                                  class="flex flex-row xl:flex-row-reverse items-center justify-between"
+                                >
+                                  <!-- name -->
+                                  <span
+                                    class="text-[15px] whitespace-nowrap font-medium"
+                                    >Eric Voss</span
+                                  >
+
+                                  <!-- last online -->
+                                  <span class="text-[11px] font-extralight"
+                                    >3 Hours Ago</span
+                                  >
+                                </div>
+
+                                <!-- message -->
+                                <p
+                                  class="text-[15px] font-extralight p-[13px] bg-[#EFEFEF] rounded-[5px]"
+                                >
+                                  ...I'll text you later when I'm out of my
+                                  meeting
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- line -->
+                          <div class="flex w-full justify-start">
+                            <!-- message -->
+                            <div class="w-full flex gap-3 max-w-[350px]">
+                              <!-- user image -->
+                              <div
+                                class="rounded-[50%] overflow-hidden w-[47px] h-[47px] flex-shrink-0"
+                              >
+                                <img
+                                  class="w-full object-cover object-center"
+                                  src="../assets/images/avatar.png"
+                                  alt="user image"
+                                />
+                              </div>
+
+                              <!-- name/message/last online -->
+                              <div
+                                class="flex flex-col gap-2 text-secondary flex-grow"
+                              >
+                                <!-- name/last online -->
+                                <div class="flex items-center justify-between">
+                                  <!-- name -->
+                                  <span
+                                    class="text-[15px] whitespace-nowrap font-medium"
+                                    >Eric Voss</span
+                                  >
+
+                                  <!-- last online -->
+                                  <span
+                                    class="text-[11px] font-extralight hidden xs:flex"
+                                    >3 Hours Ago</span
+                                  >
+                                </div>
+
+                                <!-- message -->
+                                <p
+                                  class="text-[15px] font-extralight p-[13px] bg-[#EFEFEF] rounded-[5px]"
+                                >
+                                  ...I'll text you later when I'm out of my
+                                  meeting
+                                </p>
+
+                                <!-- last online (for mobiles) -->
+                                <span
+                                  class="text-[11px] font-extralight flex xs:hidden"
+                                  >3 Hours Ago</span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- input -->
+                        <div
+                          class="bg-[#435485] py-[10px] px-[18px] w-full flex flex-col sm:flex-row gap-4 items-center"
+                        >
+                          <textarea
+                            rows="2"
+                            class="border-[3px] border-primary rounded-[9px] max-w-[730px] w-full resize-none p-2 text-[15px] md:text-[18px]"
+                          ></textarea>
+
+                          <div
+                            class="flex flex-col gap-3 flex-grow w-full sm:w-fit"
+                          >
+                            <div
+                              class="flex justify-between gap-4 lg:gap-2 w-fit sm:w-full"
+                            >
+                              <button>
+                                <img
+                                  src="../assets/vectors/smiley.svg"
+                                  alt="emoji"
+                                />
+                              </button>
+
+                              <button>
+                                <img
+                                  src="../assets/vectors/paperclip.svg"
+                                  alt="attach"
+                                />
+                              </button>
+
+                              <button>
+                                <img
+                                  src="../assets/vectors/microphone.svg"
+                                  alt="voice message"
+                                />
+                              </button>
+                            </div>
+
+                            <button
+                              class="bg-primary py-1 px-2 rounded-md text-[15px] w-full font-medium text-white"
+                            >
+                              Send
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- categories/verifications -->
+                <div class="flex flex-col gap-[22px] w-full md:pl-[60px]">
+                  <div class="grid grid-cols-12 gap-[22px]">
+                    <!-- box #1 -->
+                    <div
+                      class="rounded-[10px] overflow-hidden col-span-12 xl:col-span-8 bg-[url(../assets/images/dashboard1.png)] bg-center bg-cover"
+                    >
+                      <div
+                        class="w-full h-full bg-[linear-gradient(90deg,_rgba(22,35,74,0.8995973389355743)_0%,_rgba(22,35,74,0.8211659663865546)_75%,_rgba(22,35,74,0.6615021008403361)_100%)]"
+                      >
+                        <div
+                          class="w-full h-full py-[35px] sm:py-[50px] px-[25px] sm:px-[40px] flex flex-col gap-3 justify-end text-white xl:w-[80%]"
+                        >
+                          <h3
+                            class="text-[25px] sm:text-[27px] md:text-[30px] xl:text-[35px] leading-8 md:leading-[2.8rem] lg:mt-[50px]"
+                          >
+                            Verify your compliance and increase your conversions
+                          </h3>
+
+                          <p class="text-[15px] md:text-[17px] xl:w-[80%]">
+                            By verifying your compliance, you’re telling
+                            investors you’re both trustworthy and serious about
+                            making a substantial ROI.
+                          </p>
+
+                          <div class="flex items-center gap-5">
+                            <button
+                              class="py-1 px-5 text-[15px] sm:w-fit w-full bg-primary rounded-md"
+                            >
+                              Gain A Compliance Verified Badge
+                            </button>
+
+                            <img
+                              class="w-[48px] h-[48px] flex-shrink-0"
+                              src="../assets/vectors/goldCheck.svg"
+                              alt="check"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- box #2 -->
+                    <div
+                      class="opacity-80 rounded-[10px] overflow-hidden col-span-12 xl:col-span-4 bg-[url(../assets/images/dashboard2.png)] bg-center bg-cover relative"
+                    >
+                      <div
+                        class="bg-secondary opacity-60 w-full h-full text-white absolute top-0 left-0 -z-10"
+                      ></div>
+                      <div
+                        class="flex flex-col w-full h-full justify-end text-white z-10 px-[20px] sm:px-[30px] py-[25px] sm:py-[50px] gap-2"
+                      >
+                        <h3
+                          class="text-[25px] sm:text-[27px] md:text-[30px] xl:text-[35px] leading-8 md:leading-[2.8rem]"
+                        >
+                          Get ID Verified
+                        </h3>
+                        <p class="text-[15px] md:text-[17px]">
+                          Build confidence with your investors by verifying your
+                          credentials with Aquila
+                        </p>
+
+                        <div class="flex items-center gap-5">
+                          <button
+                            class="py-1 px-5 text-[15px] sm:w-fit w-full bg-primary rounded-md font-medium"
+                          >
+                            Get ID Verified
+                          </button>
+
+                          <img
+                            class="w-[48px] h-[48px] flex-shrink-0"
+                            src="../assets/vectors/goldCheck.svg"
+                            alt="check"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid grid-cols-12 gap-[22px]">
+                    <!-- box #1 -->
+                    <div
+                      class="opacity-80 rounded-[10px] overflow-hidden col-span-12 xl:col-span-4 bg-[url(../assets/images/dashboard3.png)] bg-center bg-cover relative"
+                    >
+                      <div
+                        class="bg-secondary opacity-60 w-full h-full text-white absolute top-0 left-0 -z-10"
+                      ></div>
+                      <div
+                        class="flex flex-col w-full h-full justify-end text-white z-10 px-[20px] sm:px-[30px] py-[25px] sm:py-[50px] gap-2"
+                      >
+                        <h3
+                          class="text-[25px] sm:text-[27px] md:text-[30px] xl:text-[35px] leading-8 md:leading-[2.8rem]"
+                        >
+                          Add Strategies
+                        </h3>
+                        <p class="text-[15px] md:text-[17px]">
+                          Adding new strategies opens up your properties to more
+                          investors.
+                        </p>
+
+                        <button
+                          class="py-1 px-5 text-[15px] sm:w-fit w-full bg-primary rounded-md font-medium"
+                        >
+                          Add Strategies
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- box #2 -->
+                    <div
+                      class="rounded-[10px] overflow-hidden col-span-12 xl:col-span-8 bg-[url(../assets/images/dashboard4.png)] bg-center bg-cover"
+                    >
+                      <div
+                        class="w-full h-full bg-[linear-gradient(90deg,_rgba(22,35,74,0.8995973389355743)_0%,_rgba(22,35,74,0.8211659663865546)_75%,_rgba(22,35,74,0.6615021008403361)_100%)]"
+                      >
+                        <div
+                          class="w-full h-full py-[35px] sm:py-[50px] px-[25px] sm:px-[40px] flex flex-col gap-3 justify-end text-white xl:w-[80%]"
+                        >
+                          <h3
+                            class="text-[25px] sm:text-[27px] md:text-[30px] xl:text-[35px] leading-8 md:leading-[2.8rem] lg:mt-[50px]"
+                          >
+                            Important things to know before you list a property
+                          </h3>
+
+                          <p class="text-[15px] md:text-[17px] xl:w-[80%]">
+                            To keep a level playing field we have rules and
+                            regulations in place to ensure an honest and
+                            trustworthy marketplace.
+                          </p>
+
+                          <button
+                            class="py-1 px-5 text-[15px] sm:w-fit w-full bg-primary rounded-md"
+                          >
+                            Find Out More
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- announcements -->
+                <div class="flex flex-col gap-6 md:pl-[60px] pt-10 w-full">
+                  <!-- heading -->
+                  <div class="flex items-center gap-3">
+                    <img src="../assets/vectors/infoSecondary.svg" alt="info">
+                    <h3 class="text-[26px] sm:text-[29px] md:text-[33px] lg:text-[39px] text-secondary">Announcements</h3>
+                  </div>
+
+                  <!-- slider -->
+                  <div class="flex flex-col-reverse lg:flex-row w-full rounded-[10px] sm:rounded-[20px] overflow-hidden">
+                    <!-- text/nav -->
+                    <div class="w-full xl:w-[40%] py-[30px] px-[20px] xs:py-[45px] xs:px-[30px] md:py-[60px] md:px-[50px] flex flex-col bg-secondary text-white gap-1">
+                      <!-- nav -->
+                      <div class="flex justify-start xs:justify-end gap-5">
+                        <button>
+                          <img class="w-[21px] h-[21px]" src="../assets/vectors/arrowLeft.svg" alt="arrow left">
+                        </button>
+                        <button>
+                          <img class="w-[21px] h-[21px]" src="../assets/vectors/arrowRight.svg" alt="arrow right">
+                        </button>
+                      </div>
+
+                      <!-- category -->
+                      <span class="text-[15px] sm:text-[17px] lg:text-[20px] text-primary mt-5">Latest News</span>
+                      <h6 class="text-[20px] sm:text-[24px] lg:text-[30px] xl:w-[70%]">New Features Coming Soon</h6>
+                      <p class="md:text-[17px] text-[15px] mt-4">
+                        We are still in our beta testing phase and will be rolling out exciting new features and updates in the coming weeks.
+                      </p>
+                      <button class="w-fit mt-3">
+                        <span class="underline text-primary md:text-[17px] text-[15px]">Find Out More</span>
+                      </button>
+
+                      <div class="flex justify-start xs:justify-end gap-3 mt-8 xs:mt-14">
+                        <div class="w-[46px] h-[5px] bg-primary rounded-[30px]">
+                        </div>
+                        <div class="w-[46px] h-[5px] bg-white rounded-[30px]">
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- image -->
+                    <div class="w-full xl:w-[60%] flex">
+                      <img class="w-full object-cover object-center" src="../assets/images/dashboard4.png" alt="slide">
+                    </div>
                   </div>
                 </div>
               </div>
@@ -369,4 +2133,3 @@
     </section>
   </body>
 </html>
-

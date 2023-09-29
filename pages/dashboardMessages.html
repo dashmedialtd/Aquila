@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aquila</title>
+    <link rel="stylesheet" href="../output.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/mbg1zau.css" />
+  </head>
+  <body>
+    <header class="font-stolzl font-light text-[#16234A] flex shadow-md">
+      <div
+        class="navbar customContainer relative flex items-center justify-between py-6"
+      >
+        <div
+          class="absolute hidden sm:flex items-center -top-2 right-[10px] gap-6"
+        >
+          <div class="flex gap-2 items-center">
+            <img src="../assets/vectors/phoneBlue.svg" alt="phone" />
+            <span>0203 693 3811</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="flex gap-2 items-center">
+              <img src="../assets/vectors/facebookBlue.svg" alt="phone" />
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="../assets/vectors/instagramBlue.svg" alt="phone" />
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="../assets/vectors/linkedInBlue.svg" alt="phone" />
+            </div>
+          </div>
+          <button
+            class="bg-[#16234A] text-[14px] font-light text-white py-3 px-5 rounded-b-lg rounded-bl-lg"
+          >
+            Investor Lounge
+          </button>
+        </div>
+        <div class="logoContainer max-w-[134px]">
+          <!-- <img src="assets/images/Logo.png" alt="Logo" /> -->
+          <img src="../assets/vectors/LogoSvgBlueFont.svg" alt="Logo" />
+        </div>
+        <div class="flex items-center gap-16">
+          <nav class="hidden lg:flex">
+            <ul class="flex items-center gap-8 text-lg">
+              <li><a href="sourcers.html">Sourcers</a></li>
+              <li><a href="#">Landlords</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Our Services</a></li>
+              <li><a href="#">Our Partners</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </nav>
+          <div class="flex items-center gap-7 text=[18px]">
+            <div class="hidden sm:flex items-center gap-6">
+              <button
+                class="bg-none border-2 border-[#16234A] flex items-center gap-2 py-3 px-4 rounded-md"
+              >
+                <img src="../assets/vectors/user.svg" alt="user" />
+                Sign In
+              </button>
+              <button
+                class="bg-[#F8B84E] flex items-center gap-2 py-3 px-4 rounded-md text-white border-2 border-[#F8B84E]"
+              >
+                <img src="../assets/vectors/edit.svg" alt="edit" />
+                Create Account
+              </button>
+            </div>
+
+            <!-- Burger button -->
+            <div class="inline-block lg:hidden">
+              <button class="relative group">
+                <div
+                  class="relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all bg-[#F8B84E] ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md"
+                >
+                  <div
+                    class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden"
+                  >
+                    <div
+                      class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10"
+                    ></div>
+                    <div
+                      class="bg-white h-[2px] w-7 rounded transform transition-all duration-300 group-focus:translate-x-10 delay-75"
+                    ></div>
+                    <div
+                      class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10 delay-150"
+                    ></div>
+
+                    <div
+                      class="absolute items-center justify-between transform transition-all duration-500 top-2.5 -translate-x-10 group-focus:translate-x-0 flex w-0 group-focus:w-12"
+                    >
+                      <div
+                        class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 rotate-0 delay-300 group-focus:rotate-45"
+                      ></div>
+                      <div
+                        class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 -rotate-0 delay-300 group-focus:-rotate-45"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- profile -->
+    <section class="bg-secondary py-[29px]">
+      <div class="customContainer">
+        <div
+          class="flex md:flex-row flex-col items-center justify-between gap-3"
+        >
+          <!-- avatar/name/username/level -->
+          <div
+            class="flex xl:flex-row flex-col items-center md:items-start xl:items-center gap-7"
+          >
+            <!-- avatar -->
+            <div
+              class="w-[139px] h-[139px] flex flex-shrink-0 rounded-[50%] border-2 border-white relative"
+            >
+              <img
+                class="w-full object-cover object-center"
+                src="../assets/images/avatarLg.png"
+                alt="avatar"
+              />
+              <div
+                class="w-[24px] h-[24px] border border-white bg-[#17D938] top-3 right-[5px] rounded-[50%] absolute"
+              ></div>
+            </div>
+            <!-- name/username/level -->
+            <div class="flex items-center md:items-start flex-col gap-5">
+              <div
+                class="flex lg:flex-row flex-col gap-3 items-center md:items-baseline"
+              >
+                <h3
+                  class="text-[24px] sm:text-[30px] md:text-[34px] lg:text-[39px] text-white"
+                >
+                  Daniel Way
+                </h3>
+                <span class="text-[15px] md:text-[17px] text-primary"
+                  >@DWay3000</span
+                >
+              </div>
+              <div
+                class="flex md:flex-row flex-col gap-6 items-center md:items-baseline"
+              >
+                <div class="flex flex-col items-center gap-2">
+                  <div
+                    class="w-[274px] h-[19px] grid grid-cols-5 gap-1 rounded-[13px] overflow-hidden"
+                  >
+                    <div class="bg-primary w-full"></div>
+                    <div class="bg-white w-full"></div>
+                    <div class="bg-white w-full"></div>
+                    <div class="bg-white w-full"></div>
+                    <div class="bg-white w-full"></div>
+                  </div>
+                  <div class="flex items-center gap-7">
+                    <span
+                      class="text-primary underline cursor-pointer text-[14px]"
+                      >Active for 25 days</span
+                    >
+                    <button>
+                      <img src="../assets/vectors/info.svg" alt="info" />
+                    </button>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3">
+                  <span
+                    class="text-[#43B565] underline cursor-pointer text-[14px]"
+                    >My Aquila Reputation</span
+                  >
+                  <button class="flex-shrink-0">
+                    <img src="../assets/vectors/info.svg" alt="info" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- verifications/credits count -->
+          <div class="flex xl:flex-row flex-col items-center gap-5">
+            <!-- verifications -->
+            <div
+              class="flex gap-6 md:flex-row flex-col items-center md:items-end"
+            >
+              <!-- badges -->
+              <div
+                class="flex xl:flex-row flex-col gap-5 flex-wrap w-fit xl:w-[400px] xl:justify-end items-center md:items-end xl:items-start"
+              >
+                <div
+                  class="relative rounded-xl w-fit py-1 pl-3 pr-11 bg-[#F8B84E]"
+                >
+                  <span class="text-white font-medium text-[15px]"
+                    >Compliance Verified</span
+                  >
+                  <img
+                    class="absolute -right-3 -top-[9px]"
+                    src="../assets/vectors/goldCheck.svg"
+                    alt="gold check"
+                  />
+                </div>
+                <div
+                  class="relative rounded-xl w-fit py-1 pl-3 pr-11 bg-[#F8B84E]"
+                >
+                  <span class="text-white font-medium text-[15px]"
+                    >ID Verified</span
+                  >
+                  <img
+                    class="absolute -right-3 -top-[9px]"
+                    src="../assets/vectors/idVerified.svg"
+                    alt="verified id"
+                  />
+                </div>
+                <div
+                  class="relative rounded-xl w-fit py-1 pl-3 pr-11 bg-[#BEBEBE]"
+                >
+                  <span class="text-white font-medium text-[15px]"
+                    >Compliant</span
+                  >
+                  <img
+                    class="absolute -right-3 -top-[9px] p-[7px]"
+                    src="../assets/vectors/grayCheck.svg"
+                    alt="gray check"
+                  />
+                </div>
+              </div>
+              <!-- add btn -->
+              <div class="opacity-20 flex items-end">
+                <button
+                  class="border-[3px] border-white rounded-[50%] w-[30px] h-[30px] relative flex items-center justify-center"
+                >
+                  <div class="bg-white rounded-md w-[3px] h-[14px]"></div>
+                  <div
+                    class="bg-white rounded-md w-[3px] h-[14px] rotate-90 absolute"
+                  ></div>
+                </button>
+              </div>
+            </div>
+            <!-- credits count -->
+            <div
+              class="bg-[#435485] rounded-[11px] w-full xs:w-[314px] py-[17px] px-[25px] flex flex-col text-white gap-1"
+            >
+              <div class="flex items-baseline gap-2">
+                <span
+                  class="text-[28px] sm:text-[33px] md:text-[38px] lg:text-[44px] leading-[3rem]"
+                  >08</span
+                >
+                <span class="md:text-[21px]">Credits Remaining</span>
+              </div>
+              <p class="text-[13px]">Your Subscription renews on 12/7/2023</p>
+              <button class="w-fit">
+                <span class="underline text-primary text-[13px]"
+                  >Upgrade your plan</span
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- sidebar/main content -->
+    <section>
+      <div class="max-w-[3000px] mx-auto relative">
+        <div
+          class="w-[40%] bg-[#435485] h-full absolute -z-10 hidden md:block"
+        ></div>
+        <div class="customContainer">
+          <div class="flex">
+            <!-- sidebar -->
+            <aside
+              class="text-white w-[312px] relative hidden md:flex flex-col"
+            >
+              <div class="flex flex-col py-[60px] pr-[60px] gap-7">
+                <!-- opened tab -->
+                <span
+                  class="text-[20px] sm:text-[22px] md:text-[26px] lg:text-[30px]"
+                >
+                  Dashboard
+                </span>
+                <!-- select view -->
+                <div class="flex flex-col">
+                  <span class="text-primary text-[15px] md:text-[17px]"
+                    >Switch View</span
+                  >
+                  <select
+                    class="rounded border border-primary w-full text-[15px] bg-[#435485] p-1"
+                  >
+                    <option value="sourcer" selected>Sourcer</option>
+                  </select>
+                </div>
+                <!-- list -->
+                <div class="flex flex-col gap-3">
+                  <button class="w-fit flex items-center gap-2 text-left">
+                    <div class="w-[20px] h-[21px]">
+                      <img
+                        class="w-full"
+                        src="../assets/vectors/home.svg"
+                        alt="home"
+                      />
+                    </div>
+                    <span class="md:text-[17px]">Manage Listings</span>
+                  </button>
+                  <button class="w-fit flex items-center gap-2 text-left">
+                    <div class="w-[20px] h-[21px]">
+                      <img
+                        class="w-full"
+                        src="../assets/vectors/plusCircle.svg"
+                        alt="plus"
+                      />
+                    </div>
+                    <span class="md:text-[17px]">Create New Listing</span>
+                  </button>
+                  <button class="w-fit flex items-center gap-2 text-left">
+                    <div class="w-[20px] h-[21px]">
+                      <img
+                        class="w-full"
+                        src="../assets/vectors/messaging.svg"
+                        alt="messaging"
+                      />
+                    </div>
+                    <span class="md:text-[17px]">Messages</span>
+                  </button>
+                  <button class="w-fit flex items-center gap-2 text-left">
+                    <div class="w-[20px] h-[21px]">
+                      <img
+                        class="w-full"
+                        src="../assets/vectors/questionCircle.svg"
+                        alt="question"
+                      />
+                    </div>
+                    <span class="md:text-[17px]">Listing Rules</span>
+                  </button>
+                  <button class="w-fit flex items-center gap-2 text-left">
+                    <div class="w-[20px] h-[21px]">
+                      <img
+                        class="w-full"
+                        src="../assets/vectors/starWhite.svg"
+                        alt="star"
+                      />
+                    </div>
+                    <span class="md:text-[17px]">Your Aquila Reputation</span>
+                  </button>
+                  <button class="w-fit flex items-center gap-2 text-left">
+                    <div class="w-[20px] h-[21px]">
+                      <img
+                        class="w-full"
+                        src="../assets/vectors/bookmark.svg"
+                        alt="bookmark"
+                      />
+                    </div>
+                    <span class="md:text-[17px]">Bookmarks</span>
+                  </button>
+                  <button class="w-fit flex items-center gap-2 text-left">
+                    <div class="w-[20px] h-[21px]">
+                      <img
+                        class="w-full"
+                        src="../assets/vectors/archive.svg"
+                        alt="archive"
+                      />
+                    </div>
+                    <span class="md:text-[17px]">Archive</span>
+                  </button>
+                  <button class="w-fit flex items-center gap-2 text-left">
+                    <div class="w-[20px] h-[21px]">
+                      <img
+                        class="w-full"
+                        src="../assets/vectors/document.svg"
+                        alt="document"
+                      />
+                    </div>
+                    <span class="md:text-[17px]">Terms & Conditions</span>
+                  </button>
+                  <button class="w-fit flex items-center gap-2 text-left">
+                    <div class="w-[20px] h-[21px]">
+                      <img
+                        class="w-full"
+                        src="../assets/vectors/userAlt.svg"
+                        alt="user"
+                      />
+                    </div>
+                    <span class="md:text-[17px]">My Profile</span>
+                  </button>
+                </div>
+                <!-- sign out btn -->
+                <button class="flex items-center gap-2">
+                  <div class="w-[20px] h-[21px]">
+                    <img
+                      class="w-full"
+                      src="../assets/vectors/exit.svg"
+                      alt="exit"
+                    />
+                  </div>
+                  <span class="md:text-[17px] text-primary">My Profile</span>
+                </button>
+              </div>
+              <!-- back btn -->
+              <button
+                class="w-[48px] h-[48px] rounded-[50%] bg-primary flex items-center justify-center absolute top-[60px] -right-[24px]"
+              >
+                <img
+                  class="w-[26px]"
+                  src="../assets/vectors/arrowLeft.svg"
+                  alt="arrow left"
+                />
+              </button>
+            </aside>
+            <!-- main -->
+            <div class="bg-white w-[1300px] overflow-x-hidden">
+              <div class="flex flex-col">
+
+                <!-- messages -->
+                <div
+                  class="flex flex-col gap-10 md:pl-[60px] py-[40px] md:py-[70px]"
+                >
+                  <!-- heading -->
+                  <div
+                    class="flex lg:flex-row flex-col lg:items-center lg:justify-between gap-3"
+                  >
+                    <!-- title/alerts -->
+                    <div
+                      class="flex md:items-center md:flex-row flex-col gap-5"
+                    >
+                      <!-- title -->
+                      <div class="flex items-center gap-3">
+                        <img
+                          src="../assets/vectors/messagingSecondary.svg"
+                          alt="messaging"
+                        />
+                        <h3 class="text-[27px] md:text-[39px] text-secondary">
+                          Recent Messages
+                        </h3>
+                      </div>
+
+                      <!-- alert -->
+                      <div
+                        class="flex items-center py-2 px-3 bg-primary rounded-[11px] text-white gap-3 w-full sm:w-fit justify-center sm:justify-start"
+                      >
+                        <span class="text-[15px] md:text-[17px]"
+                          >01 Unread</span
+                        >
+                        <img
+                          class="cursor-pointer"
+                          src="../assets/vectors/infoWhite.svg"
+                          alt="info"
+                        />
+                      </div>
+                    </div>
+
+                    <!-- all messages btn -->
+                    <button
+                      class="text-white bg-secondary rounded-[7px] py-2 px-10 text-[15px] md:text-[17px] sm:w-fit w-full"
+                    >
+                      All Messages
+                    </button>
+                  </div>
+
+                  <!-- messanger -->
+                  <div
+                    class="w-full rounded-[10px] overflow-hidden flex flex-col"
+                  >
+                    <!-- heading/search bar -->
+                    <div
+                      class="w-full bg-[#435485] py-[9px] px-[20px] flex lg:items-center gap-4 lg:gap-14 flex-col lg:flex-row"
+                    >
+                      <!-- edit/search -->
+                      <div class="flex items-center gap-[30px]">
+                        <button>
+                          <img src="../assets/vectors/edit.svg" alt="edit" />
+                        </button>
+
+                        <input
+                          placeholder="Search..."
+                          type="text"
+                          class="border border-primary rounded-[4px] bg-[#435485] text-white text-[15px] py-1 px-3 w-full sm:w-[256px]"
+                        />
+                      </div>
+
+                      <!-- chat name/review, report btns -->
+                      <div
+                        class="flex xs:items-center xs:justify-between text-white flex-grow flex-col-reverse xs:flex-row gap-3"
+                      >
+                        <span class="text-[19px] md:text-[22px] font-medium"
+                          >Eric Voss</span
+                        >
+
+                        <div class="flex items-center gap-5">
+                          <button
+                            class="bg-primary rounded-[7px] py-1 px-5 w-fit text-[14px]"
+                          >
+                            Post a Review
+                          </button>
+                          <button>
+                            <img
+                              src="../assets/vectors/reportFlagWhite.svg"
+                              alt="flag"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- chat list/chat -->
+                    <div class="flex flex-col lg:flex-row">
+                      <!-- side -->
+                      <div class="flex flex-col lg:max-w-[350px] w-full">
+                        <!-- chat list -->
+                        <div
+                          class="flex flex-col max-h-[612px] h-full border-r-[5px] border-[#BEBEBE] overflow-y-auto"
+                        >
+                          <!-- active -->
+                          <div
+                            class="w-full py-[17px] px-[20px] bg-[#EAEEF6] flex gap-3"
+                          >
+                            <!-- user image -->
+                            <div
+                              class="rounded-[50%] overflow-hidden w-[47px] h-[47px] flex-shrink-0"
+                            >
+                              <img
+                                class="w-full object-cover object-center"
+                                src="../assets/images/avatar.png"
+                                alt="user image"
+                              />
+                            </div>
+
+                            <!-- name/message/last online -->
+                            <div
+                              class="flex flex-col gap-2 text-secondary flex-grow"
+                            >
+                              <!-- name/last online -->
+                              <div class="flex items-center justify-between">
+                                <!-- name/is online -->
+                                <div class="flex gap-2 items-baseline">
+                                  <span
+                                    class="text-[15px] whitespace-nowrap font-medium"
+                                    >Eric Voss</span
+                                  >
+                                  <div
+                                    class="rounded-[50%] bg-[#17D938] w-[8px] h-[8px]"
+                                  ></div>
+                                </div>
+
+                                <!-- last online -->
+                                <span class="text-[11px] font-extralight"
+                                  >3 Hours Ago</span
+                                >
+                              </div>
+
+                              <!-- message -->
+                              <p
+                                class="text-[15px] font-extralight line-clamp-2"
+                              >
+                                ...I'll text you later when I'm out of my
+                                meeting
+                              </p>
+                            </div>
+                          </div>
+
+                          <!-- chat #2 -->
+                          <div
+                            class="w-full py-[17px] px-[20px] border border-[#D9D9D9] flex gap-3"
+                          >
+                            <!-- user image -->
+                            <div
+                              class="rounded-[50%] overflow-hidden w-[47px] h-[47px] flex-shrink-0"
+                            >
+                              <img
+                                class="w-full object-cover object-center"
+                                src="../assets/images/avatar.png"
+                                alt="user image"
+                              />
+                            </div>
+
+                            <!-- name/message/last online -->
+                            <div
+                              class="flex flex-col gap-2 text-secondary flex-grow"
+                            >
+                              <!-- name/last online -->
+                              <div class="flex items-center justify-between">
+                                <!-- name/is online -->
+                                <div class="flex gap-2 items-baseline">
+                                  <span
+                                    class="text-[15px] whitespace-nowrap font-medium"
+                                    >Eric Voss</span
+                                  >
+                                  <div
+                                    class="rounded-[50%] bg-[#17D938] w-[8px] h-[8px]"
+                                  ></div>
+                                </div>
+
+                                <!-- last online -->
+                                <span class="text-[11px] font-extralight"
+                                  >3 Hours Ago</span
+                                >
+                              </div>
+
+                              <!-- message -->
+                              <p
+                                class="text-[15px] font-extralight line-clamp-2"
+                              >
+                                ...I'll text you later when I'm out of my
+                                meeting
+                              </p>
+                            </div>
+                          </div>
+
+                          <!-- chat #3 -->
+                          <div class="flex">
+                            <div class="w-full py-[17px] px-[20px] flex gap-3">
+                              <!-- user image -->
+                              <div
+                                class="rounded-[50%] overflow-hidden w-[47px] h-[47px] flex-shrink-0"
+                              >
+                                <img
+                                  class="w-full object-cover object-center"
+                                  src="../assets/images/avatar.png"
+                                  alt="user image"
+                                />
+                              </div>
+
+                              <!-- name/message/last online -->
+                              <div
+                                class="flex flex-col gap-2 text-secondary flex-grow"
+                              >
+                                <!-- name/last online -->
+                                <div class="flex items-center justify-between">
+                                  <!-- name/is online -->
+                                  <div class="flex gap-2 items-baseline">
+                                    <span
+                                      class="text-[15px] whitespace-nowrap font-medium"
+                                      >Eric Voss</span
+                                    >
+                                    <div
+                                      class="rounded-[50%] bg-[#17D938] w-[8px] h-[8px]"
+                                    ></div>
+                                  </div>
+
+                                  <!-- last online -->
+                                  <span class="text-[11px] font-extralight"
+                                    >3 Hours Ago</span
+                                  >
+                                </div>
+
+                                <!-- message -->
+                                <p
+                                  class="text-[15px] font-extralight line-clamp-2"
+                                >
+                                  ...I'll text you later when I'm out of my
+                                  meeting
+                                </p>
+                              </div>
+                            </div>
+
+                            <!-- alert -->
+                            <div
+                              class="w-[26px] bg-danger text-white flex justify-center items-center h-full"
+                            >
+                              <span class="text-[15px] font-medium">1</span>
+                            </div>
+                          </div>
+
+                          <!-- chat #4 -->
+                          <div
+                            class="w-full py-[17px] px-[20px] border border-[#D9D9D9] flex gap-3"
+                          >
+                            <!-- user image -->
+                            <div
+                              class="rounded-[50%] overflow-hidden w-[47px] h-[47px] flex-shrink-0"
+                            >
+                              <img
+                                class="w-full object-cover object-center"
+                                src="../assets/images/avatar.png"
+                                alt="user image"
+                              />
+                            </div>
+
+                            <!-- name/message/last online -->
+                            <div
+                              class="flex flex-col gap-2 text-secondary flex-grow"
+                            >
+                              <!-- name/last online -->
+                              <div class="flex items-center justify-between">
+                                <!-- name/is online -->
+                                <div class="flex gap-2 items-baseline">
+                                  <span
+                                    class="text-[15px] whitespace-nowrap font-medium"
+                                    >Eric Voss</span
+                                  >
+                                  <div
+                                    class="rounded-[50%] bg-[#17D938] w-[8px] h-[8px]"
+                                  ></div>
+                                </div>
+
+                                <!-- last online -->
+                                <span class="text-[11px] font-extralight"
+                                  >3 Hours Ago</span
+                                >
+                              </div>
+
+                              <!-- message -->
+                              <p
+                                class="text-[15px] font-extralight line-clamp-2"
+                              >
+                                ...I'll text you later when I'm out of my
+                                meeting
+                              </p>
+                            </div>
+                          </div>
+
+                          <!-- chat #5 -->
+                          <div
+                            class="w-full py-[17px] px-[20px] border border-[#D9D9D9] flex gap-3"
+                          >
+                            <!-- user image -->
+                            <div
+                              class="rounded-[50%] overflow-hidden w-[47px] h-[47px] flex-shrink-0"
+                            >
+                              <img
+                                class="w-full object-cover object-center"
+                                src="../assets/images/avatar.png"
+                                alt="user image"
+                              />
+                            </div>
+
+                            <!-- name/message/last online -->
+                            <div
+                              class="flex flex-col gap-2 text-secondary flex-grow"
+                            >
+                              <!-- name/last online -->
+                              <div class="flex items-center justify-between">
+                                <!-- name/is online -->
+                                <div class="flex gap-2 items-baseline">
+                                  <span
+                                    class="text-[15px] whitespace-nowrap font-medium"
+                                    >Eric Voss</span
+                                  >
+                                  <div
+                                    class="rounded-[50%] bg-[#17D938] w-[8px] h-[8px]"
+                                  ></div>
+                                </div>
+
+                                <!-- last online -->
+                                <span class="text-[11px] font-extralight"
+                                  >3 Hours Ago</span
+                                >
+                              </div>
+
+                              <!-- message -->
+                              <p
+                                class="text-[15px] font-extralight line-clamp-2"
+                              >
+                                ...I'll text you later when I'm out of my
+                                meeting
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- setting/is online -->
+                        <div
+                          class="flex items-center justify-between w-full bg-secondary py-[23px] px-[30px]"
+                        >
+                          <button>
+                            <img
+                              src="../assets/vectors/settingsWhite.svg"
+                              alt="settings"
+                            />
+                          </button>
+
+                          <div class="flex gap-2 items-center">
+                            <div
+                              class="rounded-[50%] border-2 border-white bg-[#17D938] w-[14px] h-[14px]"
+                            ></div>
+                            <span class="text-[15px] text-white">Online</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- chat window -->
+                      <div class="flex flex-col flex-grow">
+                        <!-- chat -->
+                        <div
+                          class="flex flex-col py-[30px] px-[38px] min-h-[577px] max-h-[577px] h-full overflow-y-auto border-r-[5px] border-[#BEBEBE] gap-4 xs:gap-2 xl:gap-0"
+                        >
+                          <!-- line -->
+                          <div class="flex w-full justify-start">
+                            <!-- message -->
+                            <div class="w-full flex gap-3 max-w-[350px]">
+                              <!-- user image -->
+                              <div
+                                class="rounded-[50%] overflow-hidden w-[47px] h-[47px] flex-shrink-0"
+                              >
+                                <img
+                                  class="w-full object-cover object-center"
+                                  src="../assets/images/avatar.png"
+                                  alt="user image"
+                                />
+                              </div>
+
+                              <!-- name/message/last online -->
+                              <div
+                                class="flex flex-col gap-2 text-secondary flex-grow"
+                              >
+                                <!-- name/last online -->
+                                <div class="flex items-center justify-between">
+                                  <!-- name -->
+                                  <span
+                                    class="text-[15px] whitespace-nowrap font-medium"
+                                    >Eric Voss</span
+                                  >
+
+                                  <!-- last online -->
+                                  <span
+                                    class="text-[11px] font-extralight hidden xs:flex"
+                                    >3 Hours Ago</span
+                                  >
+                                </div>
+
+                                <!-- message -->
+                                <p
+                                  class="text-[15px] font-extralight p-[13px] bg-[#EFEFEF] rounded-[5px]"
+                                >
+                                  ...I'll text you later when I'm out of my
+                                  meeting
+                                </p>
+
+                                <!-- last online (for mobiles) -->
+                                <span
+                                  class="text-[11px] font-extralight flex xs:hidden"
+                                  >3 Hours Ago</span
+                                >
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- line -->
+                          <div class="flex w-full justify-start xl:justify-end">
+                            <!-- message -->
+                            <div
+                              class="w-full flex gap-3 max-w-[350px] flex-row xl:flex-row-reverse"
+                            >
+                              <!-- user image -->
+                              <div
+                                class="rounded-[50%] overflow-hidden w-[47px] h-[47px] flex-shrink-0"
+                              >
+                                <img
+                                  class="w-full object-cover object-center"
+                                  src="../assets/images/avatar.png"
+                                  alt="user image"
+                                />
+                              </div>
+
+                              <!-- name/message/last online -->
+                              <div
+                                class="flex flex-col gap-2 text-secondary flex-grow"
+                              >
+                                <!-- name/last online -->
+                                <div
+                                  class="flex flex-row xl:flex-row-reverse items-center justify-between"
+                                >
+                                  <!-- name -->
+                                  <span
+                                    class="text-[15px] whitespace-nowrap font-medium"
+                                    >Eric Voss</span
+                                  >
+
+                                  <!-- last online -->
+                                  <span
+                                    class="text-[11px] font-extralight hidden xs:flex"
+                                    >3 Hours Ago</span
+                                  >
+                                </div>
+
+                                <!-- message -->
+                                <p
+                                  class="text-[15px] font-extralight p-[13px] bg-[#EFEFEF] rounded-[5px]"
+                                >
+                                  ...I'll text you later when I'm out of my
+                                  meeting
+                                </p>
+
+                                <!-- last online (for mobiles) -->
+                                <span
+                                  class="text-[11px] font-extralight flex xs:hidden"
+                                  >3 Hours Ago</span
+                                >
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- line -->
+                          <div class="flex w-full justify-start">
+                            <!-- message -->
+                            <div class="w-full flex gap-3 max-w-[350px]">
+                              <!-- user image -->
+                              <div
+                                class="rounded-[50%] overflow-hidden w-[47px] h-[47px] flex-shrink-0"
+                              >
+                                <img
+                                  class="w-full object-cover object-center"
+                                  src="../assets/images/avatar.png"
+                                  alt="user image"
+                                />
+                              </div>
+
+                              <!-- name/message/last online -->
+                              <div
+                                class="flex flex-col gap-2 text-secondary flex-grow"
+                              >
+                                <!-- name/last online -->
+                                <div class="flex items-center justify-between">
+                                  <!-- name -->
+                                  <span
+                                    class="text-[15px] whitespace-nowrap font-medium"
+                                    >Eric Voss</span
+                                  >
+
+                                  <!-- last online -->
+                                  <span
+                                    class="text-[11px] font-extralight hidden xs:flex"
+                                    >3 Hours Ago</span
+                                  >
+                                </div>
+
+                                <!-- message -->
+                                <p
+                                  class="text-[15px] font-extralight p-[13px] bg-[#EFEFEF] rounded-[5px]"
+                                >
+                                  ...I'll text you later when I'm out of my
+                                  meeting
+                                </p>
+
+                                <!-- last online (for mobiles) -->
+                                <span
+                                  class="text-[11px] font-extralight flex xs:hidden"
+                                  >3 Hours Ago</span
+                                >
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- line -->
+                          <div class="flex w-full justify-start xl:justify-end">
+                            <!-- message -->
+                            <div
+                              class="w-full flex gap-3 max-w-[350px] flex-row xl:flex-row-reverse"
+                            >
+                              <!-- user image -->
+                              <div
+                                class="rounded-[50%] overflow-hidden w-[47px] h-[47px] flex-shrink-0"
+                              >
+                                <img
+                                  class="w-full object-cover object-center"
+                                  src="../assets/images/avatar.png"
+                                  alt="user image"
+                                />
+                              </div>
+
+                              <!-- name/message/last online -->
+                              <div
+                                class="flex flex-col gap-2 text-secondary flex-grow"
+                              >
+                                <!-- name/last online -->
+                                <div
+                                  class="flex flex-row xl:flex-row-reverse items-center justify-between"
+                                >
+                                  <!-- name -->
+                                  <span
+                                    class="text-[15px] whitespace-nowrap font-medium"
+                                    >Eric Voss</span
+                                  >
+
+                                  <!-- last online -->
+                                  <span class="text-[11px] font-extralight"
+                                    >3 Hours Ago</span
+                                  >
+                                </div>
+
+                                <!-- message -->
+                                <p
+                                  class="text-[15px] font-extralight p-[13px] bg-[#EFEFEF] rounded-[5px]"
+                                >
+                                  ...I'll text you later when I'm out of my
+                                  meeting
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- line -->
+                          <div class="flex w-full justify-start">
+                            <!-- message -->
+                            <div class="w-full flex gap-3 max-w-[350px]">
+                              <!-- user image -->
+                              <div
+                                class="rounded-[50%] overflow-hidden w-[47px] h-[47px] flex-shrink-0"
+                              >
+                                <img
+                                  class="w-full object-cover object-center"
+                                  src="../assets/images/avatar.png"
+                                  alt="user image"
+                                />
+                              </div>
+
+                              <!-- name/message/last online -->
+                              <div
+                                class="flex flex-col gap-2 text-secondary flex-grow"
+                              >
+                                <!-- name/last online -->
+                                <div class="flex items-center justify-between">
+                                  <!-- name -->
+                                  <span
+                                    class="text-[15px] whitespace-nowrap font-medium"
+                                    >Eric Voss</span
+                                  >
+
+                                  <!-- last online -->
+                                  <span
+                                    class="text-[11px] font-extralight hidden xs:flex"
+                                    >3 Hours Ago</span
+                                  >
+                                </div>
+
+                                <!-- message -->
+                                <p
+                                  class="text-[15px] font-extralight p-[13px] bg-[#EFEFEF] rounded-[5px]"
+                                >
+                                  ...I'll text you later when I'm out of my
+                                  meeting
+                                </p>
+
+                                <!-- last online (for mobiles) -->
+                                <span
+                                  class="text-[11px] font-extralight flex xs:hidden"
+                                  >3 Hours Ago</span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- input -->
+                        <div
+                          class="bg-[#435485] py-[10px] px-[18px] w-full flex flex-col sm:flex-row gap-4 items-center"
+                        >
+                          <textarea
+                            rows="2"
+                            class="border-[3px] border-primary rounded-[9px] max-w-[730px] w-full resize-none p-2 text-[15px] md:text-[18px]"
+                          ></textarea>
+
+                          <div
+                            class="flex flex-col gap-3 flex-grow w-full sm:w-fit"
+                          >
+                            <div
+                              class="flex justify-between gap-4 lg:gap-2 w-fit sm:w-full"
+                            >
+                              <button>
+                                <img
+                                  src="../assets/vectors/smiley.svg"
+                                  alt="emoji"
+                                />
+                              </button>
+
+                              <button>
+                                <img
+                                  src="../assets/vectors/paperclip.svg"
+                                  alt="attach"
+                                />
+                              </button>
+
+                              <button>
+                                <img
+                                  src="../assets/vectors/microphone.svg"
+                                  alt="voice message"
+                                />
+                              </button>
+                            </div>
+
+                            <button
+                              class="bg-primary py-1 px-2 rounded-md text-[15px] w-full font-medium text-white"
+                            >
+                              Send
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

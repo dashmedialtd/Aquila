@@ -20,6 +20,8 @@ module.exports = {
     "./pages/propertyListings.html",
     "./pages/listing.html",
     "./pages/dashboard.html",
+    "./pages/dashboardMessages.html",
+
 
   ],
   theme: {
@@ -33,6 +35,7 @@ module.exports = {
       'lg': '1024px',
       'xl': '1280px',
       '2xl': '1536px',
+      "2k": "2560px"
     },
     colors: {
       "primary": "#F8B84E",

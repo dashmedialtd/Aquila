@@ -5,6 +5,7 @@
 * {
   font-family: stolzl, sans-serif;
   font-weight: 300;
+  box-sizing: border-box;
 }
 
 .homeContainer {
@@ -15,7 +16,7 @@
 }
 
 .customContainer {
-  max-width: 1640px;
+  max-width: 1670px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -63,4 +64,8 @@
 .paginationItem:hover {
   background-color: rgba(22, 35, 74, .6);
   color: #fff;
+}
+
+td, th {
+  padding: 0 20px;
 }
