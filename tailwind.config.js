@@ -21,6 +21,13 @@ module.exports = {
     "./pages/listing.html",
     "./pages/dashboard.html",
     "./pages/dashboardMessages.html",
+    "./pages/investors.html",
+    "./pages/investorProfilePage.html",
+    "./pages/subscription.html",
+    "./pages/accountDetails.html",
+    "./pages/myProfile.html",
+
+
 
 
   ],

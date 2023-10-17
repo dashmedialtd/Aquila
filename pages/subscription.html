@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aquila</title>
+    <link rel="stylesheet" href="../output.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/mbg1zau.css" />
+  </head>
+  <body>
+    <header
+      class="font-stolzl font-light text-white flex fixed left-1/2 right-1/2 translate-x-[-50%] w-full bg-gradient-to-b from-black"
+    >
+      <div
+        class="navbar customContainer w-full flex items-center justify-between mx-auto py-6 px-[10px] relative"
+      >
+        <div
+          class="absolute hidden sm:flex items-center -top-2 right-[10px] gap-6"
+        >
+          <div class="flex gap-2 items-center">
+            <img src="../assets/vectors/phone.svg" alt="phone" />
+            <span>0203 693 3811</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="flex gap-2 items-center">
+              <img src="../assets/vectors/facebook.svg" alt="phone" />
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="../assets/vectors/instagram.svg" alt="phone" />
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="../assets/vectors/linkedIn.svg" alt="phone" />
+            </div>
+          </div>
+          <button
+            class="bg-white text-[14px] font-light text-[#16234A] py-3 px-5 rounded-b-lg rounded-bl-lg"
+          >
+            Investor Lounge
+          </button>
+        </div>
+        <div class="logoContainer max-w-[134px]">
+          <!-- <img src="assets/images/Logo.png" alt="Logo" /> -->
+          <img src="../assets/vectors/LogoSvg.svg" alt="Logo" />
+        </div>
+        <div class="flex items-center gap-16">
+          <nav class="hidden lg:flex">
+            <ul class="flex items-center gap-8 text-lg">
+              <li><a href="sourcers.html">Sourcers</a></li>
+              <li><a href="#">Landlords</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Our Services</a></li>
+              <li><a href="#">Our Partners</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </nav>
+          <div class="flex items-center gap-7 text=[18px]">
+            <div class="hidden sm:flex items-center gap-6">
+              <button
+                class="bg-none border-2 border-white flex items-center gap-2 py-3 px-4 rounded-md"
+              >
+                <img src="../assets/vectors/userWhiteBg.svg" alt="user" />
+                Sign In
+              </button>
+              <button
+                class="bg-[#F8B84E] flex items-center gap-2 py-3 px-4 rounded-md text-white border-2 border-[#F8B84E]"
+              >
+                <img src="../assets/vectors/edit.svg" alt="edit" />
+                Create Account
+              </button>
+            </div>
+
+            <!-- Burger button -->
+            <div class="inline-block lg:hidden">
+              <button class="relative group">
+                <div
+                  class="relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all bg-[#F8B84E] ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md"
+                >
+                  <div
+                    class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden"
+                  >
+                    <div
+                      class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10"
+                    ></div>
+                    <div
+                      class="bg-white h-[2px] w-7 rounded transform transition-all duration-300 group-focus:translate-x-10 delay-75"
+                    ></div>
+                    <div
+                      class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10 delay-150"
+                    ></div>
+
+                    <div
+                      class="absolute items-center justify-between transform transition-all duration-500 top-2.5 -translate-x-10 group-focus:translate-x-0 flex w-0 group-focus:w-12"
+                    >
+                      <div
+                        class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 rotate-0 delay-300 group-focus:rotate-45"
+                      ></div>
+                      <div
+                        class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 -rotate-0 delay-300 group-focus:-rotate-45"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section
+      class="w-full min-h-[1000px] flex bg-[url('../assets/images/HeaderBackground.png')] bg-no-repeat bg-cover bg-center font-stolzl font-light"
+    >
+      <div
+        class="bg-[#16234A] flex flex-1 bg-opacity-80 min-h-full w-full pt-[200px] pb-8"
+      >
+        <div class="customContainer">
+          <div
+            class="bg-white w-full rounded-[20px] flex flex-col lg:flex-row overflow-hidden min-h-[800px]"
+          >
+            <!-- avatar/menu/signOut -->
+            <div
+              class="w-full lg:max-w-[364px] bg-[#435485] px-[20px] md:px-[30px] lg:px-[45px] pt-[35px] md:pt-[75px] pb-[30px] md:pb-[50px] flex flex-col justify-between text-white gap-5"
+            >
+              <!-- avatar/full name -->
+              <div class="flex flex-col gap-2">
+                <!-- avatar -->
+                <div
+                  class="w-[150px] h-[150px] rounded-[50%] overflow-hidden border border-white"
+                >
+                  <img
+                    class="w-full h-full object-cover object-center"
+                    src="../assets/images/avatarLg.png"
+                    alt="avatar"
+                  />
+                </div>
+
+                <!-- full name -->
+                <span
+                  class="lg:text-[25px] md:text-[21px] sm:text-[19px] text-[17px]"
+                  >Daniel Way</span
+                >
+              </div>
+
+              <!-- menu -->
+              <ul class="w-full">
+                <li>
+                  <a
+                    class="text-[16px] md:text-[18px] border-b border-white w-full block py-3 px-2"
+                    href="#"
+                    >My Profile</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-[16px] md:text-[18px] border-b border-white w-full block py-3 px-2"
+                    href="#"
+                    >Account Details</a
+                  >
+                </li>
+                <li class="bg-gradient-to-r from-secondary">
+                  <a
+                    class="text-[16px] md:text-[18px] border-b border-white w-full block py-3 px-2"
+                    href="#"
+                    >Subscription</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-[16px] md:text-[18px] border-b border-white w-full block py-3 px-2"
+                    href="#"
+                    >Payment Information</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-[16px] md:text-[18px] w-full block py-3 px-2"
+                    href="#"
+                    >Purchase History</a
+                  >
+                </li>
+              </ul>
+
+              <!-- sign out -->
+              <button class="w-fit">
+                <span class="underline text-[16px]">Sign out</span>
+              </button>
+            </div>
+
+            <!-- info -->
+            <div
+              class="flex flex-col gap-5 flex-grow text-secondary p-[15px] py-[20px] sm:p-[25px] md:p-[45px] lg:p-[65px] xl:p-[75px]"
+            >
+              <!-- title -->
+              <h1
+                class="text-[34px] sm:text-[40px] md:text-[45px] lg:text-[50px]"
+              >
+                Subscription
+              </h1>
+
+              <!-- current plan -->
+              <div
+                class="rounded-[7px] bg-lightGrey w-full py-[13px] px-[15px] md:px-[35px] flex lg:flex-row flex-col lg:justify-between gap-3"
+              >
+                <!-- col -->
+                <div class="flex flex-col gap-3 py-3 max-w-[660px] w-full">
+                  <div class="flex items-center flex-wrap gap-3">
+                    <p
+                      class="text-[15px] md:text-[17px] text-secondary font-medium"
+                    >
+                      Current Subscription:
+                      <span class="font-light">Monthly Advanced Plan</span>
+                    </p>
+                    <button class="w-fit">
+                      <span class="text-[16px] underline text-primary"
+                        >Change Plan</span
+                      >
+                    </button>
+                  </div>
+
+                  <span class="text-[18px] md:text-[20px] text-primary"
+                    >50 Credits / Month</span
+                  >
+
+                  <div class="grid grid-cols-1 xl:grid-cols-2 gap-y-[17px]">
+                    <div class="flex items-center gap-2">
+                      <img
+                        class="w-[18px]"
+                        src="../assets/vectors/listGoldCheck.svg"
+                        alt="check"
+                      />
+                      <span class="text-[14px]">All Essential Features</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <img
+                        class="w-[18px]"
+                        src="../assets/vectors/listGoldCheck.svg"
+                        alt="check"
+                      />
+                      <span class="text-[14px]"
+                        >Download deals in .pdf format
+                      </span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <img
+                        class="w-[18px]"
+                        src="../assets/vectors/listGoldCheck.svg"
+                        alt="check"
+                      />
+                      <span class="text-[14px]"
+                        >Edit already listed deals
+                      </span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <img
+                        class="w-[18px]"
+                        src="../assets/vectors/listGoldCheck.svg"
+                        alt="check"
+                      />
+                      <span class="text-[14px]"
+                        >Unlimited Property Alerts every month
+                      </span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <img
+                        class="w-[18px]"
+                        src="../assets/vectors/listGoldCheck.svg"
+                        alt="check"
+                      />
+                      <span class="text-[14px]">Verify your ID for free </span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- col -->
+                <div class="flex flex-col gap-3 w-full lg:w-[340px]">
+                  <div
+                    class="border-[3px] border-primary rounded-[15px] min-h-[117px] w-full py-[16px] px-[25px] flex flex-col gap-2"
+                  >
+                    <div class="flex items-baseline">
+                      <span class="text-[30px] font-semibold leading-8"
+                        >£40</span
+                      >
+                      <span class="text-[17px]">+vat</span>
+                    </div>
+
+                    <span class="font-medium text-[17px]"
+                      >Next Payment Date: 01/10/2023</span
+                    >
+                  </div>
+
+                  <div
+                    class="rounded-[7px] bg-secondary min-h-[117px] w-full py-[16px] px-[18px] flex flex-col items-center justify-center gap-1"
+                  >
+                    <p class="text-[17px] text-white font-medium text-center">
+                      Switch to quarterly payments and save up to 24%
+                    </p>
+
+                    <button class="w-full">
+                      <span class="underline text-[14px] text-primary"
+                        >Change payment terms</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- upgraded plan -->
+              <div
+                class="rounded-[7px] bg-secondary text-white w-full py-[28px] px-[35px] flex flex-col gap-3"
+              >
+                <span class="text-primary text-[18px] md:text-[20px]"
+                  >Upgrade to the professional plan</span
+                >
+
+                <p class="text-[15px] md:text-[17px]">
+                  unlock 150 credits a month, all of your Advanced plan perks,
+                  plus:
+                </p>
+
+                <div
+                  class="grid grid-cols-1 xl:grid-cols-2 gap-y-[17px] gap-x-[75px] w-fit pt-3"
+                >
+                  <div class="flex items-start gap-2 max-w-[200px] w-full">
+                    <img
+                      class="w-[18px]"
+                      src="../assets/vectors/listGoldCheck.svg"
+                      alt="check"
+                    />
+                    <span class="text-[14px]"
+                      >30% off most of our paid services</span
+                    >
+                  </div>
+                  <div class="flex items-start gap-2 max-w-[200px] w-full">
+                    <img
+                      class="w-[18px]"
+                      src="../assets/vectors/listGoldCheck.svg"
+                      alt="check"
+                    />
+                    <span class="text-[14px]"
+                      >50% off when placing adverts
+                    </span>
+                  </div>
+                </div>
+
+                <div class="flex items-center flex-wrap gap-x-9 gap-y-3 pt-4">
+                  <button
+                    class="text-[14px] rounded-[12px] bg-primary w-[185px] py-2"
+                  >
+                    Upgrade
+                  </button>
+                  <button class="text-[14px] w-fit">
+                    <span class="underline">View all subscription plans</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- cancel subs -->
+              <div class="w-full flex md:justify-end">
+                <button class="text-[16px] w-fit">
+                  <span class="underline text-primary"
+                    >Cancel Subscription</span
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

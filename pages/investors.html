@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aquila</title>
+    <link rel="stylesheet" href="../output.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/mbg1zau.css" />
+  </head>
+  <body>
+    <header class="font-stolzl font-light text-[#16234A] flex">
+      <div
+        class="navbar max-w-[1700px] relative w-full flex items-center justify-between mx-auto py-6 px-[10px]"
+      >
+        <div
+          class="absolute hidden sm:flex items-center -top-2 right-[10px] gap-6"
+        >
+          <div class="flex gap-2 items-center">
+            <img src="../assets/vectors/phoneBlue.svg" alt="phone" />
+            <span>0203 693 3811</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="flex gap-2 items-center">
+              <img src="../assets/vectors/facebookBlue.svg" alt="phone" />
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="../assets/vectors/instagramBlue.svg" alt="phone" />
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="../assets/vectors/linkedInBlue.svg" alt="phone" />
+            </div>
+          </div>
+          <button
+            class="bg-[#16234A] text-[14px] font-light text-white py-3 px-5 rounded-b-lg rounded-bl-lg"
+          >
+            Investor Lounge
+          </button>
+        </div>
+        <div class="logoContainer max-w-[134px]">
+          <!-- <img src="assets/images/Logo.png" alt="Logo" /> -->
+          <img src="../assets/vectors/LogoSvgBlueFont.svg" alt="Logo" />
+        </div>
+        <div class="flex items-center gap-16">
+          <nav class="hidden lg:flex">
+            <ul class="flex items-center gap-8 text-lg">
+              <li><a href="sourcers.html">Sourcers</a></li>
+              <li><a href="#">Landlords</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Our Services</a></li>
+              <li><a href="#">Our Partners</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </nav>
+          <div class="flex items-center gap-7 text=[18px]">
+            <div class="hidden sm:flex items-center gap-6">
+              <button
+                class="bg-none border-2 border-[#16234A] flex items-center gap-2 py-3 px-4 rounded-md"
+              >
+                <img src="../assets/vectors/user.svg" alt="user" />
+                Sign In
+              </button>
+              <button
+                class="bg-[#F8B84E] flex items-center gap-2 py-3 px-4 rounded-md text-white border-2 border-[#F8B84E]"
+              >
+                <img src="../assets/vectors/edit.svg" alt="edit" />
+                Create Account
+              </button>
+            </div>
+
+            <!-- Burger button -->
+            <div class="inline-block lg:hidden">
+              <button class="relative group">
+                <div
+                  class="relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all bg-[#F8B84E] ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md"
+                >
+                  <div
+                    class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden"
+                  >
+                    <div
+                      class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10"
+                    ></div>
+                    <div
+                      class="bg-white h-[2px] w-7 rounded transform transition-all duration-300 group-focus:translate-x-10 delay-75"
+                    ></div>
+                    <div
+                      class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10 delay-150"
+                    ></div>
+
+                    <div
+                      class="absolute items-center justify-between transform transition-all duration-500 top-2.5 -translate-x-10 group-focus:translate-x-0 flex w-0 group-focus:w-12"
+                    >
+                      <div
+                        class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 rotate-0 delay-300 group-focus:rotate-45"
+                      ></div>
+                      <div
+                        class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 -rotate-0 delay-300 group-focus:-rotate-45"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- page heading -->
+      <section class="bg-[#16234A] font-stolzl font-light">
+        <div class="customContainer pt-7 md:pt-20 pb-5">
+          <div class="flex flex-col lg:flex-row lg:justify-between">
+            <div class="mb-4 lg:mb-0">
+              <h2 class="text-white text-[35px] md:text-[50px] font-light">
+                Investors
+              </h2>
+            </div>
+            <div
+              class="flex flex-col lg:flex-row lg:flex-wrap items-center gap-6"
+            >
+              <input
+                type="text"
+                placeholder="Location"
+                class="py-4 pl-6 pr-3 rounded-md w-full lg:w-[280px]"
+              />
+              <input
+                type="text"
+                placeholder="Distance"
+                class="py-4 pl-6 pr-3 rounded-md w-full lg:w-[280px]"
+              />
+              <select
+                class="py-[17px] pl-6 pr-3 rounded-md w-full lg:w-[280px]"
+              >
+                <option value="1" selected disabled>Strategy</option>
+                <option value="2">Option #2</option>
+                <option value="3">Option #3</option>
+              </select>
+              <button
+                class="bg-[#F8B84E] py-3 lg:py-3 px-7 rounded-md text-white text-[19px] md:text-[22px] w-full lg:w-fit"
+              >
+                Search
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- filter menu section -->
+      <section class="font-stolzl font-light">
+        <div
+          class="customContainer gap-3 py-10 flex flex-col sm:flex-row sm:justify-between sm:items-center"
+        >
+          <div>
+            <p class="text-black text-[17px]">
+              Showing 1-5 of 55 property investors
+            </p>
+          </div>
+          <div class="flex gap-2 items-center">
+            <span class="text-black text-[17px]">Sort by</span>
+            <select
+              class="border-2 border-[#F8B84E] py-2 px-3 rounded-md sm:w-[213px]"
+            >
+              <option value="1" selected disabled>Popularity</option>
+              <option value="2">Option #2</option>
+              <option value="3">Option #3</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <!-- sourcer cards -->
+      <section class="font-stolzl font-light text-[#16234A]">
+        <div class="customContainer flex flex-col gap-5 sm:gap-10">
+          <div
+            class="flex flex-col xl:justify-between xl:flex-row items-center w-full rounded-xl overflow-hidden shadow-[0px_0px_30px_-11px_rgba(0,0,0,0.25)]"
+          >
+            <div
+              class="flex flex-col xl:flex-row xl:items-center gap-10 w-full py-6 px-9"
+            >
+              <!-- card image -->
+              <div
+                class="max-w-[200px] max-h-[200px] w-full h-full overflow-hidden rounded-full"
+              >
+                <img src="../assets//images/sourcer.png" alt="profile i1ge" />
+              </div>
+
+              <!-- card info -->
+              <div class="flex flex-col gap-5 w-full">
+                <!-- name/statuses/location -->
+                <div class="flex flex-wrap items-center gap-y-2 gap-x-7">
+                  <span class="text-[28px] md:text-[39px]">IainW01</span>
+
+                  <!-- icon statuses -->
+                  <div class="flex gap-3">
+                    <!-- status 1 -->
+                    <div class="w-[48px] h-[48px]">
+                      <img
+                        class="w-full"
+                        src="../assets/vectors/goldPound.svg"
+                        alt="pound"
+                      />
+                    </div>
+
+                    <!-- status 2 -->
+                    <div class="w-[48px] h-[48px]">
+                      <img
+                        class="w-full"
+                        src="../assets/vectors/goldId.svg"
+                        alt="id"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- status -->
+                  <div
+                    class="bg-[#D54545] text-[15px] font-medium text-white py-1 px-5 rounded-[10px]"
+                  >
+                    BRRR - BTL
+                  </div>
+
+                  <!-- location -->
+                  <div class="flex items-center gap-3">
+                    <img src="../assets/vectors/location.svg" alt="location" />
+                    <span class="text-[15px] text-black">
+                      Birmingham, England, United Kingdom
+                    </span>
+                  </div>
+                </div>
+
+                <!-- description -->
+                <p class="text-black text-[15px] xl:w-[85%]">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua.
+                </p>
+
+                <!-- stats -->
+                <div
+                  class="flex w-full gap-y-3 gap-6 lg:gap-x-12 xl:gap-x-16 flex-wrap items-start"
+                >
+                  <div class="flex flex-col gap-[3px]">
+                    <p class="text-[13px]">Preferred investment value</p>
+                    <span class="text-primary font-semibold text-[17px]"
+                      >£100k - £200k</span
+                    >
+                  </div>
+
+                  <div class="flex flex-col gap-[3px]">
+                    <p class="text-[13px]">Investment Type</p>
+                    <span class="text-primary font-semibold text-[17px]"
+                      >Mortgage Buyer</span
+                    >
+                  </div>
+
+                  <div class="flex flex-col gap-[3px]">
+                    <p class="text-[13px]">Minimum Yield Expected</p>
+                    <span class="text-primary font-semibold text-[17px]"
+                      >8%</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-[#F9F9F9] gap-4 flex flex-col px-10 py-12 text-white w-full xl:max-w-[387px]"
+            >
+              <button
+                class="px-2 py-4 md:py-5 bg-[#F8B84E] rounded-lg w-full text-base md:text-lg"
+              >
+                View Profile
+              </button>
+              <button
+                class="px-2 py-4 md:py-5 bg-[#16234A] rounded-lg w-full text-base md:text-lg"
+              >
+                Message
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col xl:justify-between xl:flex-row items-center w-full rounded-xl overflow-hidden shadow-[0px_0px_30px_-11px_rgba(0,0,0,0.25)]"
+          >
+            <div
+              class="flex flex-col xl:flex-row xl:items-center gap-10 w-full py-6 px-9"
+            >
+              <!-- card image -->
+              <div
+                class="max-w-[200px] max-h-[200px] w-full h-full overflow-hidden rounded-full"
+              >
+                <img src="../assets//images/sourcer.png" alt="profile i1ge" />
+              </div>
+
+              <!-- card info -->
+              <div class="flex flex-col gap-5 w-full">
+                <!-- name/statuses/location -->
+                <div class="flex flex-wrap items-center gap-y-2 gap-x-7">
+                  <span class="text-[28px] md:text-[39px]">IainW01</span>
+
+                  <!-- icon statuses -->
+                  <div class="flex gap-3">
+                    <!-- status 1 -->
+                    <div class="w-[48px] h-[48px]">
+                      <img
+                        class="w-full"
+                        src="../assets/vectors/goldPound.svg"
+                        alt="pound"
+                      />
+                    </div>
+
+                    <!-- status 2 -->
+                    <div class="w-[48px] h-[48px]">
+                      <img
+                        class="w-full"
+                        src="../assets/vectors/goldId.svg"
+                        alt="id"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- status -->
+                  <div
+                    class="bg-[#D54545] text-[15px] font-medium text-white py-1 px-5 rounded-[10px]"
+                  >
+                    BRRR - BTL
+                  </div>
+
+                  <!-- location -->
+                  <div class="flex items-center gap-3">
+                    <img src="../assets/vectors/location.svg" alt="location" />
+                    <span class="text-[15px] text-black">
+                      Birmingham, England, United Kingdom
+                    </span>
+                  </div>
+                </div>
+
+                <!-- description -->
+                <p class="text-black text-[15px] xl:w-[85%]">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua.
+                </p>
+
+                <!-- stats -->
+                <div
+                  class="flex w-full gap-y-3 gap-6 lg:gap-x-12 xl:gap-x-16 flex-wrap items-start"
+                >
+                  <div class="flex flex-col gap-[3px]">
+                    <p class="text-[13px]">Preferred investment value</p>
+                    <span class="text-primary font-semibold text-[17px]"
+                      >£100k - £200k</span
+                    >
+                  </div>
+
+                  <div class="flex flex-col gap-[3px]">
+                    <p class="text-[13px]">Investment Type</p>
+                    <span class="text-primary font-semibold text-[17px]"
+                      >Mortgage Buyer</span
+                    >
+                  </div>
+
+                  <div class="flex flex-col gap-[3px]">
+                    <p class="text-[13px]">Minimum Yield Expected</p>
+                    <span class="text-primary font-semibold text-[17px]"
+                      >8%</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-[#F9F9F9] gap-4 flex flex-col px-10 py-12 text-white w-full xl:max-w-[387px]"
+            >
+              <button
+                class="px-2 py-4 md:py-5 bg-[#F8B84E] rounded-lg w-full text-base md:text-lg"
+              >
+                View Profile
+              </button>
+              <button
+                class="px-2 py-4 md:py-5 bg-[#16234A] rounded-lg w-full text-base md:text-lg"
+              >
+                Message
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col xl:justify-between xl:flex-row items-center w-full rounded-xl overflow-hidden shadow-[0px_0px_30px_-11px_rgba(0,0,0,0.25)]"
+          >
+            <div
+              class="flex flex-col xl:flex-row xl:items-center gap-10 w-full py-6 px-9"
+            >
+              <!-- card image -->
+              <div
+                class="max-w-[200px] max-h-[200px] w-full h-full overflow-hidden rounded-full"
+              >
+                <img src="../assets//images/sourcer.png" alt="profile i1ge" />
+              </div>
+
+              <!-- card info -->
+              <div class="flex flex-col gap-5 w-full">
+                <!-- name/statuses/location -->
+                <div class="flex flex-wrap items-center gap-y-2 gap-x-7">
+                  <span class="text-[28px] md:text-[39px]">IainW01</span>
+
+                  <!-- icon statuses -->
+                  <div class="flex gap-3">
+                    <!-- status 1 -->
+                    <div class="w-[48px] h-[48px]">
+                      <img
+                        class="w-full"
+                        src="../assets/vectors/goldPound.svg"
+                        alt="pound"
+                      />
+                    </div>
+
+                    <!-- status 2 -->
+                    <div class="w-[48px] h-[48px]">
+                      <img
+                        class="w-full"
+                        src="../assets/vectors/goldId.svg"
+                        alt="id"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- status -->
+                  <div
+                    class="bg-[#D54545] text-[15px] font-medium text-white py-1 px-5 rounded-[10px]"
+                  >
+                    BRRR - BTL
+                  </div>
+
+                  <!-- location -->
+                  <div class="flex items-center gap-3">
+                    <img src="../assets/vectors/location.svg" alt="location" />
+                    <span class="text-[15px] text-black">
+                      Birmingham, England, United Kingdom
+                    </span>
+                  </div>
+                </div>
+
+                <!-- description -->
+                <p class="text-black text-[15px] xl:w-[85%]">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua.
+                </p>
+
+                <!-- stats -->
+                <div
+                  class="flex w-full gap-y-3 gap-6 lg:gap-x-12 xl:gap-x-16 flex-wrap items-start"
+                >
+                  <div class="flex flex-col gap-[3px]">
+                    <p class="text-[13px]">Preferred investment value</p>
+                    <span class="text-primary font-semibold text-[17px]"
+                      >£100k - £200k</span
+                    >
+                  </div>
+
+                  <div class="flex flex-col gap-[3px]">
+                    <p class="text-[13px]">Investment Type</p>
+                    <span class="text-primary font-semibold text-[17px]"
+                      >Mortgage Buyer</span
+                    >
+                  </div>
+
+                  <div class="flex flex-col gap-[3px]">
+                    <p class="text-[13px]">Minimum Yield Expected</p>
+                    <span class="text-primary font-semibold text-[17px]"
+                      >8%</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-[#F9F9F9] gap-4 flex flex-col px-10 py-12 text-white w-full xl:max-w-[387px]"
+            >
+              <button
+                class="px-2 py-4 md:py-5 bg-[#F8B84E] rounded-lg w-full text-base md:text-lg"
+              >
+                View Profile
+              </button>
+              <button
+                class="px-2 py-4 md:py-5 bg-[#16234A] rounded-lg w-full text-base md:text-lg"
+              >
+                Message
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col xl:justify-between xl:flex-row items-center w-full rounded-xl overflow-hidden shadow-[0px_0px_30px_-11px_rgba(0,0,0,0.25)]"
+          >
+            <div
+              class="flex flex-col xl:flex-row xl:items-center gap-10 w-full py-6 px-9"
+            >
+              <!-- card image -->
+              <div
+                class="max-w-[200px] max-h-[200px] w-full h-full overflow-hidden rounded-full"
+              >
+                <img src="../assets//images/sourcer.png" alt="profile i1ge" />
+              </div>
+
+              <!-- card info -->
+              <div class="flex flex-col gap-5 w-full">
+                <!-- name/statuses/location -->
+                <div class="flex flex-wrap items-center gap-y-2 gap-x-7">
+                  <span class="text-[28px] md:text-[39px]">IainW01</span>
+
+                  <!-- icon statuses -->
+                  <div class="flex gap-3">
+                    <!-- status 1 -->
+                    <div class="w-[48px] h-[48px]">
+                      <img
+                        class="w-full"
+                        src="../assets/vectors/goldPound.svg"
+                        alt="pound"
+                      />
+                    </div>
+
+                    <!-- status 2 -->
+                    <div class="w-[48px] h-[48px]">
+                      <img
+                        class="w-full"
+                        src="../assets/vectors/goldId.svg"
+                        alt="id"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- status -->
+                  <div
+                    class="bg-[#D54545] text-[15px] font-medium text-white py-1 px-5 rounded-[10px]"
+                  >
+                    BRRR - BTL
+                  </div>
+
+                  <!-- location -->
+                  <div class="flex items-center gap-3">
+                    <img src="../assets/vectors/location.svg" alt="location" />
+                    <span class="text-[15px] text-black">
+                      Birmingham, England, United Kingdom
+                    </span>
+                  </div>
+                </div>
+
+                <!-- description -->
+                <p class="text-black text-[15px] xl:w-[85%]">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua.
+                </p>
+
+                <!-- stats -->
+                <div
+                  class="flex w-full gap-y-3 gap-6 lg:gap-x-12 xl:gap-x-16 flex-wrap items-start"
+                >
+                  <div class="flex flex-col gap-[3px]">
+                    <p class="text-[13px]">Preferred investment value</p>
+                    <span class="text-primary font-semibold text-[17px]"
+                      >£100k - £200k</span
+                    >
+                  </div>
+
+                  <div class="flex flex-col gap-[3px]">
+                    <p class="text-[13px]">Investment Type</p>
+                    <span class="text-primary font-semibold text-[17px]"
+                      >Mortgage Buyer</span
+                    >
+                  </div>
+
+                  <div class="flex flex-col gap-[3px]">
+                    <p class="text-[13px]">Minimum Yield Expected</p>
+                    <span class="text-primary font-semibold text-[17px]"
+                      >8%</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-[#F9F9F9] gap-4 flex flex-col px-10 py-12 text-white w-full xl:max-w-[387px]"
+            >
+              <button
+                class="px-2 py-4 md:py-5 bg-[#F8B84E] rounded-lg w-full text-base md:text-lg"
+              >
+                View Profile
+              </button>
+              <button
+                class="px-2 py-4 md:py-5 bg-[#16234A] rounded-lg w-full text-base md:text-lg"
+              >
+                Message
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- pagination -->
+      <section>
+        <div class="customContainer rounded-xl bg-[#F9F9F9] p-4 mt-9 md:my-14">
+          <div class="flex items-center justify-center gap-3">
+            <img
+              class="p-4"
+              src="../assets/vectors/arrowLeftGold.svg"
+              alt="arrow left gold"
+            />
+
+            <div class="paginationItem-active">1</div>
+
+            <div class="paginationItem">2</div>
+
+            <div class="paginationItem">3</div>
+
+            <div class="paginationItem">4</div>
+
+            <img
+              class="p-4"
+              src="../assets/vectors/arrowRightGold.svg"
+              alt="arrow right gold"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
