@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aquila</title>
+    <link rel="stylesheet" href="../output.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/mbg1zau.css" />
+  </head>
+  <body>
+    <header class="font-stolzl font-light text-secondary flex shadow-md">
+      <div
+        class="navbar customContainer relative flex items-center justify-between py-6"
+      >
+        <div
+          class="absolute hidden sm:flex items-center -top-2 right-[10px] gap-6"
+        >
+          <div class="flex gap-2 items-center">
+            <img src="../assets/vectors/phoneBlue.svg" alt="phone" />
+            <span>0203 693 3811</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="flex gap-2 items-center">
+              <img src="../assets/vectors/facebookBlue.svg" alt="phone" />
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="../assets/vectors/instagramBlue.svg" alt="phone" />
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="../assets/vectors/linkedInBlue.svg" alt="phone" />
+            </div>
+          </div>
+          <button
+            class="bg-secondary text-[14px] font-light text-white py-3 px-5 rounded-b-lg rounded-bl-lg"
+          >
+            Investor Lounge
+          </button>
+        </div>
+        <div class="logoContainer max-w-[134px]">
+          <!-- <img src="assets/images/Logo.png" alt="Logo" /> -->
+          <img src="../assets/vectors/LogoSvgBlueFont.svg" alt="Logo" />
+        </div>
+        <div class="flex items-center gap-16">
+          <nav class="hidden lg:flex">
+            <ul class="flex items-center gap-8 text-lg">
+              <li><a href="sourcers.html">Sourcers</a></li>
+              <li><a href="#">Landlords</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Our Services</a></li>
+              <li><a href="#">Our Partners</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </nav>
+          <div class="flex items-center gap-7 text=[18px]">
+            <div class="hidden sm:flex items-center gap-6">
+              <button
+                class="bg-none border-2 border-secondary flex items-center gap-2 py-3 px-4 rounded-md"
+              >
+                <img src="../assets/vectors/user.svg" alt="user" />
+                Sign In
+              </button>
+              <button
+                class="bg-primary flex items-center gap-2 py-3 px-4 rounded-md text-white border-2 border-primary"
+              >
+                <img src="../assets/vectors/edit.svg" alt="edit" />
+                Create Account
+              </button>
+            </div>
+
+            <!-- Burger button -->
+            <div class="inline-block lg:hidden">
+              <button class="relative group">
+                <div
+                  class="relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all bg-primary ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md"
+                >
+                  <div
+                    class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden"
+                  >
+                    <div
+                      class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10"
+                    ></div>
+                    <div
+                      class="bg-white h-[2px] w-7 rounded transform transition-all duration-300 group-focus:translate-x-10 delay-75"
+                    ></div>
+                    <div
+                      class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10 delay-150"
+                    ></div>
+
+                    <div
+                      class="absolute items-center justify-between transform transition-all duration-500 top-2.5 -translate-x-10 group-focus:translate-x-0 flex w-0 group-focus:w-12"
+                    >
+                      <div
+                        class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 rotate-0 delay-300 group-focus:rotate-45"
+                      ></div>
+                      <div
+                        class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 -rotate-0 delay-300 group-focus:-rotate-45"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- profile -->
+    <section class="bg-secondary py-[29px]">
+      <div class="customContainer">
+        <div
+          class="flex md:flex-row flex-col items-center justify-between gap-3"
+        >
+          <!-- avatar/name/username/level -->
+          <div
+            class="flex xl:flex-row flex-col items-center md:items-start xl:items-center gap-7"
+          >
+            <!-- avatar -->
+            <div
+              class="w-[139px] h-[139px] flex flex-shrink-0 rounded-[50%] border-2 border-white relative"
+            >
+              <img
+                class="w-full object-cover object-center"
+                src="../assets/images/avatarLg.png"
+                alt="avatar"
+              />
+              <div
+                class="w-[24px] h-[24px] border border-white bg-[#17D938] top-3 right-[5px] rounded-[50%] absolute"
+              ></div>
+            </div>
+            <!-- name/username/level -->
+            <div
+              class="flex items-center md:items-start flex-col gap-2 lg:pt-5"
+            >
+              <!-- name/edit btn -->
+              <div
+                class="flex lg:flex-row flex-col gap-3 items-center md:items-baseline"
+              >
+                <h3
+                  class="text-[24px] sm:text-[30px] md:text-[34px] lg:text-[39px] text-white leading-9"
+                >
+                  Iain Watson
+                </h3>
+                <button class="w-fit">
+                  <span
+                    class="underline text-[15px] md:text-[17px] text-primary"
+                    >Edit</span
+                  >
+                </button>
+              </div>
+              <!-- username -->
+              <p class="text-[16px] md:text-[20px] text-white">
+                Username <span class="text-primary">@watson123</span>
+              </p>
+
+              <!-- level -->
+              <div
+                class="flex md:flex-row flex-col gap-6 items-center md:items-baseline"
+              >
+                <div class="flex flex-col items-center gap-2">
+                  <div
+                    class="w-[274px] h-[19px] grid grid-cols-5 gap-1 rounded-[13px] overflow-hidden"
+                  >
+                    <div class="bg-primary w-full"></div>
+                    <div class="bg-white w-full"></div>
+                    <div class="bg-white w-full"></div>
+                    <div class="bg-white w-full"></div>
+                    <div class="bg-white w-full"></div>
+                  </div>
+                  <div class="flex items-center gap-7">
+                    <span
+                      class="text-primary underline cursor-pointer text-[14px]"
+                      >Active for 25 days</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- verifications/credits count -->
+          <div class="flex xl:flex-row flex-col items-center gap-5">
+            <!-- credits count -->
+            <div
+              class="bg-[#435485] rounded-[11px] w-full xs:w-[314px] py-[17px] px-[25px] flex flex-col text-white gap-1"
+            >
+              <div class="flex items-baseline gap-2">
+                <span
+                  class="text-[28px] sm:text-[33px] md:text-[38px] lg:text-[44px] leading-[3rem]"
+                  >08</span
+                >
+                <span class="md:text-[21px]">Credits Remaining</span>
+              </div>
+              <p class="text-[13px]">Your Subscription renews on 12/7/2023</p>
+              <button class="w-fit">
+                <span class="underline text-primary text-[13px]"
+                  >Upgrade your plan</span
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- sidebar/main content -->
+    <section>
+      <div class="max-w-[3000px] mx-auto relative">
+        <div
+          class="w-[40%] bg-[#435485] h-full absolute -z-10 hidden md:block"
+        ></div>
+        <div class="customContainer">
+          <div class="flex">
+            <!-- sidebar -->
+            <aside
+              class="text-white w-[312px] relative hidden md:flex flex-col"
+            >
+              <div class="flex flex-col py-[60px] pr-[60px] gap-7">
+                <!-- opened tab -->
+                <span
+                  class="text-[20px] sm:text-[22px] md:text-[26px] lg:text-[30px]"
+                >
+                  Investor Lounge
+                </span>
+                <!-- select view -->
+                <div class="flex flex-col">
+                  <span class="text-primary text-[15px] md:text-[17px]"
+                    >Switch View</span
+                  >
+                  <select
+                    class="rounded border border-primary w-full text-[15px] bg-[#435485] p-1"
+                  >
+                    <option value="sourcer" selected>Investor</option>
+                  </select>
+                </div>
+                <!-- list -->
+                <div class="flex flex-col gap-3">
+                  <button class="w-fit flex items-center gap-2 text-left">
+                    <div class="w-[20px] h-[21px]">
+                      <img
+                        class="w-full"
+                        src="../assets/vectors/home.svg"
+                        alt="home"
+                      />
+                    </div>
+                    <span class="md:text-[17px]">Manage Listings</span>
+                  </button>
+                  <button class="w-fit flex items-center gap-2 text-left">
+                    <div class="w-[20px] h-[21px]">
+                      <img
+                        class="w-full"
+                        src="../assets/vectors/plusCircle.svg"
+                        alt="plus"
+                      />
+                    </div>
+                    <span class="md:text-[17px]">Create New Listing</span>
+                  </button>
+                  <button class="w-fit flex items-center gap-2 text-left">
+                    <div class="w-[20px] h-[21px]">
+                      <img
+                        class="w-full"
+                        src="../assets/vectors/messaging.svg"
+                        alt="messaging"
+                      />
+                    </div>
+                    <span class="md:text-[17px]">Messages</span>
+                  </button>
+                  <button class="w-fit flex items-center gap-2 text-left">
+                    <div class="w-[20px] h-[21px]">
+                      <img
+                        class="w-full"
+                        src="../assets/vectors/alarm.svg"
+                        alt="alarm"
+                      />
+                    </div>
+                    <span class="md:text-[17px]">Set Property Alert</span>
+                  </button>
+                  <button class="w-fit flex items-center gap-2 text-left">
+                    <div class="w-[20px] h-[21px]">
+                      <img
+                        class="w-full"
+                        src="../assets/vectors/bookmark.svg"
+                        alt="bookmark"
+                      />
+                    </div>
+                    <span class="md:text-[17px]">Saved Listings</span>
+                  </button>
+                  <button class="w-fit flex items-center gap-2 text-left">
+                    <div class="w-[20px] h-[21px]">
+                      <img
+                        class="w-full"
+                        src="../assets/vectors/checkWhite.svg"
+                        alt="checkWhite"
+                      />
+                    </div>
+                    <span class="md:text-[17px]">Check your Sourcer</span>
+                  </button>
+                </div>
+                <!-- sign out btn -->
+                <button class="flex items-center gap-2">
+                  <div class="w-[20px] h-[21px]">
+                    <img
+                      class="w-full"
+                      src="../assets/vectors/exit.svg"
+                      alt="Sign Out"
+                    />
+                  </div>
+                  <span class="md:text-[17px] text-primary">Sign Out</span>
+                </button>
+              </div>
+              <!-- back btn -->
+              <button
+                class="w-[48px] h-[48px] rounded-[50%] bg-primary flex items-center justify-center absolute top-[60px] -right-[24px]"
+              >
+                <img
+                  class="w-[26px]"
+                  src="../assets/vectors/arrowLeft.svg"
+                  alt="arrow left"
+                />
+              </button>
+            </aside>
+            <!-- main -->
+            <div class="bg-white w-[1300px] overflow-x-hidden flex-grow">
+              <div class="flex flex-col gap-7 text-secondary">
+                <!-- set an alert -->
+                <div class="flex flex-col gap-7 bg-[#EDEDED] py-[60px]">
+                  <!-- heading -->
+                  <div class="flex items-baseline gap-3 md:pl-[60px]">
+                    <img
+                      class="w-[37px] h-[37px]"
+                      src="../assets/vectors/alarmSecondary.svg"
+                      alt="alarm"
+                    />
+                    <h2
+                      class="lg:text-[35px] md:text-[32px] sm:text-[30px] text-[26px]"
+                    >
+                      Set Property Alert
+                    </h2>
+                  </div>
+
+                  <!-- set an alert block -->
+                  <div
+                    class="md:rounded-[20px] rounded-[10px] w-full flex flex-col lg:flex-row overflow-hidden md:pl-[60px]"
+                  >
+                    <!-- img -->
+                    <div class="lg:min-w-[300px] lg:max-w-[426px] w-full flex">
+                      <img
+                        class="w-full object-cover object-center rounded-tl-[10px] md:rounded-tl-[20px] rounded-bl-[10px] md:rounded-bl-[20px]"
+                        src="../assets/images/setPropertyAlert.png"
+                        alt="setPropertyAlert"
+                      />
+                    </div>
+
+                    <!-- text -->
+                    <div
+                      class="flex flex-col gap-5 md:gap-10 py-[25px] xs:py-[35px] md:py-[50px] lg:py-[70px] xl:py-[80px] px-[15px] xs:px-[20px] md:px-[30px] lg:px-[50px] xl:px-[60px] bg-secondary text-white"
+                    >
+                      <!-- title -->
+                      <h3
+                        class="lg:text-[35px] md:text-[30px] sm:text-[26px] text-[21px]"
+                      >
+                        Stay up to date when properties that meet your criteria
+                        enter the market by setting a property alert
+                      </h3>
+
+                      <!-- list -->
+                      <div class="flex flex-col gap-4">
+                        <div
+                          class="flex items-start sm:flex-row flex-col gap-2"
+                        >
+                          <!-- icon -->
+                          <div
+                            class="flex justify-center sm:w-[50px] flex-shrink-0"
+                          >
+                            <img
+                              class="w-[40px]"
+                              src="../assets/vectors/homePrimary.svg"
+                              alt="home"
+                            />
+                          </div>
+
+                          <!-- text -->
+                          <p class="text-[15px] md:text-[17px]">
+                            Tell us about the ideal listing you're interested in
+                            using our form below and we can notify you as new
+                            listings become avaialble
+                          </p>
+                        </div>
+
+                        <div
+                          class="flex items-start sm:flex-row flex-col gap-2"
+                        >
+                          <!-- icon -->
+                          <div
+                            class="flex justify-center sm:w-[50px] flex-shrink-0"
+                          >
+                            <img
+                              class="w-[29px]"
+                              src="../assets/vectors/atPrimary.svg"
+                              alt="at"
+                            />
+                          </div>
+
+                          <!-- text -->
+                          <div>
+                            <p class="text-[15px] md:text-[17px]">
+                              Choose how you want to be notified, either by
+                              email or sms*
+                            </p>
+                            <p class="text-[12px] text-primary">
+                              *Charges apply
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- btn -->
+                      <button
+                        class="w-full sm:w-fit bg-primary rounded-[6px] text-white font-medium text-[15px] py-2 px-8"
+                      >
+                        Set An Alert
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- set alert form -->
+                <div
+                  class="flex flex-col gap-4 py-6 sm:py-10 lg:py-16 md:pl-[60px]"
+                >
+                  <!-- form #1 -->
+                  <div
+                    class="md:rounded-[20px] rounded-[10px] bg-[#EDEDED] flex flex-col gap-9 py-[35px] sm:py-[45px] md:py-[70px] px-[15px] sm:px-[30px] md:px-[45px] lg:px-[65px] xl:px-[80px]"
+                  >
+                    <!-- title/step -->
+                    <div
+                      class="flex gap-x-5 gap-y-3 flex-wrap items-center justify-between"
+                    >
+                      <h3
+                        class="lg:text-[35px] md:text-[32px] sm:text-[30px] text-[26px]"
+                      >
+                        Set An Alert
+                      </h3>
+                      <img
+                        class="w-[122px] md:w-[157px]"
+                        src="../assets/vectors/setAlert_Step_1.svg"
+                        alt="step1"
+                      />
+                    </div>
+
+                    <!-- form -->
+                    <div
+                      class="grid grid-cols-1 lg:grid-cols-2 gap-y-4 gap-x-[60px]"
+                    >
+                      <!-- col -->
+                      <div class="flex flex-col gap-4 lg:gap-8 w-full">
+                        <!-- input -->
+                        <div class="flex flex-col gap-1">
+                          <span class="text-[15px] md:text-[17px] text-black"
+                            >Alert Name</span
+                          >
+                          <select
+                            class="text-[15px] md:text-[17px] rounded-[7px] bg-white border-[3px] border-primary py-4 px-3"
+                          ></select>
+                        </div>
+
+                        <!-- double inputs -->
+                        <div
+                          class="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-[25px]"
+                        >
+                          <!-- input -->
+                          <div class="flex flex-col gap-1">
+                            <span class="text-[15px] md:text-[17px] text-black"
+                              >No. Bedrooms</span
+                            >
+                            <select
+                              class="text-[15px] md:text-[17px] rounded-[7px] bg-white border-[3px] border-primary py-4 px-3"
+                            ></select>
+                          </div>
+
+                          <!-- input -->
+                          <div class="flex flex-col gap-1">
+                            <span class="text-[15px] md:text-[17px] text-black"
+                              >No. Bathrooms</span
+                            >
+                            <select
+                              class="text-[15px] md:text-[17px] rounded-[7px] bg-white border-[3px] border-primary py-4 px-3"
+                            ></select>
+                          </div>
+                        </div>
+
+                        <!-- input -->
+                        <div class="flex flex-col gap-1">
+                          <span class="text-[15px] md:text-[17px] text-black"
+                            >Location</span
+                          >
+                          <select
+                            class="text-[15px] md:text-[17px] rounded-[7px] bg-white border-[3px] border-primary py-4 px-3"
+                          ></select>
+                        </div>
+
+                        <!-- input -->
+                        <div class="flex flex-col gap-1">
+                          <span class="text-[15px] md:text-[17px] text-black"
+                            >Min Value</span
+                          >
+                          <select
+                            class="text-[15px] md:text-[17px] rounded-[7px] bg-white border-[3px] border-primary py-4 px-3"
+                          ></select>
+                        </div>
+                      </div>
+
+                      <!-- col -->
+                      <div class="flex flex-col gap-4 lg:gap-8 w-full">
+                        <!-- input -->
+                        <div class="flex flex-col gap-1">
+                          <span class="text-[15px] md:text-[17px] text-black"
+                            >Property</span
+                          >
+                          <select
+                            class="text-[15px] md:text-[17px] rounded-[7px] bg-white border-[3px] border-primary py-4 px-3"
+                          ></select>
+                        </div>
+
+                        <!-- input -->
+                        <div class="flex flex-col gap-1">
+                          <span class="text-[15px] md:text-[17px] text-black"
+                            >Strategy</span
+                          >
+                          <select
+                            class="text-[15px] md:text-[17px] rounded-[7px] bg-white border-[3px] border-primary py-4 px-3"
+                          ></select>
+                        </div>
+
+                        <!-- input -->
+                        <div class="flex flex-col gap-1">
+                          <span class="text-[15px] md:text-[17px] text-black"
+                            >Location Radius</span
+                          >
+                          <select
+                            class="text-[15px] md:text-[17px] rounded-[7px] bg-white border-[3px] border-primary py-4 px-3"
+                          ></select>
+                        </div>
+
+                        <!-- input -->
+                        <div class="flex flex-col gap-1">
+                          <span class="text-[15px] md:text-[17px] text-black"
+                            >Max Value</span
+                          >
+                          <select
+                            class="text-[15px] md:text-[17px] rounded-[7px] bg-white border-[3px] border-primary py-4 px-3"
+                          ></select>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- btn -->
+                    <div class="flex w-full sm:justify-end">
+                      <button
+                        class="w-full sm:w-fit text-[15px] font-normal text-white bg-primary rounded-[6px] py-[12px] px-[75px]"
+                      >
+                        Next
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- form #2 -->
+                  <div
+                    class="md:rounded-[20px] rounded-[10px] bg-[#EDEDED] flex flex-col gap-9 py-[35px] sm:py-[45px] md:py-[70px] px-[15px] sm:px-[30px] md:px-[45px] lg:px-[65px] xl:px-[80px]"
+                  >
+                    <!-- title/step -->
+                    <div
+                      class="flex gap-x-5 gap-y-3 flex-wrap items-center justify-between"
+                    >
+                      <h3
+                        class="lg:text-[35px] md:text-[32px] sm:text-[30px] text-[26px]"
+                      >
+                        Set An Alert
+                      </h3>
+                      <img
+                        class="w-[122px] md:w-[157px]"
+                        src="../assets/vectors/setAlert_Step_2.svg"
+                        alt="step2"
+                      />
+                    </div>
+
+                    <!-- form -->
+                    <div
+                      class="grid grid-cols-1 lg:grid-cols-2 gap-y-4 gap-x-[60px]"
+                    >
+                      <!-- col -->
+                      <div
+                        class="w-full flex flex-col gap-3 rounded-[10px] overflow-hidden bg-secondary text-white py-[25px] xs:py-[30px] md:py-[46px] px-[15px] xs:px-[25px] md:px-[42px] relative"
+                      >
+                        <span
+                          class="font-semibold text-primary md:text-[20px] text-[17px]"
+                          >Good To Know</span
+                        >
+
+                        <p class="text-[15px] md:text-[17px] z-20">
+                          We will alert you when relevant properties that meet
+                          your criteria appear until your alerts run out.
+                        </p>
+
+                        <p class="text-[15px] md:text-[17px] z-20">
+                          You can always extend the amount of alerts you are
+                          due.
+                        </p>
+
+                        <img
+                          class="absolute w-[175px] h-[175px] xs:w-[233px] xs:h-[233px] -rotate-12 opacity-5 top-16 xs:top-[35px] right-5 xs:right-[50px]"
+                          src="../assets/vectors/alarm.svg"
+                          alt="alarm"
+                        />
+                      </div>
+
+                      <!-- col -->
+                      <div class="flex flex-col gap-[14px] w-full">
+                        <span class="text-[15px] md:text-[17px]"
+                          >How Would You Like To Receive Your Alerts?</span
+                        >
+
+                        <!-- #1 -->
+                        <label
+                          for="emailCheckbox"
+                          class="w-full flex py-2 px-5 justify-between items-center rounded-[7px] bg-secondary text-white cursor-pointer"
+                        >
+                          <div
+                            class="flex flex-col xs:flex-row xs:items-center gap-x-5 gap-y-2"
+                          >
+                            <div
+                              class="bg-primary rounded-[50%] w-[52px] h-[52px] flex justify-center items-center flex-shrink-0"
+                            >
+                              <img
+                                class="w-[25px]"
+                                src="../assets/vectors/mailWhite.svg"
+                                alt="mail"
+                              />
+                            </div>
+
+                            <span class="text-[15px] md:text-[17px]"
+                              >Email</span
+                            >
+                          </div>
+
+                          <input
+                            type="checkbox"
+                            name="emailCheckbox"
+                            id="emailCheckbox"
+                          />
+                        </label>
+
+                        <!-- #2 -->
+                        <label
+                          for="dashboardCheckbox"
+                          class="w-full flex py-2 px-5 justify-between items-center rounded-[7px] bg-secondary text-white cursor-pointer"
+                        >
+                          <div
+                            class="flex flex-col xs:flex-row xs:items-center gap-x-5 gap-y-2"
+                          >
+                            <div
+                              class="bg-primary rounded-[50%] w-[52px] h-[52px] flex justify-center items-center flex-shrink-0"
+                            >
+                              <img
+                                class="w-[20px]"
+                                src="../assets/vectors/bell.svg"
+                                alt="bell"
+                              />
+                            </div>
+
+                            <span class="text-[15px] md:text-[17px]"
+                              >Dashboard Notofications</span
+                            >
+                          </div>
+
+                          <input
+                            type="checkbox"
+                            name="dashboardCheckbox"
+                            id="dashboardCheckbox"
+                          />
+                        </label>
+
+                        <!-- #3 -->
+                        <label
+                          for="smsCheckbox"
+                          class="w-full flex py-2 px-5 justify-between items-center rounded-[7px] bg-secondary text-white cursor-pointer"
+                        >
+                          <div
+                            class="flex flex-col xs:flex-row xs:items-center gap-x-5 gap-y-2"
+                          >
+                            <div
+                              class="bg-primary rounded-[50%] w-[52px] h-[52px] flex justify-center items-center flex-shrink-0"
+                            >
+                              <img
+                                class="w-[20px]"
+                                src="../assets/vectors/smartphone.svg"
+                                alt="smartphone"
+                              />
+                            </div>
+
+                            <div>
+                              <span class="text-[15px] md:text-[17px] block"
+                                >SMS Message</span
+                              >
+                              <span class="text-[13px] block"
+                                >1 Credit per message</span
+                              >
+                            </div>
+                          </div>
+
+                          <input
+                            type="checkbox"
+                            name="smsCheckbox"
+                            id="smsCheckbox"
+                          />
+                        </label>
+                      </div>
+                    </div>
+
+                    <!-- btn -->
+                    <div class="flex w-full sm:justify-end">
+                      <div
+                        class="flex items-center gap-5 flex-col sm:flex-row w-full sm:w-fit"
+                      >
+                        <button class="w-full sm:w-fit">
+                          <span class="text-[14px] underline">Go Back</span>
+                        </button>
+                        <button
+                          class="w-full sm:w-fit text-[15px] font-normal text-white bg-primary rounded-[6px] py-[12px] px-[75px]"
+                        >
+                          Next
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- form #3 -->
+                  <div
+                    class="md:rounded-[20px] rounded-[10px] bg-[#EDEDED] flex flex-col gap-9 py-[35px] sm:py-[45px] md:py-[70px] px-[15px] sm:px-[30px] md:px-[45px] lg:px-[65px] xl:px-[80px]"
+                  >
+                    <!-- title/step -->
+                    <div
+                      class="flex gap-x-5 gap-y-3 flex-wrap items-center justify-between"
+                    >
+                      <div
+                        class="flex items-baseline flex-wrap gap-x-5 gap-y-2"
+                      >
+                        <h3
+                          class="lg:text-[35px] md:text-[32px] sm:text-[30px] text-[26px]"
+                        >
+                          Checkout
+                        </h3>
+
+                        <span class="text-[15px] md:text-[17px]"
+                          >5 SMS Alerts spread over two weeks</span
+                        >
+                      </div>
+                      <img
+                        class="w-[122px] md:w-[157px]"
+                        src="../assets/vectors/setAlert_Step_3.svg"
+                        alt="step3"
+                      />
+                    </div>
+
+                    <!-- payment info -->
+                    <div class="flex items-center flex-wrap gap-3 mt-7">
+                      <span
+                        class="text-black font-medium lg:text-[27px] md:text-[23px] sm:text-[20px] text-[18px] md:pr-4"
+                        >Payment information</span
+                      >
+
+                      <!-- apple pay -->
+                      <div class="flex items-center gap-1">
+                        <img
+                          src="../assets/vectors/applePay.svg"
+                          alt="applePay"
+                        />
+                      </div>
+
+                      <!-- google pay -->
+                      <div class="flex items-center gap-1">
+                        <img
+                          src="../assets/vectors/googlePayWhite.svg"
+                          alt="googlePay"
+                        />
+                      </div>
+
+                      <!-- paypal -->
+                      <div class="flex items-center gap-1">
+                        <img
+                          src="../assets/vectors/paypalWhite.svg"
+                          alt="paypal"
+                        />
+                      </div>
+                    </div>
+
+                    <!-- form -->
+                    <div
+                      class="grid grid-cols-1 lg:grid-cols-2 gap-y-4 gap-x-[60px] pb-7"
+                    >
+                      <!-- col -->
+                      <div class="flex flex-col gap-4 lg:gap-8 w-full">
+                        <!-- input -->
+                        <div class="flex flex-col gap-1">
+                          <label
+                            for="nameOnCard"
+                            class="text-[15px] md:text-[17px] text-black"
+                            >Name On Card</label
+                          >
+                          <input
+                            id="nameOnCard"
+                            type="text"
+                            class="text-[15px] md:text-[17px] rounded-[7px] bg-white border-[3px] border-primary py-4 px-3"
+                          />
+                        </div>
+
+                        <!-- input -->
+                        <div class="flex flex-col gap-1">
+                          <label
+                            for="cardNumber"
+                            class="text-[15px] md:text-[17px] text-black"
+                            >Card Number</label
+                          >
+                          <input
+                            id="cardNumber"
+                            placeholder="1234 1234 1234 1223"
+                            type="text"
+                            class="text-[15px] md:text-[17px] rounded-[7px] bg-white border-[3px] border-primary py-4 px-3"
+                          />
+                        </div>
+                      </div>
+
+                      <!-- col -->
+                      <div class="flex flex-col gap-4 lg:gap-8 w-full">
+                        <!-- input -->
+                        <div class="flex flex-col gap-1">
+                          <label
+                            for="email"
+                            class="text-[15px] md:text-[17px] text-black"
+                            >Email Address</label
+                          >
+                          <input
+                            id="email"
+                            type="text"
+                            class="text-[15px] md:text-[17px] rounded-[7px] bg-white border-[3px] border-primary py-4 px-3"
+                          />
+                        </div>
+
+                        <!-- double inputs -->
+                        <div
+                          class="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-[25px]"
+                        >
+                          <!-- input -->
+                          <div class="flex flex-col gap-1">
+                            <label
+                              for="expiry"
+                              class="text-[15px] md:text-[17px] text-black"
+                              >Expiry</label
+                            >
+                            <input
+                              id="expiry"
+                              placeholder="MM / YY"
+                              type="text"
+                              class="text-[15px] md:text-[17px] rounded-[7px] bg-white border-[3px] border-primary py-4 px-3"
+                            />
+                          </div>
+
+                          <!-- input -->
+                          <div class="flex flex-col gap-1">
+                            <label
+                              for="CVC"
+                              class="text-[15px] md:text-[17px] text-black"
+                              >CVC</label
+                            >
+                            <input
+                              id="CVC"
+                              placeholder="###"
+                              type="password"
+                              class="text-[15px] md:text-[17px] rounded-[7px] bg-white border-[3px] border-primary py-4 px-3"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- btn -->
+                    <div class="flex w-full sm:justify-end">
+                      <div
+                        class="flex items-center gap-5 flex-col sm:flex-row w-full sm:w-fit"
+                      >
+                        <button class="w-full sm:w-fit">
+                          <span class="text-[14px] underline">Go Back</span>
+                        </button>
+                        <button
+                          class="w-full sm:w-fit text-[15px] font-normal text-white bg-primary rounded-[6px] py-[12px] px-[75px]"
+                        >
+                          Next
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- My Alerts -->
+                <div class="w-full flex flex-col md:pl-[60px] pb-10 md:pb-20">
+                  <!-- title -->
+                  <div
+                    class="w-full py-[16px] px-[20px] md:px-[30px] lg:px-[40px] xl:px-[70px] bg-secondary text-white rounded-tl-[10px] md:rounded-tl-[20px] rounded-tr-[10px] md:rounded-tr-[20px]"
+                  >
+                    <h3
+                      class="lg:text-[35px] md:text-[32px] sm:text-[30px] text-[26px]"
+                    >
+                      My Alerts
+                    </h3>
+                  </div>
+
+                  <!-- table -->
+                  <div
+                    class="w-full bg-[#EDEDED] rounded-bl-[10px] md:rounded-bl-[20px] rounded-br-[10px] md:rounded-br-[20px] py-[15px] px-0 md:px-[10px] lg:px-[20px] xl:px-[50px] overflow-x-auto"
+                  >
+                    <table class="text-secondary w-full">
+                      <thead>
+                        <tr valign="bottom">
+                          <td class="py-2 min-w-[150px] text-start">
+                            <span
+                              class="text-[15px] md:text-[17px] font-medium text-black"
+                              >Alert Name</span
+                            >
+                          </td>
+                          <td class="py-2 min-w-[150px] text-start">
+                            <span
+                              class="text-[15px] md:text-[17px] font-medium text-black"
+                              >Date Created</span
+                            >
+                          </td>
+                          <td class="py-2 min-w-[150px] text-start">
+                            <span
+                              class="text-[15px] md:text-[17px] font-medium text-black"
+                              >Alert Type</span
+                            >
+                          </td>
+                          <td class="py-2 min-w-[150px] text-start">
+                            <span
+                              class="text-[15px] md:text-[17px] font-medium text-black"
+                              >Alerts Sent</span
+                            >
+                          </td>
+                          <td class="py-2 min-w-[150px] text-start">
+                            <span
+                              class="text-[15px] md:text-[17px] font-medium text-black"
+                              >Enable / <br>Disable</span
+                            >
+                          </td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td
+                            class="py-[12px] md:py-[15px]"
+                          >
+                            <span class="text-[15px] md:text-[17px] font-extralight underline"
+                              >London Alert</span
+                            >
+                          </td>
+                          <td
+                            class="py-[12px] md:py-[15px]"
+                          >
+                            <span class="text-[15px] md:text-[17px] font-extralight"
+                              >01/08/2023</span
+                            >
+                          </td>
+                          <td
+                            class="py-[12px] md:py-[15px]"
+                          >
+                            <span class="text-[15px] md:text-[17px] font-extralight"
+                              >Email</span
+                            >
+                          </td>
+                          <td
+                            class="py-[12px] md:py-[15px]"
+                          >
+                            <span class="text-[15px] md:text-[17px] font-extralight"
+                              >1</span
+                            >
+                          </td>
+                          <td
+                            class="py-[12px] md:py-[15px]"
+                          >
+                            <input type="checkbox" name="" id="">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            class="py-[12px] md:py-[15px]"
+                          >
+                            <span class="text-[15px] md:text-[17px] font-extralight underline"
+                              >London Flat Alert</span
+                            >
+                          </td>
+                          <td
+                            class="py-[12px] md:py-[15px]"
+                          >
+                            <span class="text-[15px] md:text-[17px] font-extralight"
+                              >01/08/2023</span
+                            >
+                          </td>
+                          <td
+                            class="py-[12px] md:py-[15px]"
+                          >
+                            <span class="text-[15px] md:text-[17px] font-extralight"
+                              >Email</span
+                            >
+                          </td>
+                          <td
+                            class="py-[12px] md:py-[15px]"
+                          >
+                            <span class="text-[15px] md:text-[17px] font-extralight"
+                              >12</span
+                            >
+                          </td>
+                          <td
+                            class="py-[12px] md:py-[15px]"
+                          >
+                            <input type="checkbox" name="" id="">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            class="py-[12px] md:py-[15px]"
+                          >
+                            <span class="text-[15px] md:text-[17px] font-extralight underline"
+                              >2 Bed London Alert</span
+                            >
+                          </td>
+                          <td
+                            class="py-[12px] md:py-[15px]"
+                          >
+                            <span class="text-[15px] md:text-[17px] font-extralight"
+                              >01/08/2023</span
+                            >
+                          </td>
+                          <td
+                            class="py-[12px] md:py-[15px]"
+                          >
+                            <span class="text-[15px] md:text-[17px] font-extralight"
+                              >Email</span
+                            >
+                          </td>
+                          <td
+                            class="py-[12px] md:py-[15px]"
+                          >
+                            <span class="text-[15px] md:text-[17px] font-extralight"
+                              >3</span
+                            >
+                          </td>
+                          <td
+                            class="py-[12px] md:py-[15px]"
+                          >
+                            <input type="checkbox" name="" id="">
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

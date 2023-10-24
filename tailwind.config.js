@@ -26,9 +26,21 @@ module.exports = {
     "./pages/subscription.html",
     "./pages/accountDetails.html",
     "./pages/myProfile.html",
-
-
-
+    "./pages/postReview.html",
+    "./pages/leaveReview.html",
+    "./pages/purchaseHistory.html",
+    "./pages/payments.html",
+    "./pages/paymentInformation.html",
+    "./pages/id&AMLVerification.html",
+    "./pages/advertiseWithUs.html",
+    "./pages/setPropertyAlert.html",
+    "./pages/aquilaReputation.html",
+    "./pages/listingRules.html",
+    "./pages/terms&conditions.html",
+    "./pages/privacyPolicy.html",
+    "./pages/socialMedia.html",
+    "./pages/glossary.html",
+    "./pages/aboutUs.html",
 
   ],
   theme: {

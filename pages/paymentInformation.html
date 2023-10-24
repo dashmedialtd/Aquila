@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aquila</title>
+    <link rel="stylesheet" href="../output.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/mbg1zau.css" />
+  </head>
+  <body>
+    <header
+      class="font-stolzl font-light text-white flex fixed left-1/2 right-1/2 translate-x-[-50%] w-full bg-gradient-to-b from-black"
+    >
+      <div
+        class="navbar customContainer w-full flex items-center justify-between mx-auto py-6 px-[10px] relative"
+      >
+        <div
+          class="absolute hidden sm:flex items-center -top-2 right-[10px] gap-6"
+        >
+          <div class="flex gap-2 items-center">
+            <img src="../assets/vectors/phone.svg" alt="phone" />
+            <span>0203 693 3811</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="flex gap-2 items-center">
+              <img src="../assets/vectors/facebook.svg" alt="phone" />
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="../assets/vectors/instagram.svg" alt="phone" />
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="../assets/vectors/linkedIn.svg" alt="phone" />
+            </div>
+          </div>
+          <button
+            class="bg-white text-[14px] font-light text-secondary py-3 px-5 rounded-b-lg rounded-bl-lg"
+          >
+            Investor Lounge
+          </button>
+        </div>
+        <div class="logoContainer max-w-[134px]">
+          <!-- <img src="assets/images/Logo.png" alt="Logo" /> -->
+          <img src="../assets/vectors/LogoSvg.svg" alt="Logo" />
+        </div>
+        <div class="flex items-center gap-16">
+          <nav class="hidden lg:flex">
+            <ul class="flex items-center gap-8 text-lg">
+              <li><a href="sourcers.html">Sourcers</a></li>
+              <li><a href="#">Landlords</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Our Services</a></li>
+              <li><a href="#">Our Partners</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </nav>
+          <div class="flex items-center gap-7 text=[18px]">
+            <div class="hidden sm:flex items-center gap-6">
+              <button
+                class="bg-none border-2 border-white flex items-center gap-2 py-3 px-4 rounded-md"
+              >
+                <img src="../assets/vectors/userWhiteBg.svg" alt="user" />
+                Sign In
+              </button>
+              <button
+                class="bg-primary flex items-center gap-2 py-3 px-4 rounded-md text-white border-2 border-primary"
+              >
+                <img src="../assets/vectors/edit.svg" alt="edit" />
+                Create Account
+              </button>
+            </div>
+
+            <!-- Burger button -->
+            <div class="inline-block lg:hidden">
+              <button class="relative group">
+                <div
+                  class="relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all bg-primary ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md"
+                >
+                  <div
+                    class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden"
+                  >
+                    <div
+                      class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10"
+                    ></div>
+                    <div
+                      class="bg-white h-[2px] w-7 rounded transform transition-all duration-300 group-focus:translate-x-10 delay-75"
+                    ></div>
+                    <div
+                      class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10 delay-150"
+                    ></div>
+
+                    <div
+                      class="absolute items-center justify-between transform transition-all duration-500 top-2.5 -translate-x-10 group-focus:translate-x-0 flex w-0 group-focus:w-12"
+                    >
+                      <div
+                        class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 rotate-0 delay-300 group-focus:rotate-45"
+                      ></div>
+                      <div
+                        class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 -rotate-0 delay-300 group-focus:-rotate-45"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section
+      class="w-full min-h-[1000px] flex bg-[url('../assets/images/HeaderBackground.png')] bg-no-repeat bg-cover bg-center font-stolzl font-light"
+    >
+      <div
+        class="bg-secondary flex flex-1 bg-opacity-80 min-h-full w-full pt-[200px] pb-8"
+      >
+        <div class="customContainer">
+          <div
+            class="bg-white w-full rounded-[20px] flex flex-col lg:flex-row overflow-hidden min-h-[800px]"
+          >
+            <!-- avatar/menu/signOut -->
+            <div
+              class="w-full lg:max-w-[364px] bg-[#435485] px-[20px] md:px-[30px] lg:px-[45px] pt-[35px] md:pt-[75px] pb-[30px] md:pb-[50px] flex flex-col justify-between text-white gap-5"
+            >
+              <!-- avatar/full name -->
+              <div class="flex flex-col gap-2">
+                <!-- avatar -->
+                <div
+                  class="w-[150px] h-[150px] rounded-[50%] overflow-hidden border border-white"
+                >
+                  <img
+                    class="w-full h-full object-cover object-center"
+                    src="../assets/images/avatarLg.png"
+                    alt="avatar"
+                  />
+                </div>
+
+                <!-- full name -->
+                <span
+                  class="lg:text-[25px] md:text-[21px] sm:text-[19px] text-[17px]"
+                  >Daniel Way</span
+                >
+              </div>
+
+              <!-- menu -->
+              <ul class="w-full">
+                <li>
+                  <a
+                    class="text-[16px] md:text-[18px] border-b border-white w-full block py-3 px-2"
+                    href="#"
+                    >My Profile</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-[16px] md:text-[18px] border-b border-white w-full block py-3 px-2"
+                    href="#"
+                    >Account Details</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-[16px] md:text-[18px] border-b border-white w-full block py-3 px-2"
+                    href="#"
+                    >Subscription</a
+                  >
+                </li>
+                <li class="bg-gradient-to-r from-secondary">
+                  <a
+                    class="text-[16px] md:text-[18px] border-b border-white w-full block py-3 px-2"
+                    href="#"
+                    >Payment Information</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-[16px] md:text-[18px] w-full block py-3 px-2"
+                    href="#"
+                    >Purchase History</a
+                  >
+                </li>
+              </ul>
+
+              <!-- sign out -->
+              <button class="w-fit">
+                <span class="underline text-[16px]">Sign out</span>
+              </button>
+            </div>
+
+            <!-- info -->
+            <div
+              class="flex flex-col gap-5 flex-grow text-secondary p-[15px] py-[20px] sm:p-[25px] md:p-[45px] lg:p-[65px] xl:p-[75px]"
+            >
+              <!-- title -->
+              <h1
+                class="text-[34px] sm:text-[40px] md:text-[45px] lg:text-[50px]"
+              >
+                Payment Method
+              </h1>
+
+              <!-- form -->
+              <div class="flex lg:flex-row flex-col w-full mt-10 lg:gap-0 gap-4">
+                <!-- col -->
+                <div class="w-full lg:w-1/2">
+                  <div class="w-full lg:pr-[30px] flex flex-col gap-4">
+                    <!-- input -->
+                    <div class="flex flex-col w-full">
+                      <label for="nameOnCard" class="text-[15px] md:text-[17px]"
+                        >Name On Card</label
+                      >
+                      <input
+                        type="text"
+                        id="nameOnCard"
+                        placeholder="Daniel Way"
+                        class="py-4 px-5 border-2 border-primary rounded-[7px] text-[17px] w-full"
+                      />
+                    </div>
+
+                    <!-- input -->
+                    <div class="flex flex-col w-full">
+                      <label for="email" class="text-[15px] md:text-[17px]"
+                        >Email</label
+                      >
+                      <input
+                        type="email"
+                        id="email"
+                        placeholder="Dan@fakeemail.com"
+                        class="py-4 px-5 border-2 border-primary rounded-[7px] text-[17px] w-full"
+                      />
+                    </div>
+
+                    <!-- input -->
+                    <div class="flex flex-col w-full">
+                      <label for="cardNumber" class="text-[15px] md:text-[17px]"
+                        >Card Number</label
+                      >
+                      <input
+                        type="text"
+                        id="cardNumber"
+                        placeholder="**** **** **** 1234"
+                        class="py-4 px-5 border-2 border-primary rounded-[7px] text-[17px] w-full"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- col -->
+                <div class="w-full lg:w-1/2">
+                  <div class="w-full lg:pl-[30px] flex flex-col gap-4">
+                    <!-- expiry/cvc -->
+                    <div class="flex flex-col xs:flex-row">
+                      <div class="xs:w-1/2">
+                        <div class="xs:pr-[20px]">
+                          <!-- input -->
+                          <div class="flex flex-col w-full">
+                            <label
+                              for="expiry"
+                              class="text-[15px] md:text-[17px]"
+                              >Expiry</label
+                            >
+                            <input
+                              type="text"
+                              id="expiry"
+                              placeholder="00 / 00"
+                              class="py-4 px-5 border-2 border-primary rounded-[7px] text-[17px] w-full"
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="xs:w-1/2">
+                        <div class="xs:pl-[20px]">
+                          <!-- input -->
+                          <div class="flex flex-col w-full">
+                            <label
+                              for="CVC"
+                              class="text-[15px] md:text-[17px]"
+                              >CVC</label
+                            >
+                            <input
+                              type="password"
+                              id="CVC"
+                              placeholder="***"
+                              class="py-4 px-5 border-2 border-primary rounded-[7px] text-[17px] w-full"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- input -->
+                    <div class="flex flex-col w-full">
+                      <label for="country" class="text-[15px] md:text-[17px]"
+                        >Country</label
+                      >
+                      <select id="country" class="py-4 px-5 border-2 border-primary rounded-[7px] text-[17px] w-full">
+                        <option value="placeholder" selected disabled>Country</option>
+                        <option value="United Kingdom">United Kingdom</option>
+                      </select>
+                    </div>
+
+                    <!-- input -->
+                    <div class="flex flex-col w-full">
+                      <label for="postCode" class="text-[15px] md:text-[17px]"
+                        >Post Code</label
+                      >
+                      <input
+                        type="text"
+                        id="postCode"
+                        placeholder="ABC 123"
+                        class="py-4 px-5 border-2 border-primary rounded-[7px] text-[17px] w-full"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- btns -->
+              <div class="w-full flex md:justify-end py-3">
+                <div class="flex flex-col sm:flex-row items-center gap-6 w-full">
+                  <button class="w-full sm:w-fit">
+                    <span class="underline text-primary text-[15px] md:text-[17px]">Delete Payment Details</span>
+                  </button>
+                  <button class="w-full sm:w-fit text-[15px] md:text-[17px] bg-primary text-white rounded-[12px] p-5">
+                    Change Payment Method
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
