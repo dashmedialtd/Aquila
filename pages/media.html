@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aquila</title>
+    <link rel="stylesheet" href="../output.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/mbg1zau.css" />
+  </head>
+  <body>
+    <section class="bg-[rgba(22,_35,_74,_.8)] h-screen">
+      <div class="customContainer pt-10">
+        <div
+          class="w-full flex flex-col lg:flex-row bg-white rounded-[10px] md:rounded-[20px] h-auto lg:h-[837px] overflow-hidden shadow-[0px_0px_72px_30px_rgba(0,0,0,0.1);] relative"
+        >
+          <!-- side -->
+          <div
+            class="flex flex-col justify-end lg:max-w-[527px] w-full p-[20px] xs:p-[35px] md:py-[70px] md:px-[60px] bg-[url('assets/images/leaveReview.png')] bg-cover bg-center relative min-h-[250px] xs:min-h-[300px] h-full"
+          >
+            <div
+              class="bg-gradient-to-t from-[#222A43] to-[#435485] absolute top-0 left-0 w-full h-full opacity-90"
+            ></div>
+
+            <!-- logo -->
+            <div class="w-[115px] xs:w-[140px] lg:w-[227px] z-10">
+              <img
+                class="w-full"
+                src="../assets/vectors/LogoSvg.svg"
+                alt="logo"
+              />
+            </div>
+          </div>
+
+          <!-- main -->
+          <div
+            class="text-secondary flex-grow flex lg:items-center p-4 sm:p-6 lg:px-16"
+          > 
+            <div class="flex flex-col lg:flex-row gap-10 w-full">
+              <!-- col -->
+              <div class="w-full lg:w-1/2 flex flex-col gap-6">
+                <h1 class="lg:text-[54px] md:text-[47px] sm:text-[40px] text-[33px]">
+                  Media Enquiries
+                </h1>
+                <p class="md:text-[21px] text-[17px] font-normal">
+                  For media inquiries, contact us through the form via email shown below. We look forward to collaborating with you!
+                </p>
+                <div class="w-full flex flex-wrap items-center gap-6">
+                  <span class="cursor-pointer text-primary lg:text-[21px] md:text-[21px] text-[18px] font-normal">#MediaEnquiries</span>
+                  <span class="cursor-pointer text-primary lg:text-[21px] md:text-[21px] text-[18px] font-normal">#AquilaConnect</span>
+                </div>
+
+                <a href="mailto:enquiries@aquilaconnect.co.uk" class="flex items-center gap-3">
+                  <img src="../assets/vectors/mail.svg" alt="mail">
+                  <span class="font-medium text-[17px]">enquiries@aquilaconnect.co.uk</span>
+                </a>
+              </div>
+
+              <!-- col -->
+              <div class="flex flex-col gap-4 w-full lg:w-1/2 lg:pt-2">
+                <input placeholder="Full Name" type="text" class="border-primary border-2 rounded-md py-4 px-3 w-full text-[17px]">
+                <input placeholder="Email Address" type="email" class="border-primary border-2 rounded-md py-4 px-3 w-full text-[17px]">
+                <input placeholder="Phone Number" type="number" class="border-primary border-2 rounded-md py-4 px-3 w-full text-[17px]">
+                <textarea placeholder="Messages" rows="5" class="border-primary resize-none border-2 rounded-md py-4 px-3 w-full text-[17px]"></textarea>
+                <div class="flex w-full justify-end">
+                  <button class="text-white bg-primary rounded-md py-4 px-10 sm:w-fit w-full text-[15px]">
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

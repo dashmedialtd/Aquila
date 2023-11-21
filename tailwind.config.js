@@ -41,6 +41,9 @@ module.exports = {
     "./pages/socialMedia.html",
     "./pages/glossary.html",
     "./pages/aboutUs.html",
+    "./pages/media.html",
+    "./pages/careers.html",
+    "./pages/internationalInvestors.html",
 
   ],
   theme: {
